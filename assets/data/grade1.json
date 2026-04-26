@@ -1,0 +1,1927 @@
+{
+  "grade": 1,
+  "ageRange": "6-7",
+  "types": [
+    "add",
+    "sub",
+    "evenodd",
+    "spatial",
+    "clock",
+    "lineup",
+    "shapeseq",
+    "oddone",
+    "rotshape",
+    "mirror"
+  ],
+  "totalQuestions": 139,
+  "questions": [
+    {
+      "type": "add",
+      "key": "a:2+12",
+      "icon": "➕",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">2</div><div class=\"op-sign\">+</div><div class=\"num-display\">12</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "14",
+      "ch": [
+        "14",
+        "15",
+        "13",
+        "24"
+      ],
+      "tts": "What is 2 plus 12?"
+    },
+    {
+      "type": "add",
+      "key": "a:14+12",
+      "icon": "➕",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">14</div><div class=\"op-sign\">+</div><div class=\"num-display\">12</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "26",
+      "ch": [
+        "27",
+        "26",
+        "36",
+        "25"
+      ],
+      "tts": "What is 14 plus 12?"
+    },
+    {
+      "type": "add",
+      "key": "a:30+46",
+      "icon": "➕",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">30</div><div class=\"op-sign\">+</div><div class=\"num-display\">46</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "76",
+      "ch": [
+        "76",
+        "77",
+        "86",
+        "75"
+      ],
+      "tts": "What is 30 plus 46?"
+    },
+    {
+      "type": "add",
+      "key": "a:19+5",
+      "icon": "➕",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">19</div><div class=\"op-sign\">+</div><div class=\"num-display\">5</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "24",
+      "ch": [
+        "34",
+        "23",
+        "25",
+        "24"
+      ],
+      "tts": "What is 19 plus 5?"
+    },
+    {
+      "type": "add",
+      "key": "a:6+4",
+      "icon": "➕",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">6</div><div class=\"op-sign\">+</div><div class=\"num-display\">4</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "10",
+      "ch": [
+        "10",
+        "11",
+        "20",
+        "9"
+      ],
+      "tts": "What is 6 plus 4?"
+    },
+    {
+      "type": "add",
+      "key": "a:5+15",
+      "icon": "➕",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">5</div><div class=\"op-sign\">+</div><div class=\"num-display\">15</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "20",
+      "ch": [
+        "19",
+        "30",
+        "20",
+        "21"
+      ],
+      "tts": "What is 5 plus 15?"
+    },
+    {
+      "type": "add",
+      "key": "a:5+13",
+      "icon": "➕",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">5</div><div class=\"op-sign\">+</div><div class=\"num-display\">13</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "18",
+      "ch": [
+        "28",
+        "17",
+        "19",
+        "18"
+      ],
+      "tts": "What is 5 plus 13?"
+    },
+    {
+      "type": "add",
+      "key": "a:6+14",
+      "icon": "➕",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">6</div><div class=\"op-sign\">+</div><div class=\"num-display\">14</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "20",
+      "ch": [
+        "30",
+        "19",
+        "21",
+        "20"
+      ],
+      "tts": "What is 6 plus 14?"
+    },
+    {
+      "type": "add",
+      "key": "a:12+9",
+      "icon": "➕",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">12</div><div class=\"op-sign\">+</div><div class=\"num-display\">9</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "21",
+      "ch": [
+        "31",
+        "21",
+        "22",
+        "20"
+      ],
+      "tts": "What is 12 plus 9?"
+    },
+    {
+      "type": "add",
+      "key": "a:11+?=30",
+      "icon": "➕",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">11</div><div class=\"op-sign\">+</div><div class=\"blank-box\">?</div><div class=\"op-sign\">=</div><div class=\"num-display\" style=\"background:#f0fdf4;border-color:#86efac;\">30</div></div>",
+      "a": "19",
+      "ch": [
+        "19",
+        "20",
+        "21",
+        "30"
+      ],
+      "tts": "11 plus what equals 30?"
+    },
+    {
+      "type": "add",
+      "key": "a:3+?=23",
+      "icon": "➕",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">3</div><div class=\"op-sign\">+</div><div class=\"blank-box\">?</div><div class=\"op-sign\">=</div><div class=\"num-display\" style=\"background:#f0fdf4;border-color:#86efac;\">23</div></div>",
+      "a": "20",
+      "ch": [
+        "22",
+        "20",
+        "21",
+        "23"
+      ],
+      "tts": "3 plus what equals 23?"
+    },
+    {
+      "type": "add",
+      "key": "a:31+47",
+      "icon": "➕",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">31</div><div class=\"op-sign\">+</div><div class=\"num-display\">47</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "78",
+      "ch": [
+        "78",
+        "79",
+        "88",
+        "77"
+      ],
+      "tts": "What is 31 plus 47?"
+    },
+    {
+      "type": "add",
+      "key": "a:3+1",
+      "icon": "➕",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">3</div><div class=\"op-sign\">+</div><div class=\"num-display\">1</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "4",
+      "ch": [
+        "4",
+        "3",
+        "5",
+        "14"
+      ],
+      "tts": "What is 3 plus 1?"
+    },
+    {
+      "type": "add",
+      "key": "a:13+?=32",
+      "icon": "➕",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">13</div><div class=\"op-sign\">+</div><div class=\"blank-box\">?</div><div class=\"op-sign\">=</div><div class=\"num-display\" style=\"background:#f0fdf4;border-color:#86efac;\">32</div></div>",
+      "a": "19",
+      "ch": [
+        "21",
+        "20",
+        "19",
+        "32"
+      ],
+      "tts": "13 plus what equals 32?"
+    },
+    {
+      "type": "add",
+      "key": "a:6+17",
+      "icon": "➕",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">6</div><div class=\"op-sign\">+</div><div class=\"num-display\">17</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "23",
+      "ch": [
+        "33",
+        "24",
+        "22",
+        "23"
+      ],
+      "tts": "What is 6 plus 17?"
+    },
+    {
+      "type": "add",
+      "key": "a:20+16",
+      "icon": "➕",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">20</div><div class=\"op-sign\">+</div><div class=\"num-display\">16</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "36",
+      "ch": [
+        "46",
+        "35",
+        "37",
+        "36"
+      ],
+      "tts": "What is 20 plus 16?"
+    },
+    {
+      "type": "add",
+      "key": "a:3+13",
+      "icon": "➕",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">3</div><div class=\"op-sign\">+</div><div class=\"num-display\">13</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "16",
+      "ch": [
+        "26",
+        "15",
+        "16",
+        "17"
+      ],
+      "tts": "What is 3 plus 13?"
+    },
+    {
+      "type": "add",
+      "key": "a:4+?=27",
+      "icon": "➕",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">4</div><div class=\"op-sign\">+</div><div class=\"blank-box\">?</div><div class=\"op-sign\">=</div><div class=\"num-display\" style=\"background:#f0fdf4;border-color:#86efac;\">27</div></div>",
+      "a": "23",
+      "ch": [
+        "25",
+        "23",
+        "24",
+        "27"
+      ],
+      "tts": "4 plus what equals 27?"
+    },
+    {
+      "type": "add",
+      "key": "a:13+?=14",
+      "icon": "➕",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">13</div><div class=\"op-sign\">+</div><div class=\"blank-box\">?</div><div class=\"op-sign\">=</div><div class=\"num-display\" style=\"background:#f0fdf4;border-color:#86efac;\">14</div></div>",
+      "a": "1",
+      "ch": [
+        "2",
+        "14",
+        "1",
+        "3"
+      ],
+      "tts": "13 plus what equals 14?"
+    },
+    {
+      "type": "add",
+      "key": "a:1+3",
+      "icon": "➕",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">1</div><div class=\"op-sign\">+</div><div class=\"num-display\">3</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "4",
+      "ch": [
+        "5",
+        "14",
+        "4",
+        "3"
+      ],
+      "tts": "What is 1 plus 3?"
+    },
+    {
+      "type": "sub",
+      "key": "s:30-17",
+      "icon": "➖",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">30</div><div class=\"op-sign\">−</div><div class=\"num-display\">17</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "13",
+      "ch": [
+        "17",
+        "12",
+        "14",
+        "13"
+      ],
+      "tts": "What is 30 minus 17?"
+    },
+    {
+      "type": "sub",
+      "key": "s:21-3",
+      "icon": "➖",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">21</div><div class=\"op-sign\">−</div><div class=\"num-display\">3</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "18",
+      "ch": [
+        "3",
+        "18",
+        "19",
+        "17"
+      ],
+      "tts": "What is 21 minus 3?"
+    },
+    {
+      "type": "sub",
+      "key": "s:11-5",
+      "icon": "➖",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">11</div><div class=\"op-sign\">−</div><div class=\"num-display\">5</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "6",
+      "ch": [
+        "8",
+        "5",
+        "7",
+        "6"
+      ],
+      "tts": "What is 11 minus 5?"
+    },
+    {
+      "type": "sub",
+      "key": "s:19-14",
+      "icon": "➖",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">19</div><div class=\"op-sign\">−</div><div class=\"num-display\">14</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "5",
+      "ch": [
+        "4",
+        "14",
+        "6",
+        "5"
+      ],
+      "tts": "What is 19 minus 14?"
+    },
+    {
+      "type": "sub",
+      "key": "s:36-16",
+      "icon": "➖",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">36</div><div class=\"op-sign\">−</div><div class=\"num-display\">16</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "20",
+      "ch": [
+        "20",
+        "21",
+        "16",
+        "19"
+      ],
+      "tts": "What is 36 minus 16?"
+    },
+    {
+      "type": "sub",
+      "key": "s:13-9",
+      "icon": "➖",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">13</div><div class=\"op-sign\">−</div><div class=\"num-display\">9</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "4",
+      "ch": [
+        "4",
+        "9",
+        "5",
+        "3"
+      ],
+      "tts": "What is 13 minus 9?"
+    },
+    {
+      "type": "sub",
+      "key": "s:32-15",
+      "icon": "➖",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">32</div><div class=\"op-sign\">−</div><div class=\"num-display\">15</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "17",
+      "ch": [
+        "17",
+        "18",
+        "16",
+        "15"
+      ],
+      "tts": "What is 32 minus 15?"
+    },
+    {
+      "type": "sub",
+      "key": "s:12-7",
+      "icon": "➖",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">12</div><div class=\"op-sign\">−</div><div class=\"num-display\">7</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "5",
+      "ch": [
+        "4",
+        "7",
+        "5",
+        "6"
+      ],
+      "tts": "What is 12 minus 7?"
+    },
+    {
+      "type": "sub",
+      "key": "s:6-3",
+      "icon": "➖",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">6</div><div class=\"op-sign\">−</div><div class=\"num-display\">3</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "3",
+      "ch": [
+        "3",
+        "5",
+        "4",
+        "2"
+      ],
+      "tts": "What is 6 minus 3?"
+    },
+    {
+      "type": "sub",
+      "key": "s:12-10",
+      "icon": "➖",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">12</div><div class=\"op-sign\">−</div><div class=\"num-display\">10</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "2",
+      "ch": [
+        "2",
+        "10",
+        "3",
+        "1"
+      ],
+      "tts": "What is 12 minus 10?"
+    },
+    {
+      "type": "sub",
+      "key": "s:25-18",
+      "icon": "➖",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">25</div><div class=\"op-sign\">−</div><div class=\"num-display\">18</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "7",
+      "ch": [
+        "18",
+        "6",
+        "8",
+        "7"
+      ],
+      "tts": "What is 25 minus 18?"
+    },
+    {
+      "type": "sub",
+      "key": "s:59-43",
+      "icon": "➖",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">59</div><div class=\"op-sign\">−</div><div class=\"num-display\">43</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "16",
+      "ch": [
+        "15",
+        "43",
+        "16",
+        "17"
+      ],
+      "tts": "What is 59 minus 43?"
+    },
+    {
+      "type": "sub",
+      "key": "s:32-13",
+      "icon": "➖",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">32</div><div class=\"op-sign\">−</div><div class=\"num-display\">13</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "19",
+      "ch": [
+        "19",
+        "20",
+        "18",
+        "13"
+      ],
+      "tts": "What is 32 minus 13?"
+    },
+    {
+      "type": "sub",
+      "key": "s:33-17",
+      "icon": "➖",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">33</div><div class=\"op-sign\">−</div><div class=\"num-display\">17</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "16",
+      "ch": [
+        "16",
+        "15",
+        "17",
+        "18"
+      ],
+      "tts": "What is 33 minus 17?"
+    },
+    {
+      "type": "sub",
+      "key": "s:15-4",
+      "icon": "➖",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">15</div><div class=\"op-sign\">−</div><div class=\"num-display\">4</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "11",
+      "ch": [
+        "4",
+        "10",
+        "12",
+        "11"
+      ],
+      "tts": "What is 15 minus 4?"
+    },
+    {
+      "type": "sub",
+      "key": "s:29-9",
+      "icon": "➖",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">29</div><div class=\"op-sign\">−</div><div class=\"num-display\">9</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "20",
+      "ch": [
+        "20",
+        "9",
+        "21",
+        "19"
+      ],
+      "tts": "What is 29 minus 9?"
+    },
+    {
+      "type": "sub",
+      "key": "s:28-11",
+      "icon": "➖",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">28</div><div class=\"op-sign\">−</div><div class=\"num-display\">11</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "17",
+      "ch": [
+        "11",
+        "16",
+        "18",
+        "17"
+      ],
+      "tts": "What is 28 minus 11?"
+    },
+    {
+      "type": "sub",
+      "key": "s:45-10",
+      "icon": "➖",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">45</div><div class=\"op-sign\">−</div><div class=\"num-display\">10</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "35",
+      "ch": [
+        "35",
+        "36",
+        "34",
+        "10"
+      ],
+      "tts": "What is 45 minus 10?"
+    },
+    {
+      "type": "sub",
+      "key": "s:25-10",
+      "icon": "➖",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">25</div><div class=\"op-sign\">−</div><div class=\"num-display\">10</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "15",
+      "ch": [
+        "16",
+        "14",
+        "15",
+        "10"
+      ],
+      "tts": "What is 25 minus 10?"
+    },
+    {
+      "type": "sub",
+      "key": "s:7-1",
+      "icon": "➖",
+      "display": "<div class=\"eq-row\"><div class=\"num-display\">7</div><div class=\"op-sign\">−</div><div class=\"num-display\">1</div><div class=\"op-sign\">=</div><div class=\"blank-box\">?</div></div>",
+      "a": "6",
+      "ch": [
+        "6",
+        "7",
+        "5",
+        "1"
+      ],
+      "tts": "What is 7 minus 1?"
+    },
+    {
+      "type": "evenodd",
+      "key": "eo:17",
+      "icon": "🎲",
+      "display": "<div style=\"font-size:22px;font-family:var(--px);color:#374151;margin-bottom:8px\">17</div><div style=\"font-size:14px;color:#555;font-family:var(--px)\">Even or Odd?</div>",
+      "a": "Odd",
+      "ch": [
+        "Even",
+        "Odd"
+      ],
+      "tts": "Is 17 even or odd?"
+    },
+    {
+      "type": "evenodd",
+      "key": "eo:15",
+      "icon": "🎲",
+      "display": "<div style=\"font-size:22px;font-family:var(--px);color:#374151;margin-bottom:8px\">15</div><div style=\"font-size:14px;color:#555;font-family:var(--px)\">Even or Odd?</div>",
+      "a": "Odd",
+      "ch": [
+        "Even",
+        "Odd"
+      ],
+      "tts": "Is 15 even or odd?"
+    },
+    {
+      "type": "evenodd",
+      "key": "eo:75",
+      "icon": "🎲",
+      "display": "<div style=\"font-size:22px;font-family:var(--px);color:#374151;margin-bottom:8px\">75</div><div style=\"font-size:14px;color:#555;font-family:var(--px)\">Even or Odd?</div>",
+      "a": "Odd",
+      "ch": [
+        "Even",
+        "Odd"
+      ],
+      "tts": "Is 75 even or odd?"
+    },
+    {
+      "type": "evenodd",
+      "key": "eo:7",
+      "icon": "🎲",
+      "display": "<div style=\"font-size:22px;font-family:var(--px);color:#374151;margin-bottom:8px\">7</div><div style=\"font-size:14px;color:#555;font-family:var(--px)\">Even or Odd?</div>",
+      "a": "Odd",
+      "ch": [
+        "Even",
+        "Odd"
+      ],
+      "tts": "Is 7 even or odd?"
+    },
+    {
+      "type": "evenodd",
+      "key": "eo:18",
+      "icon": "🎲",
+      "display": "<div style=\"font-size:22px;font-family:var(--px);color:#374151;margin-bottom:8px\">18</div><div style=\"font-size:14px;color:#555;font-family:var(--px)\">Even or Odd?</div>",
+      "a": "Even",
+      "ch": [
+        "Even",
+        "Odd"
+      ],
+      "tts": "Is 18 even or odd?"
+    },
+    {
+      "type": "evenodd",
+      "key": "eo:46",
+      "icon": "🎲",
+      "display": "<div style=\"font-size:22px;font-family:var(--px);color:#374151;margin-bottom:8px\">46</div><div style=\"font-size:14px;color:#555;font-family:var(--px)\">Even or Odd?</div>",
+      "a": "Even",
+      "ch": [
+        "Even",
+        "Odd"
+      ],
+      "tts": "Is 46 even or odd?"
+    },
+    {
+      "type": "evenodd",
+      "key": "eo:6",
+      "icon": "🎲",
+      "display": "<div style=\"font-size:22px;font-family:var(--px);color:#374151;margin-bottom:8px\">6</div><div style=\"font-size:14px;color:#555;font-family:var(--px)\">Even or Odd?</div>",
+      "a": "Even",
+      "ch": [
+        "Even",
+        "Odd"
+      ],
+      "tts": "Is 6 even or odd?"
+    },
+    {
+      "type": "evenodd",
+      "key": "eo:9",
+      "icon": "🎲",
+      "display": "<div style=\"font-size:22px;font-family:var(--px);color:#374151;margin-bottom:8px\">9</div><div style=\"font-size:14px;color:#555;font-family:var(--px)\">Even or Odd?</div>",
+      "a": "Odd",
+      "ch": [
+        "Even",
+        "Odd"
+      ],
+      "tts": "Is 9 even or odd?"
+    },
+    {
+      "type": "evenodd",
+      "key": "eo:78",
+      "icon": "🎲",
+      "display": "<div style=\"font-size:22px;font-family:var(--px);color:#374151;margin-bottom:8px\">78</div><div style=\"font-size:14px;color:#555;font-family:var(--px)\">Even or Odd?</div>",
+      "a": "Even",
+      "ch": [
+        "Even",
+        "Odd"
+      ],
+      "tts": "Is 78 even or odd?"
+    },
+    {
+      "type": "evenodd",
+      "key": "eo:3",
+      "icon": "🎲",
+      "display": "<div style=\"font-size:22px;font-family:var(--px);color:#374151;margin-bottom:8px\">3</div><div style=\"font-size:14px;color:#555;font-family:var(--px)\">Even or Odd?</div>",
+      "a": "Odd",
+      "ch": [
+        "Even",
+        "Odd"
+      ],
+      "tts": "Is 3 even or odd?"
+    },
+    {
+      "type": "evenodd",
+      "key": "eo:2",
+      "icon": "🎲",
+      "display": "<div style=\"font-size:22px;font-family:var(--px);color:#374151;margin-bottom:8px\">2</div><div style=\"font-size:14px;color:#555;font-family:var(--px)\">Even or Odd?</div>",
+      "a": "Even",
+      "ch": [
+        "Even",
+        "Odd"
+      ],
+      "tts": "Is 2 even or odd?"
+    },
+    {
+      "type": "evenodd",
+      "key": "eo:19",
+      "icon": "🎲",
+      "display": "<div style=\"font-size:22px;font-family:var(--px);color:#374151;margin-bottom:8px\">19</div><div style=\"font-size:14px;color:#555;font-family:var(--px)\">Even or Odd?</div>",
+      "a": "Odd",
+      "ch": [
+        "Even",
+        "Odd"
+      ],
+      "tts": "Is 19 even or odd?"
+    },
+    {
+      "type": "evenodd",
+      "key": "eo:14",
+      "icon": "🎲",
+      "display": "<div style=\"font-size:22px;font-family:var(--px);color:#374151;margin-bottom:8px\">14</div><div style=\"font-size:14px;color:#555;font-family:var(--px)\">Even or Odd?</div>",
+      "a": "Even",
+      "ch": [
+        "Even",
+        "Odd"
+      ],
+      "tts": "Is 14 even or odd?"
+    },
+    {
+      "type": "evenodd",
+      "key": "eo:83",
+      "icon": "🎲",
+      "display": "<div style=\"font-size:22px;font-family:var(--px);color:#374151;margin-bottom:8px\">83</div><div style=\"font-size:14px;color:#555;font-family:var(--px)\">Even or Odd?</div>",
+      "a": "Odd",
+      "ch": [
+        "Even",
+        "Odd"
+      ],
+      "tts": "Is 83 even or odd?"
+    },
+    {
+      "type": "evenodd",
+      "key": "eo:1",
+      "icon": "🎲",
+      "display": "<div style=\"font-size:22px;font-family:var(--px);color:#374151;margin-bottom:8px\">1</div><div style=\"font-size:14px;color:#555;font-family:var(--px)\">Even or Odd?</div>",
+      "a": "Odd",
+      "ch": [
+        "Even",
+        "Odd"
+      ],
+      "tts": "Is 1 even or odd?"
+    },
+    {
+      "type": "evenodd",
+      "key": "eo:16",
+      "icon": "🎲",
+      "display": "<div style=\"font-size:22px;font-family:var(--px);color:#374151;margin-bottom:8px\">16</div><div style=\"font-size:14px;color:#555;font-family:var(--px)\">Even or Odd?</div>",
+      "a": "Even",
+      "ch": [
+        "Even",
+        "Odd"
+      ],
+      "tts": "Is 16 even or odd?"
+    },
+    {
+      "type": "evenodd",
+      "key": "eo:70",
+      "icon": "🎲",
+      "display": "<div style=\"font-size:22px;font-family:var(--px);color:#374151;margin-bottom:8px\">70</div><div style=\"font-size:14px;color:#555;font-family:var(--px)\">Even or Odd?</div>",
+      "a": "Even",
+      "ch": [
+        "Even",
+        "Odd"
+      ],
+      "tts": "Is 70 even or odd?"
+    },
+    {
+      "type": "evenodd",
+      "key": "eo:5",
+      "icon": "🎲",
+      "display": "<div style=\"font-size:22px;font-family:var(--px);color:#374151;margin-bottom:8px\">5</div><div style=\"font-size:14px;color:#555;font-family:var(--px)\">Even or Odd?</div>",
+      "a": "Odd",
+      "ch": [
+        "Even",
+        "Odd"
+      ],
+      "tts": "Is 5 even or odd?"
+    },
+    {
+      "type": "evenodd",
+      "key": "eo:20",
+      "icon": "🎲",
+      "display": "<div style=\"font-size:22px;font-family:var(--px);color:#374151;margin-bottom:8px\">20</div><div style=\"font-size:14px;color:#555;font-family:var(--px)\">Even or Odd?</div>",
+      "a": "Even",
+      "ch": [
+        "Even",
+        "Odd"
+      ],
+      "tts": "Is 20 even or odd?"
+    },
+    {
+      "type": "spatial",
+      "key": "sp:name:pentagon",
+      "icon": "🔷",
+      "display": "<div style=\"display:flex;flex-direction:column;align-items:center;gap:8px\"><svg width=\"56\" height=\"56\" viewBox=\"0 0 56 56\"><polygon points=\"28,5 49.874299874788534,20.89260912937621 41.519060802726884,46.60739087062379 14.48093919727312,46.60739087062379 6.12570012521147,20.892609129376204\" fill=\"#60a5fa\" stroke=\"white\" stroke-width=\"2\"/></svg><div style=\"font-size:11px;font-family:var(--px);color:#374151;text-align:center\">What shape is this?</div></div>",
+      "a": "pentagon",
+      "ch": [
+        "pentagon",
+        "triangle",
+        "circle",
+        "square"
+      ],
+      "tts": "What shape is this?"
+    },
+    {
+      "type": "spatial",
+      "key": "sp:sym:square",
+      "icon": "🪞",
+      "display": "<div style=\"display:flex;flex-direction:column;align-items:center;gap:6px\"><svg width=\"56\" height=\"56\" viewBox=\"0 0 56 56\"><rect x=\"5\" y=\"5\" width=\"46\" height=\"46\" fill=\"#34d399\" stroke=\"white\" stroke-width=\"2\"/></svg><div style=\"font-size:10px;font-family:var(--px);color:#374151;text-align:center\">Lines of symmetry<br>in a square?</div></div>",
+      "a": "4",
+      "ch": [
+        "4",
+        "2",
+        "5",
+        "3"
+      ],
+      "tts": "How many lines of symmetry does a square have?"
+    },
+    {
+      "type": "spatial",
+      "key": "sp:cmp:Tworighttrianglesjoinedmakewhi:Square",
+      "icon": "🔷",
+      "display": "<div style=\"font-size:11px;font-family:var(--px);color:#374151;white-space:pre-line;line-height:2;text-align:center\">Two right triangles joined\nmake which shape?</div>",
+      "a": "Square",
+      "ch": [
+        "Square",
+        "Hexagon",
+        "Circle",
+        "Pentagon"
+      ],
+      "tts": "Two right triangles joined make which shape?"
+    },
+    {
+      "type": "spatial",
+      "key": "sp:name:circle",
+      "icon": "🔷",
+      "display": "<div style=\"display:flex;flex-direction:column;align-items:center;gap:8px\"><svg width=\"56\" height=\"56\" viewBox=\"0 0 56 56\"><circle cx=\"28\" cy=\"28\" r=\"23\" fill=\"#60a5fa\" stroke=\"white\" stroke-width=\"2\"/></svg><div style=\"font-size:11px;font-family:var(--px);color:#374151;text-align:center\">What shape is this?</div></div>",
+      "a": "circle",
+      "ch": [
+        "circle",
+        "square",
+        "hexagon",
+        "triangle"
+      ],
+      "tts": "What shape is this?"
+    },
+    {
+      "type": "spatial",
+      "key": "sp:name:square",
+      "icon": "🔷",
+      "display": "<div style=\"display:flex;flex-direction:column;align-items:center;gap:8px\"><svg width=\"56\" height=\"56\" viewBox=\"0 0 56 56\"><rect x=\"5\" y=\"5\" width=\"46\" height=\"46\" fill=\"#f87171\" stroke=\"white\" stroke-width=\"2\"/></svg><div style=\"font-size:11px;font-family:var(--px);color:#374151;text-align:center\">What shape is this?</div></div>",
+      "a": "square",
+      "ch": [
+        "triangle",
+        "circle",
+        "square",
+        "hexagon"
+      ],
+      "tts": "What shape is this?"
+    },
+    {
+      "type": "spatial",
+      "key": "sp:name:hexagon",
+      "icon": "🔷",
+      "display": "<div style=\"display:flex;flex-direction:column;align-items:center;gap:8px\"><svg width=\"56\" height=\"56\" viewBox=\"0 0 56 56\"><polygon points=\"28,5 47.918584287042094,16.5 47.918584287042094,39.5 28,51 8.08141571295791,39.5 8.081415712957913,16.5\" fill=\"#fbbf24\" stroke=\"white\" stroke-width=\"2\"/></svg><div style=\"font-size:11px;font-family:var(--px);color:#374151;text-align:center\">What shape is this?</div></div>",
+      "a": "hexagon",
+      "ch": [
+        "circle",
+        "hexagon",
+        "pentagon",
+        "triangle"
+      ],
+      "tts": "What shape is this?"
+    },
+    {
+      "type": "spatial",
+      "key": "sp:sym:triangle",
+      "icon": "🪞",
+      "display": "<div style=\"display:flex;flex-direction:column;align-items:center;gap:6px\"><svg width=\"56\" height=\"56\" viewBox=\"0 0 56 56\"><polygon points=\"28,5 51,51 5,51\" fill=\"#fbbf24\" stroke=\"white\" stroke-width=\"2\"/></svg><div style=\"font-size:10px;font-family:var(--px);color:#374151;text-align:center\">Lines of symmetry<br>in a triangle?</div></div>",
+      "a": "3",
+      "ch": [
+        "2",
+        "4",
+        "5",
+        "3"
+      ],
+      "tts": "How many lines of symmetry does a triangle have?"
+    },
+    {
+      "type": "spatial",
+      "key": "sp:sym:rectangle",
+      "icon": "🪞",
+      "display": "<div style=\"display:flex;flex-direction:column;align-items:center;gap:6px\"><svg width=\"56\" height=\"56\" viewBox=\"0 0 56 56\"><rect x=\"3\" y=\"14\" width=\"50\" height=\"28\" fill=\"#a78bfa\" stroke=\"white\" stroke-width=\"2\"/></svg><div style=\"font-size:10px;font-family:var(--px);color:#374151;text-align:center\">Lines of symmetry<br>in a rectangle?</div></div>",
+      "a": "2",
+      "ch": [
+        "1",
+        "3",
+        "4",
+        "2"
+      ],
+      "tts": "How many lines of symmetry does a rectangle have?"
+    },
+    {
+      "type": "spatial",
+      "key": "sp:cmp:Asquarecutdiagonallygivesyoutw:Triangles",
+      "icon": "🔷",
+      "display": "<div style=\"font-size:11px;font-family:var(--px);color:#374151;white-space:pre-line;line-height:2;text-align:center\">A square cut diagonally\ngives you two of what?</div>",
+      "a": "Triangles",
+      "ch": [
+        "Hexagons",
+        "Triangles",
+        "Circles",
+        "Rectangles"
+      ],
+      "tts": "A square cut diagonally gives you two of what?"
+    },
+    {
+      "type": "spatial",
+      "key": "sp:cmp:Sixsquaresarrangedinacrossshap:Cube net",
+      "icon": "🔷",
+      "display": "<div style=\"font-size:11px;font-family:var(--px);color:#374151;white-space:pre-line;line-height:2;text-align:center\">Six squares arranged\nin a cross shape make a ___?</div>",
+      "a": "Cube net",
+      "ch": [
+        "Cone",
+        "Cube net",
+        "Sphere",
+        "Pyramid"
+      ],
+      "tts": "Six squares arranged in a cross shape make a ___?"
+    },
+    {
+      "type": "clock",
+      "key": "clk:2:0",
+      "icon": "🕐",
+      "display": "<svg viewBox=\"0 0 90 90\" width=\"90\" height=\"90\" style=\"display:block;margin:0 auto 6px\"><circle cx=\"45\" cy=\"45\" r=\"43\" fill=\"#fef9c3\" stroke=\"#fde68a\" stroke-width=\"3\"/><circle cx=\"45\" cy=\"45\" r=\"39\" fill=\"white\"/><text x=\"62.10000000000001\" y=\"15.381931190572196\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">1</text><text x=\"74.61806880942781\" y=\"27.900000000000002\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">2</text><text x=\"79.2\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">3</text><text x=\"74.61806880942781\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">4</text><text x=\"62.10000000000001\" y=\"74.6180688094278\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">5</text><text x=\"45\" y=\"79.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">6</text><text x=\"27.900000000000006\" y=\"74.61806880942781\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">7</text><text x=\"15.381931190572192\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">8</text><text x=\"10.799999999999997\" y=\"45.00000000000001\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">9</text><text x=\"15.381931190572196\" y=\"27.899999999999995\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">10</text><text x=\"27.899999999999984\" y=\"15.3819311905722\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">11</text><text x=\"45\" y=\"10.799999999999997\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">12</text><line x1=\"45\" y1=\"45\" x2=\"62.14730299493189\" y2=\"35.1\" stroke=\"#3730a3\" stroke-width=\"4.05\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"45\" x2=\"45\" y2=\"16.2\" stroke=\"#db2777\" stroke-width=\"2.6999999999999997\" stroke-linecap=\"round\"/><circle cx=\"45\" cy=\"45\" r=\"2.6999999999999997\" fill=\"#1e1b4b\"/></svg><div style=\"font-size:11px;font-family:var(--px);color:#374151\">What time is it?</div>",
+      "a": "2:00",
+      "ch": [
+        "2:30",
+        "3:00",
+        "1:00",
+        "2:00"
+      ],
+      "tts": "What time does the clock show?"
+    },
+    {
+      "type": "clock",
+      "key": "clk:8:0",
+      "icon": "🕐",
+      "display": "<svg viewBox=\"0 0 90 90\" width=\"90\" height=\"90\" style=\"display:block;margin:0 auto 6px\"><circle cx=\"45\" cy=\"45\" r=\"43\" fill=\"#fef9c3\" stroke=\"#fde68a\" stroke-width=\"3\"/><circle cx=\"45\" cy=\"45\" r=\"39\" fill=\"white\"/><text x=\"62.10000000000001\" y=\"15.381931190572196\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">1</text><text x=\"74.61806880942781\" y=\"27.900000000000002\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">2</text><text x=\"79.2\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">3</text><text x=\"74.61806880942781\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">4</text><text x=\"62.10000000000001\" y=\"74.6180688094278\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">5</text><text x=\"45\" y=\"79.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">6</text><text x=\"27.900000000000006\" y=\"74.61806880942781\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">7</text><text x=\"15.381931190572192\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">8</text><text x=\"10.799999999999997\" y=\"45.00000000000001\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">9</text><text x=\"15.381931190572196\" y=\"27.899999999999995\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">10</text><text x=\"27.899999999999984\" y=\"15.3819311905722\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">11</text><text x=\"45\" y=\"10.799999999999997\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">12</text><line x1=\"45\" y1=\"45\" x2=\"27.852697005068112\" y2=\"54.9\" stroke=\"#3730a3\" stroke-width=\"4.05\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"45\" x2=\"45\" y2=\"16.2\" stroke=\"#db2777\" stroke-width=\"2.6999999999999997\" stroke-linecap=\"round\"/><circle cx=\"45\" cy=\"45\" r=\"2.6999999999999997\" fill=\"#1e1b4b\"/></svg><div style=\"font-size:11px;font-family:var(--px);color:#374151\">What time is it?</div>",
+      "a": "8:00",
+      "ch": [
+        "8:00",
+        "9:00",
+        "7:00",
+        "8:30"
+      ],
+      "tts": "What time does the clock show?"
+    },
+    {
+      "type": "clock",
+      "key": "clk:9:15",
+      "icon": "🕐",
+      "display": "<svg viewBox=\"0 0 90 90\" width=\"90\" height=\"90\" style=\"display:block;margin:0 auto 6px\"><circle cx=\"45\" cy=\"45\" r=\"43\" fill=\"#fef9c3\" stroke=\"#fde68a\" stroke-width=\"3\"/><circle cx=\"45\" cy=\"45\" r=\"39\" fill=\"white\"/><text x=\"62.10000000000001\" y=\"15.381931190572196\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">1</text><text x=\"74.61806880942781\" y=\"27.900000000000002\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">2</text><text x=\"79.2\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">3</text><text x=\"74.61806880942781\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">4</text><text x=\"62.10000000000001\" y=\"74.6180688094278\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">5</text><text x=\"45\" y=\"79.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">6</text><text x=\"27.900000000000006\" y=\"74.61806880942781\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">7</text><text x=\"15.381931190572192\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">8</text><text x=\"10.799999999999997\" y=\"45.00000000000001\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">9</text><text x=\"15.381931190572196\" y=\"27.899999999999995\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">10</text><text x=\"27.899999999999984\" y=\"15.3819311905722\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">11</text><text x=\"45\" y=\"10.799999999999997\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">12</text><line x1=\"45\" y1=\"45\" x2=\"25.369391744798552\" y2=\"42.41558139404298\" stroke=\"#3730a3\" stroke-width=\"4.05\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"45\" x2=\"73.8\" y2=\"45\" stroke=\"#db2777\" stroke-width=\"2.6999999999999997\" stroke-linecap=\"round\"/><circle cx=\"45\" cy=\"45\" r=\"2.6999999999999997\" fill=\"#1e1b4b\"/></svg><div style=\"font-size:11px;font-family:var(--px);color:#374151\">What time is it?</div>",
+      "a": "9:15",
+      "ch": [
+        "10:15",
+        "9:15",
+        "8:15",
+        "9:15"
+      ],
+      "tts": "What time does the clock show?"
+    },
+    {
+      "type": "clock",
+      "key": "clk:6:0",
+      "icon": "🕐",
+      "display": "<svg viewBox=\"0 0 90 90\" width=\"90\" height=\"90\" style=\"display:block;margin:0 auto 6px\"><circle cx=\"45\" cy=\"45\" r=\"43\" fill=\"#fef9c3\" stroke=\"#fde68a\" stroke-width=\"3\"/><circle cx=\"45\" cy=\"45\" r=\"39\" fill=\"white\"/><text x=\"62.10000000000001\" y=\"15.381931190572196\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">1</text><text x=\"74.61806880942781\" y=\"27.900000000000002\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">2</text><text x=\"79.2\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">3</text><text x=\"74.61806880942781\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">4</text><text x=\"62.10000000000001\" y=\"74.6180688094278\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">5</text><text x=\"45\" y=\"79.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">6</text><text x=\"27.900000000000006\" y=\"74.61806880942781\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">7</text><text x=\"15.381931190572192\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">8</text><text x=\"10.799999999999997\" y=\"45.00000000000001\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">9</text><text x=\"15.381931190572196\" y=\"27.899999999999995\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">10</text><text x=\"27.899999999999984\" y=\"15.3819311905722\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">11</text><text x=\"45\" y=\"10.799999999999997\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">12</text><line x1=\"45\" y1=\"45\" x2=\"45\" y2=\"64.8\" stroke=\"#3730a3\" stroke-width=\"4.05\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"45\" x2=\"45\" y2=\"16.2\" stroke=\"#db2777\" stroke-width=\"2.6999999999999997\" stroke-linecap=\"round\"/><circle cx=\"45\" cy=\"45\" r=\"2.6999999999999997\" fill=\"#1e1b4b\"/></svg><div style=\"font-size:11px;font-family:var(--px);color:#374151\">What time is it?</div>",
+      "a": "6:00",
+      "ch": [
+        "6:00",
+        "7:00",
+        "5:00",
+        "6:30"
+      ],
+      "tts": "What time does the clock show?"
+    },
+    {
+      "type": "clock",
+      "key": "clk:11:0",
+      "icon": "🕐",
+      "display": "<svg viewBox=\"0 0 90 90\" width=\"90\" height=\"90\" style=\"display:block;margin:0 auto 6px\"><circle cx=\"45\" cy=\"45\" r=\"43\" fill=\"#fef9c3\" stroke=\"#fde68a\" stroke-width=\"3\"/><circle cx=\"45\" cy=\"45\" r=\"39\" fill=\"white\"/><text x=\"62.10000000000001\" y=\"15.381931190572196\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">1</text><text x=\"74.61806880942781\" y=\"27.900000000000002\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">2</text><text x=\"79.2\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">3</text><text x=\"74.61806880942781\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">4</text><text x=\"62.10000000000001\" y=\"74.6180688094278\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">5</text><text x=\"45\" y=\"79.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">6</text><text x=\"27.900000000000006\" y=\"74.61806880942781\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">7</text><text x=\"15.381931190572192\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">8</text><text x=\"10.799999999999997\" y=\"45.00000000000001\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">9</text><text x=\"15.381931190572196\" y=\"27.899999999999995\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">10</text><text x=\"27.899999999999984\" y=\"15.3819311905722\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">11</text><text x=\"45\" y=\"10.799999999999997\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">12</text><line x1=\"45\" y1=\"45\" x2=\"35.099999999999994\" y2=\"27.852697005068116\" stroke=\"#3730a3\" stroke-width=\"4.05\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"45\" x2=\"45\" y2=\"16.2\" stroke=\"#db2777\" stroke-width=\"2.6999999999999997\" stroke-linecap=\"round\"/><circle cx=\"45\" cy=\"45\" r=\"2.6999999999999997\" fill=\"#1e1b4b\"/></svg><div style=\"font-size:11px;font-family:var(--px);color:#374151\">What time is it?</div>",
+      "a": "11:00",
+      "ch": [
+        "11:00",
+        "12:00",
+        "11:30",
+        "10:00"
+      ],
+      "tts": "What time does the clock show?"
+    },
+    {
+      "type": "clock",
+      "key": "clk:12:30",
+      "icon": "🕐",
+      "display": "<svg viewBox=\"0 0 90 90\" width=\"90\" height=\"90\" style=\"display:block;margin:0 auto 6px\"><circle cx=\"45\" cy=\"45\" r=\"43\" fill=\"#fef9c3\" stroke=\"#fde68a\" stroke-width=\"3\"/><circle cx=\"45\" cy=\"45\" r=\"39\" fill=\"white\"/><text x=\"62.10000000000001\" y=\"15.381931190572196\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">1</text><text x=\"74.61806880942781\" y=\"27.900000000000002\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">2</text><text x=\"79.2\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">3</text><text x=\"74.61806880942781\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">4</text><text x=\"62.10000000000001\" y=\"74.6180688094278\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">5</text><text x=\"45\" y=\"79.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">6</text><text x=\"27.900000000000006\" y=\"74.61806880942781\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">7</text><text x=\"15.381931190572192\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">8</text><text x=\"10.799999999999997\" y=\"45.00000000000001\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">9</text><text x=\"15.381931190572196\" y=\"27.899999999999995\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">10</text><text x=\"27.899999999999984\" y=\"15.3819311905722\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">11</text><text x=\"45\" y=\"10.799999999999997\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">12</text><line x1=\"45\" y1=\"45\" x2=\"50.12461709302991\" y2=\"25.874668639476447\" stroke=\"#3730a3\" stroke-width=\"4.05\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"45\" x2=\"45\" y2=\"73.8\" stroke=\"#db2777\" stroke-width=\"2.6999999999999997\" stroke-linecap=\"round\"/><circle cx=\"45\" cy=\"45\" r=\"2.6999999999999997\" fill=\"#1e1b4b\"/></svg><div style=\"font-size:11px;font-family:var(--px);color:#374151\">What time is it?</div>",
+      "a": "12:30",
+      "ch": [
+        "12:00",
+        "11:30",
+        "1:30",
+        "12:30"
+      ],
+      "tts": "What time does the clock show?"
+    },
+    {
+      "type": "clock",
+      "key": "clk:11:15",
+      "icon": "🕐",
+      "display": "<svg viewBox=\"0 0 90 90\" width=\"90\" height=\"90\" style=\"display:block;margin:0 auto 6px\"><circle cx=\"45\" cy=\"45\" r=\"43\" fill=\"#fef9c3\" stroke=\"#fde68a\" stroke-width=\"3\"/><circle cx=\"45\" cy=\"45\" r=\"39\" fill=\"white\"/><text x=\"62.10000000000001\" y=\"15.381931190572196\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">1</text><text x=\"74.61806880942781\" y=\"27.900000000000002\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">2</text><text x=\"79.2\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">3</text><text x=\"74.61806880942781\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">4</text><text x=\"62.10000000000001\" y=\"74.6180688094278\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">5</text><text x=\"45\" y=\"79.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">6</text><text x=\"27.900000000000006\" y=\"74.61806880942781\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">7</text><text x=\"15.381931190572192\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">8</text><text x=\"10.799999999999997\" y=\"45.00000000000001\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">9</text><text x=\"15.381931190572196\" y=\"27.899999999999995\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">10</text><text x=\"27.899999999999984\" y=\"15.3819311905722\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">11</text><text x=\"45\" y=\"10.799999999999997\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">12</text><line x1=\"45\" y1=\"45\" x2=\"37.42286803917123\" y2=\"26.70718525627652\" stroke=\"#3730a3\" stroke-width=\"4.05\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"45\" x2=\"73.8\" y2=\"45\" stroke=\"#db2777\" stroke-width=\"2.6999999999999997\" stroke-linecap=\"round\"/><circle cx=\"45\" cy=\"45\" r=\"2.6999999999999997\" fill=\"#1e1b4b\"/></svg><div style=\"font-size:11px;font-family:var(--px);color:#374151\">What time is it?</div>",
+      "a": "11:15",
+      "ch": [
+        "11:15",
+        "11:15",
+        "12:15",
+        "10:15"
+      ],
+      "tts": "What time does the clock show?"
+    },
+    {
+      "type": "clock",
+      "key": "clk:7:0",
+      "icon": "🕐",
+      "display": "<svg viewBox=\"0 0 90 90\" width=\"90\" height=\"90\" style=\"display:block;margin:0 auto 6px\"><circle cx=\"45\" cy=\"45\" r=\"43\" fill=\"#fef9c3\" stroke=\"#fde68a\" stroke-width=\"3\"/><circle cx=\"45\" cy=\"45\" r=\"39\" fill=\"white\"/><text x=\"62.10000000000001\" y=\"15.381931190572196\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">1</text><text x=\"74.61806880942781\" y=\"27.900000000000002\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">2</text><text x=\"79.2\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">3</text><text x=\"74.61806880942781\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">4</text><text x=\"62.10000000000001\" y=\"74.6180688094278\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">5</text><text x=\"45\" y=\"79.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">6</text><text x=\"27.900000000000006\" y=\"74.61806880942781\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">7</text><text x=\"15.381931190572192\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">8</text><text x=\"10.799999999999997\" y=\"45.00000000000001\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">9</text><text x=\"15.381931190572196\" y=\"27.899999999999995\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">10</text><text x=\"27.899999999999984\" y=\"15.3819311905722\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">11</text><text x=\"45\" y=\"10.799999999999997\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">12</text><line x1=\"45\" y1=\"45\" x2=\"35.1\" y2=\"62.14730299493189\" stroke=\"#3730a3\" stroke-width=\"4.05\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"45\" x2=\"45\" y2=\"16.2\" stroke=\"#db2777\" stroke-width=\"2.6999999999999997\" stroke-linecap=\"round\"/><circle cx=\"45\" cy=\"45\" r=\"2.6999999999999997\" fill=\"#1e1b4b\"/></svg><div style=\"font-size:11px;font-family:var(--px);color:#374151\">What time is it?</div>",
+      "a": "7:00",
+      "ch": [
+        "6:00",
+        "8:00",
+        "7:00",
+        "7:30"
+      ],
+      "tts": "What time does the clock show?"
+    },
+    {
+      "type": "clock",
+      "key": "clk:12:0",
+      "icon": "🕐",
+      "display": "<svg viewBox=\"0 0 90 90\" width=\"90\" height=\"90\" style=\"display:block;margin:0 auto 6px\"><circle cx=\"45\" cy=\"45\" r=\"43\" fill=\"#fef9c3\" stroke=\"#fde68a\" stroke-width=\"3\"/><circle cx=\"45\" cy=\"45\" r=\"39\" fill=\"white\"/><text x=\"62.10000000000001\" y=\"15.381931190572196\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">1</text><text x=\"74.61806880942781\" y=\"27.900000000000002\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">2</text><text x=\"79.2\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">3</text><text x=\"74.61806880942781\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">4</text><text x=\"62.10000000000001\" y=\"74.6180688094278\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">5</text><text x=\"45\" y=\"79.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">6</text><text x=\"27.900000000000006\" y=\"74.61806880942781\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">7</text><text x=\"15.381931190572192\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">8</text><text x=\"10.799999999999997\" y=\"45.00000000000001\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">9</text><text x=\"15.381931190572196\" y=\"27.899999999999995\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">10</text><text x=\"27.899999999999984\" y=\"15.3819311905722\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">11</text><text x=\"45\" y=\"10.799999999999997\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">12</text><line x1=\"45\" y1=\"45\" x2=\"45\" y2=\"25.2\" stroke=\"#3730a3\" stroke-width=\"4.05\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"45\" x2=\"45\" y2=\"16.2\" stroke=\"#db2777\" stroke-width=\"2.6999999999999997\" stroke-linecap=\"round\"/><circle cx=\"45\" cy=\"45\" r=\"2.6999999999999997\" fill=\"#1e1b4b\"/></svg><div style=\"font-size:11px;font-family:var(--px);color:#374151\">What time is it?</div>",
+      "a": "12:00",
+      "ch": [
+        "12:30",
+        "11:00",
+        "1:00",
+        "12:00"
+      ],
+      "tts": "What time does the clock show?"
+    },
+    {
+      "type": "clock",
+      "key": "clk:10:45",
+      "icon": "🕐",
+      "display": "<svg viewBox=\"0 0 90 90\" width=\"90\" height=\"90\" style=\"display:block;margin:0 auto 6px\"><circle cx=\"45\" cy=\"45\" r=\"43\" fill=\"#fef9c3\" stroke=\"#fde68a\" stroke-width=\"3\"/><circle cx=\"45\" cy=\"45\" r=\"39\" fill=\"white\"/><text x=\"62.10000000000001\" y=\"15.381931190572196\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">1</text><text x=\"74.61806880942781\" y=\"27.900000000000002\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">2</text><text x=\"79.2\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">3</text><text x=\"74.61806880942781\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">4</text><text x=\"62.10000000000001\" y=\"74.6180688094278\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">5</text><text x=\"45\" y=\"79.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">6</text><text x=\"27.900000000000006\" y=\"74.61806880942781\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">7</text><text x=\"15.381931190572192\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">8</text><text x=\"10.799999999999997\" y=\"45.00000000000001\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">9</text><text x=\"15.381931190572196\" y=\"27.899999999999995\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">10</text><text x=\"27.899999999999984\" y=\"15.3819311905722\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">11</text><text x=\"45\" y=\"10.799999999999997\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">12</text><line x1=\"45\" y1=\"45\" x2=\"32.94652370562733\" y2=\"29.291603862233547\" stroke=\"#3730a3\" stroke-width=\"4.05\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"45\" x2=\"16.2\" y2=\"45\" stroke=\"#db2777\" stroke-width=\"2.6999999999999997\" stroke-linecap=\"round\"/><circle cx=\"45\" cy=\"45\" r=\"2.6999999999999997\" fill=\"#1e1b4b\"/></svg><div style=\"font-size:11px;font-family:var(--px);color:#374151\">What time is it?</div>",
+      "a": "10:45",
+      "ch": [
+        "11:45",
+        "10:15",
+        "9:45",
+        "10:45"
+      ],
+      "tts": "What time does the clock show?"
+    },
+    {
+      "type": "clock",
+      "key": "clk:3:0",
+      "icon": "🕐",
+      "display": "<svg viewBox=\"0 0 90 90\" width=\"90\" height=\"90\" style=\"display:block;margin:0 auto 6px\"><circle cx=\"45\" cy=\"45\" r=\"43\" fill=\"#fef9c3\" stroke=\"#fde68a\" stroke-width=\"3\"/><circle cx=\"45\" cy=\"45\" r=\"39\" fill=\"white\"/><text x=\"62.10000000000001\" y=\"15.381931190572196\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">1</text><text x=\"74.61806880942781\" y=\"27.900000000000002\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">2</text><text x=\"79.2\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">3</text><text x=\"74.61806880942781\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">4</text><text x=\"62.10000000000001\" y=\"74.6180688094278\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">5</text><text x=\"45\" y=\"79.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">6</text><text x=\"27.900000000000006\" y=\"74.61806880942781\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">7</text><text x=\"15.381931190572192\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">8</text><text x=\"10.799999999999997\" y=\"45.00000000000001\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">9</text><text x=\"15.381931190572196\" y=\"27.899999999999995\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">10</text><text x=\"27.899999999999984\" y=\"15.3819311905722\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">11</text><text x=\"45\" y=\"10.799999999999997\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">12</text><line x1=\"45\" y1=\"45\" x2=\"64.8\" y2=\"45\" stroke=\"#3730a3\" stroke-width=\"4.05\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"45\" x2=\"45\" y2=\"16.2\" stroke=\"#db2777\" stroke-width=\"2.6999999999999997\" stroke-linecap=\"round\"/><circle cx=\"45\" cy=\"45\" r=\"2.6999999999999997\" fill=\"#1e1b4b\"/></svg><div style=\"font-size:11px;font-family:var(--px);color:#374151\">What time is it?</div>",
+      "a": "3:00",
+      "ch": [
+        "3:00",
+        "4:00",
+        "3:30",
+        "2:00"
+      ],
+      "tts": "What time does the clock show?"
+    },
+    {
+      "type": "clock",
+      "key": "clk:9:45",
+      "icon": "🕐",
+      "display": "<svg viewBox=\"0 0 90 90\" width=\"90\" height=\"90\" style=\"display:block;margin:0 auto 6px\"><circle cx=\"45\" cy=\"45\" r=\"43\" fill=\"#fef9c3\" stroke=\"#fde68a\" stroke-width=\"3\"/><circle cx=\"45\" cy=\"45\" r=\"39\" fill=\"white\"/><text x=\"62.10000000000001\" y=\"15.381931190572196\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">1</text><text x=\"74.61806880942781\" y=\"27.900000000000002\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">2</text><text x=\"79.2\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">3</text><text x=\"74.61806880942781\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">4</text><text x=\"62.10000000000001\" y=\"74.6180688094278\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">5</text><text x=\"45\" y=\"79.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">6</text><text x=\"27.900000000000006\" y=\"74.61806880942781\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">7</text><text x=\"15.381931190572192\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">8</text><text x=\"10.799999999999997\" y=\"45.00000000000001\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">9</text><text x=\"15.381931190572196\" y=\"27.899999999999995\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">10</text><text x=\"27.899999999999984\" y=\"15.3819311905722\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">11</text><text x=\"45\" y=\"10.799999999999997\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">12</text><line x1=\"45\" y1=\"45\" x2=\"26.707185256276517\" y2=\"37.422868039171234\" stroke=\"#3730a3\" stroke-width=\"4.05\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"45\" x2=\"16.2\" y2=\"45\" stroke=\"#db2777\" stroke-width=\"2.6999999999999997\" stroke-linecap=\"round\"/><circle cx=\"45\" cy=\"45\" r=\"2.6999999999999997\" fill=\"#1e1b4b\"/></svg><div style=\"font-size:11px;font-family:var(--px);color:#374151\">What time is it?</div>",
+      "a": "9:45",
+      "ch": [
+        "10:45",
+        "8:45",
+        "9:45",
+        "9:15"
+      ],
+      "tts": "What time does the clock show?"
+    },
+    {
+      "type": "clock",
+      "key": "clk:4:0",
+      "icon": "🕐",
+      "display": "<svg viewBox=\"0 0 90 90\" width=\"90\" height=\"90\" style=\"display:block;margin:0 auto 6px\"><circle cx=\"45\" cy=\"45\" r=\"43\" fill=\"#fef9c3\" stroke=\"#fde68a\" stroke-width=\"3\"/><circle cx=\"45\" cy=\"45\" r=\"39\" fill=\"white\"/><text x=\"62.10000000000001\" y=\"15.381931190572196\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">1</text><text x=\"74.61806880942781\" y=\"27.900000000000002\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">2</text><text x=\"79.2\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">3</text><text x=\"74.61806880942781\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">4</text><text x=\"62.10000000000001\" y=\"74.6180688094278\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">5</text><text x=\"45\" y=\"79.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">6</text><text x=\"27.900000000000006\" y=\"74.61806880942781\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">7</text><text x=\"15.381931190572192\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">8</text><text x=\"10.799999999999997\" y=\"45.00000000000001\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">9</text><text x=\"15.381931190572196\" y=\"27.899999999999995\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">10</text><text x=\"27.899999999999984\" y=\"15.3819311905722\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">11</text><text x=\"45\" y=\"10.799999999999997\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">12</text><line x1=\"45\" y1=\"45\" x2=\"62.14730299493189\" y2=\"54.9\" stroke=\"#3730a3\" stroke-width=\"4.05\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"45\" x2=\"45\" y2=\"16.2\" stroke=\"#db2777\" stroke-width=\"2.6999999999999997\" stroke-linecap=\"round\"/><circle cx=\"45\" cy=\"45\" r=\"2.6999999999999997\" fill=\"#1e1b4b\"/></svg><div style=\"font-size:11px;font-family:var(--px);color:#374151\">What time is it?</div>",
+      "a": "4:00",
+      "ch": [
+        "3:00",
+        "4:30",
+        "5:00",
+        "4:00"
+      ],
+      "tts": "What time does the clock show?"
+    },
+    {
+      "type": "clock",
+      "key": "clk:1:0",
+      "icon": "🕐",
+      "display": "<svg viewBox=\"0 0 90 90\" width=\"90\" height=\"90\" style=\"display:block;margin:0 auto 6px\"><circle cx=\"45\" cy=\"45\" r=\"43\" fill=\"#fef9c3\" stroke=\"#fde68a\" stroke-width=\"3\"/><circle cx=\"45\" cy=\"45\" r=\"39\" fill=\"white\"/><text x=\"62.10000000000001\" y=\"15.381931190572196\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">1</text><text x=\"74.61806880942781\" y=\"27.900000000000002\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">2</text><text x=\"79.2\" y=\"45\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">3</text><text x=\"74.61806880942781\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">4</text><text x=\"62.10000000000001\" y=\"74.6180688094278\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">5</text><text x=\"45\" y=\"79.2\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">6</text><text x=\"27.900000000000006\" y=\"74.61806880942781\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">7</text><text x=\"15.381931190572192\" y=\"62.099999999999994\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">8</text><text x=\"10.799999999999997\" y=\"45.00000000000001\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">9</text><text x=\"15.381931190572196\" y=\"27.899999999999995\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">10</text><text x=\"27.899999999999984\" y=\"15.3819311905722\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">11</text><text x=\"45\" y=\"10.799999999999997\" text-anchor=\"middle\" dominant-baseline=\"central\" font-size=\"6.75\" font-weight=\"bold\" fill=\"#4338ca\">12</text><line x1=\"45\" y1=\"45\" x2=\"54.900000000000006\" y2=\"27.852697005068116\" stroke=\"#3730a3\" stroke-width=\"4.05\" stroke-linecap=\"round\"/><line x1=\"45\" y1=\"45\" x2=\"45\" y2=\"16.2\" stroke=\"#db2777\" stroke-width=\"2.6999999999999997\" stroke-linecap=\"round\"/><circle cx=\"45\" cy=\"45\" r=\"2.6999999999999997\" fill=\"#1e1b4b\"/></svg><div style=\"font-size:11px;font-family:var(--px);color:#374151\">What time is it?</div>",
+      "a": "1:00",
+      "ch": [
+        "1:30",
+        "1:00",
+        "2:00",
+        "12:00"
+      ],
+      "tts": "What time does the clock show?"
+    },
+    {
+      "type": "lineup",
+      "key": "lu:0:1:1",
+      "icon": "👫",
+      "display": "<div style=\"font-family:var(--px);font-size:14px;color:#374151;line-height:2.2;text-align:center\"><b>Leo</b> is in a queue.<br><span style=\"color:#3b82f6\">1 people</span> in front.<br><span style=\"color:#ef4444\">1 people</span> behind.<br>How many <b>total</b> in the queue?</div>",
+      "a": "3",
+      "ch": [
+        "3",
+        "2",
+        "5",
+        "4"
+      ],
+      "tts": "Leo is in a queue. 1 people in front, 1 behind. How many in total?"
+    },
+    {
+      "type": "lineup",
+      "key": "lu:1:2:7",
+      "icon": "👫",
+      "display": "<div style=\"font-family:var(--px);font-size:14px;color:#374151;line-height:2.2;text-align:center\">There are <b>7 people</b> in a queue.<br><b>Max</b> is in position <span style=\"color:#7c3aed;font-size:16px\">2</span>.<br>How many are <b>behind</b> them?</div>",
+      "a": "5",
+      "ch": [
+        "4",
+        "2",
+        "5",
+        "6"
+      ],
+      "tts": "There are 7 people in a queue. Max is in position 2. How many people are behind them?"
+    },
+    {
+      "type": "lineup",
+      "key": "lu:1:5:12",
+      "icon": "👫",
+      "display": "<div style=\"font-family:var(--px);font-size:14px;color:#374151;line-height:2.2;text-align:center\">There are <b>12 people</b> in a queue.<br><b>Lily</b> is in position <span style=\"color:#7c3aed;font-size:16px\">5</span>.<br>How many are <b>behind</b> them?</div>",
+      "a": "7",
+      "ch": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "tts": "There are 12 people in a queue. Lily is in position 5. How many people are behind them?"
+    },
+    {
+      "type": "lineup",
+      "key": "lu:0:2:1",
+      "icon": "👫",
+      "display": "<div style=\"font-family:var(--px);font-size:14px;color:#374151;line-height:2.2;text-align:center\"><b>Ruby</b> is in a queue.<br><span style=\"color:#3b82f6\">2 people</span> in front.<br><span style=\"color:#ef4444\">1 people</span> behind.<br>How many <b>total</b> in the queue?</div>",
+      "a": "4",
+      "ch": [
+        "4",
+        "6",
+        "3",
+        "5"
+      ],
+      "tts": "Ruby is in a queue. 2 people in front, 1 behind. How many in total?"
+    },
+    {
+      "type": "lineup",
+      "key": "lu:1:10:12",
+      "icon": "👫",
+      "display": "<div style=\"font-family:var(--px);font-size:14px;color:#374151;line-height:2.2;text-align:center\">There are <b>12 people</b> in a queue.<br><b>Zoe</b> is in position <span style=\"color:#7c3aed;font-size:16px\">10</span>.<br>How many are <b>behind</b> them?</div>",
+      "a": "2",
+      "ch": [
+        "1",
+        "2",
+        "10",
+        "3"
+      ],
+      "tts": "There are 12 people in a queue. Zoe is in position 10. How many people are behind them?"
+    },
+    {
+      "type": "lineup",
+      "key": "lu:0:2:4",
+      "icon": "👫",
+      "display": "<div style=\"font-family:var(--px);font-size:14px;color:#374151;line-height:2.2;text-align:center\"><b>Lily</b> is in a queue.<br><span style=\"color:#3b82f6\">2 people</span> in front.<br><span style=\"color:#ef4444\">4 people</span> behind.<br>How many <b>total</b> in the queue?</div>",
+      "a": "7",
+      "ch": [
+        "8",
+        "9",
+        "6",
+        "7"
+      ],
+      "tts": "Lily is in a queue. 2 people in front, 4 behind. How many in total?"
+    },
+    {
+      "type": "lineup",
+      "key": "lu:0:2:3",
+      "icon": "👫",
+      "display": "<div style=\"font-family:var(--px);font-size:14px;color:#374151;line-height:2.2;text-align:center\"><b>Leo</b> is in a queue.<br><span style=\"color:#3b82f6\">2 people</span> in front.<br><span style=\"color:#ef4444\">3 people</span> behind.<br>How many <b>total</b> in the queue?</div>",
+      "a": "6",
+      "ch": [
+        "5",
+        "6",
+        "8",
+        "7"
+      ],
+      "tts": "Leo is in a queue. 2 people in front, 3 behind. How many in total?"
+    },
+    {
+      "type": "lineup",
+      "key": "lu:1:3:10",
+      "icon": "👫",
+      "display": "<div style=\"font-family:var(--px);font-size:14px;color:#374151;line-height:2.2;text-align:center\">There are <b>10 people</b> in a queue.<br><b>Mia</b> is in position <span style=\"color:#7c3aed;font-size:16px\">3</span>.<br>How many are <b>behind</b> them?</div>",
+      "a": "7",
+      "ch": [
+        "3",
+        "6",
+        "8",
+        "7"
+      ],
+      "tts": "There are 10 people in a queue. Mia is in position 3. How many people are behind them?"
+    },
+    {
+      "type": "lineup",
+      "key": "lu:0:5:3",
+      "icon": "👫",
+      "display": "<div style=\"font-family:var(--px);font-size:14px;color:#374151;line-height:2.2;text-align:center\"><b>Tom</b> is in a queue.<br><span style=\"color:#3b82f6\">5 people</span> in front.<br><span style=\"color:#ef4444\">3 people</span> behind.<br>How many <b>total</b> in the queue?</div>",
+      "a": "9",
+      "ch": [
+        "10",
+        "11",
+        "8",
+        "9"
+      ],
+      "tts": "Tom is in a queue. 5 people in front, 3 behind. How many in total?"
+    },
+    {
+      "type": "lineup",
+      "key": "lu:0:4:2",
+      "icon": "👫",
+      "display": "<div style=\"font-family:var(--px);font-size:14px;color:#374151;line-height:2.2;text-align:center\"><b>Max</b> is in a queue.<br><span style=\"color:#3b82f6\">4 people</span> in front.<br><span style=\"color:#ef4444\">2 people</span> behind.<br>How many <b>total</b> in the queue?</div>",
+      "a": "7",
+      "ch": [
+        "9",
+        "7",
+        "6",
+        "8"
+      ],
+      "tts": "Max is in a queue. 4 people in front, 2 behind. How many in total?"
+    },
+    {
+      "type": "lineup",
+      "key": "lu:1:5:6",
+      "icon": "👫",
+      "display": "<div style=\"font-family:var(--px);font-size:14px;color:#374151;line-height:2.2;text-align:center\">There are <b>6 people</b> in a queue.<br><b>Ruby</b> is in position <span style=\"color:#7c3aed;font-size:16px\">5</span>.<br>How many are <b>behind</b> them?</div>",
+      "a": "1",
+      "ch": [
+        "5",
+        "0",
+        "2",
+        "1"
+      ],
+      "tts": "There are 6 people in a queue. Ruby is in position 5. How many people are behind them?"
+    },
+    {
+      "type": "lineup",
+      "key": "lu:1:2:9",
+      "icon": "👫",
+      "display": "<div style=\"font-family:var(--px);font-size:14px;color:#374151;line-height:2.2;text-align:center\">There are <b>9 people</b> in a queue.<br><b>Sam</b> is in position <span style=\"color:#7c3aed;font-size:16px\">2</span>.<br>How many are <b>behind</b> them?</div>",
+      "a": "7",
+      "ch": [
+        "2",
+        "8",
+        "7",
+        "6"
+      ],
+      "tts": "There are 9 people in a queue. Sam is in position 2. How many people are behind them?"
+    },
+    {
+      "type": "lineup",
+      "key": "lu:1:8:12",
+      "icon": "👫",
+      "display": "<div style=\"font-family:var(--px);font-size:14px;color:#374151;line-height:2.2;text-align:center\">There are <b>12 people</b> in a queue.<br><b>Leo</b> is in position <span style=\"color:#7c3aed;font-size:16px\">8</span>.<br>How many are <b>behind</b> them?</div>",
+      "a": "4",
+      "ch": [
+        "8",
+        "4",
+        "5",
+        "3"
+      ],
+      "tts": "There are 12 people in a queue. Leo is in position 8. How many people are behind them?"
+    },
+    {
+      "type": "lineup",
+      "key": "lu:0:1:3",
+      "icon": "👫",
+      "display": "<div style=\"font-family:var(--px);font-size:14px;color:#374151;line-height:2.2;text-align:center\"><b>Mia</b> is in a queue.<br><span style=\"color:#3b82f6\">1 people</span> in front.<br><span style=\"color:#ef4444\">3 people</span> behind.<br>How many <b>total</b> in the queue?</div>",
+      "a": "5",
+      "ch": [
+        "5",
+        "7",
+        "4",
+        "6"
+      ],
+      "tts": "Mia is in a queue. 1 people in front, 3 behind. How many in total?"
+    },
+    {
+      "type": "lineup",
+      "key": "lu:0:5:4",
+      "icon": "👫",
+      "display": "<div style=\"font-family:var(--px);font-size:14px;color:#374151;line-height:2.2;text-align:center\"><b>Ruby</b> is in a queue.<br><span style=\"color:#3b82f6\">5 people</span> in front.<br><span style=\"color:#ef4444\">4 people</span> behind.<br>How many <b>total</b> in the queue?</div>",
+      "a": "10",
+      "ch": [
+        "9",
+        "12",
+        "10",
+        "11"
+      ],
+      "tts": "Ruby is in a queue. 5 people in front, 4 behind. How many in total?"
+    },
+    {
+      "type": "lineup",
+      "key": "lu:1:4:7",
+      "icon": "👫",
+      "display": "<div style=\"font-family:var(--px);font-size:14px;color:#374151;line-height:2.2;text-align:center\">There are <b>7 people</b> in a queue.<br><b>Sam</b> is in position <span style=\"color:#7c3aed;font-size:16px\">4</span>.<br>How many are <b>behind</b> them?</div>",
+      "a": "3",
+      "ch": [
+        "3",
+        "2",
+        "4",
+        "5"
+      ],
+      "tts": "There are 7 people in a queue. Sam is in position 4. How many people are behind them?"
+    },
+    {
+      "type": "lineup",
+      "key": "lu:1:7:8",
+      "icon": "👫",
+      "display": "<div style=\"font-family:var(--px);font-size:14px;color:#374151;line-height:2.2;text-align:center\">There are <b>8 people</b> in a queue.<br><b>Lily</b> is in position <span style=\"color:#7c3aed;font-size:16px\">7</span>.<br>How many are <b>behind</b> them?</div>",
+      "a": "1",
+      "ch": [
+        "2",
+        "7",
+        "1",
+        "0"
+      ],
+      "tts": "There are 8 people in a queue. Lily is in position 7. How many people are behind them?"
+    },
+    {
+      "type": "lineup",
+      "key": "lu:1:8:9",
+      "icon": "👫",
+      "display": "<div style=\"font-family:var(--px);font-size:14px;color:#374151;line-height:2.2;text-align:center\">There are <b>9 people</b> in a queue.<br><b>Mia</b> is in position <span style=\"color:#7c3aed;font-size:16px\">8</span>.<br>How many are <b>behind</b> them?</div>",
+      "a": "1",
+      "ch": [
+        "1",
+        "8",
+        "2",
+        "0"
+      ],
+      "tts": "There are 9 people in a queue. Mia is in position 8. How many people are behind them?"
+    },
+    {
+      "type": "shapeseq",
+      "key": "sq:●:#fbbf24",
+      "icon": "🔶",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:10px;text-align:center\">What comes next in the pattern?</div><div style=\"display:flex;gap:8px;justify-content:center;align-items:center;margin-bottom:12px;flex-wrap:wrap\"><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#fbbf24;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">●</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#fb923c;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">♥</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#fbbf24;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">●</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#fb923c;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">♥</span></div><div style=\"background:#fef3c7;border:3px dashed #f59e0b;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"color:#f59e0b;font-size:20px\">?</span></div></div>",
+      "a": "D",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What comes next in the pattern?"
+    },
+    {
+      "type": "shapeseq",
+      "key": "sq:♥:#fb923c",
+      "icon": "🔶",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:10px;text-align:center\">What comes next in the pattern?</div><div style=\"display:flex;gap:8px;justify-content:center;align-items:center;margin-bottom:12px;flex-wrap:wrap\"><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#34d399;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">●</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#a78bfa;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">◆</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#fb923c;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">♥</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#34d399;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">●</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#a78bfa;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">◆</span></div><div style=\"background:#fef3c7;border:3px dashed #f59e0b;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"color:#f59e0b;font-size:20px\">?</span></div></div>",
+      "a": "D",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What comes next in the pattern?"
+    },
+    {
+      "type": "shapeseq",
+      "key": "sq:★:#fb923c",
+      "icon": "🔶",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:10px;text-align:center\">What comes next in the pattern?</div><div style=\"display:flex;gap:8px;justify-content:center;align-items:center;margin-bottom:12px;flex-wrap:wrap\"><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#f87171;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">●</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#a78bfa;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">▲</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#fb923c;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">★</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#f87171;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">●</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#a78bfa;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">▲</span></div><div style=\"background:#fef3c7;border:3px dashed #f59e0b;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"color:#f59e0b;font-size:20px\">?</span></div></div>",
+      "a": "A",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What comes next in the pattern?"
+    },
+    {
+      "type": "shapeseq",
+      "key": "sq:■:#fbbf24",
+      "icon": "🔶",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:10px;text-align:center\">What comes next in the pattern?</div><div style=\"display:flex;gap:8px;justify-content:center;align-items:center;margin-bottom:12px;flex-wrap:wrap\"><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#fbbf24;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">■</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#f87171;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">♥</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#fbbf24;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">■</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#f87171;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">♥</span></div><div style=\"background:#fef3c7;border:3px dashed #f59e0b;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"color:#f59e0b;font-size:20px\">?</span></div></div>",
+      "a": "D",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What comes next in the pattern?"
+    },
+    {
+      "type": "shapeseq",
+      "key": "sq:▲:#f87171",
+      "icon": "🔶",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:10px;text-align:center\">What comes next in the pattern?</div><div style=\"display:flex;gap:8px;justify-content:center;align-items:center;margin-bottom:12px;flex-wrap:wrap\"><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:20px;color:#f87171;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">▲</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#f87171;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">▲</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:36px;color:#f87171;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">▲</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:20px;color:#f87171;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">▲</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#f87171;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">▲</span></div><div style=\"background:#fef3c7;border:3px dashed #f59e0b;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"color:#f59e0b;font-size:20px\">?</span></div></div>",
+      "a": "D",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What comes next in the pattern?"
+    },
+    {
+      "type": "shapeseq",
+      "key": "sq:◆:#fb923c",
+      "icon": "🔶",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:10px;text-align:center\">What comes next in the pattern?</div><div style=\"display:flex;gap:8px;justify-content:center;align-items:center;margin-bottom:12px;flex-wrap:wrap\"><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:20px;color:#fb923c;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">◆</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#fb923c;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">◆</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:36px;color:#fb923c;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">◆</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:20px;color:#fb923c;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">◆</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#fb923c;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">◆</span></div><div style=\"background:#fef3c7;border:3px dashed #f59e0b;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"color:#f59e0b;font-size:20px\">?</span></div></div>",
+      "a": "D",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What comes next in the pattern?"
+    },
+    {
+      "type": "shapeseq",
+      "key": "sq:■:#a78bfa",
+      "icon": "🔶",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:10px;text-align:center\">What comes next in the pattern?</div><div style=\"display:flex;gap:8px;justify-content:center;align-items:center;margin-bottom:12px;flex-wrap:wrap\"><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:20px;color:#a78bfa;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">■</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#a78bfa;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">■</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:36px;color:#a78bfa;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">■</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:20px;color:#a78bfa;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">■</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#a78bfa;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">■</span></div><div style=\"background:#fef3c7;border:3px dashed #f59e0b;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"color:#f59e0b;font-size:20px\">?</span></div></div>",
+      "a": "A",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What comes next in the pattern?"
+    },
+    {
+      "type": "shapeseq",
+      "key": "sq:◆:#fbbf24",
+      "icon": "🔶",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:10px;text-align:center\">What comes next in the pattern?</div><div style=\"display:flex;gap:8px;justify-content:center;align-items:center;margin-bottom:12px;flex-wrap:wrap\"><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:20px;color:#fbbf24;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">◆</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#fbbf24;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">◆</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:36px;color:#fbbf24;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">◆</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:20px;color:#fbbf24;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">◆</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#fbbf24;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">◆</span></div><div style=\"background:#fef3c7;border:3px dashed #f59e0b;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"color:#f59e0b;font-size:20px\">?</span></div></div>",
+      "a": "D",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What comes next in the pattern?"
+    },
+    {
+      "type": "shapeseq",
+      "key": "sq:▲:#34d399",
+      "icon": "🔶",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:10px;text-align:center\">What comes next in the pattern?</div><div style=\"display:flex;gap:8px;justify-content:center;align-items:center;margin-bottom:12px;flex-wrap:wrap\"><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#34d399;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">▲</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#a78bfa;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">★</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#34d399;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">▲</span></div><div style=\"background:#f8fafc;border:2px solid #e2e8f0;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"font-size:28px;color:#a78bfa;text-shadow:1px 1px 0 rgba(0,0,0,.2)\">★</span></div><div style=\"background:#fef3c7;border:3px dashed #f59e0b;border-radius:10px;width:44px;height:44px;display:flex;align-items:center;justify-content:center\"><span style=\"color:#f59e0b;font-size:20px\">?</span></div></div>",
+      "a": "A",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What comes next in the pattern?"
+    },
+    {
+      "type": "oddone",
+      "key": "oo:Different size",
+      "icon": "🕵️",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:10px;text-align:center\">Which one is different from the others?</div>",
+      "a": "D",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "Which one is different from the others?"
+    },
+    {
+      "type": "oddone",
+      "key": "oo:Different color",
+      "icon": "🕵️",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:10px;text-align:center\">Which one is different from the others?</div>",
+      "a": "C",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "Which one is different from the others?"
+    },
+    {
+      "type": "oddone",
+      "key": "oo:Different shape",
+      "icon": "🕵️",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:10px;text-align:center\">Which one is different from the others?</div>",
+      "a": "C",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "Which one is different from the others?"
+    },
+    {
+      "type": "rotshape",
+      "key": "rs:square:90",
+      "icon": "🔄",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">This shape is turned <b>a quarter turn (90°)</b> clockwise.<br>What does it look like after?</div><div style=\"display:flex;gap:8px;align-items:center;justify-content:center;margin-bottom:10px\"><div style=\"font-size:11px;color:#64748b;font-family:var(--px)\">Before:</div><svg width=\"68\" height=\"68\" viewBox=\"0 0 68 68\"><rect x=\"4\" y=\"4\" width=\"19\" height=\"19\" fill=\"#60a5fa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"24\" y=\"4\" width=\"19\" height=\"19\" fill=\"#60a5fa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"44\" y=\"4\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"24\" width=\"19\" height=\"19\" fill=\"#60a5fa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"24\" y=\"24\" width=\"19\" height=\"19\" fill=\"#60a5fa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"44\" y=\"24\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"44\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"24\" y=\"44\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"44\" y=\"44\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg><div style=\"font-size:20px\">➡️</div><div style=\"font-size:11px;color:#64748b;font-family:var(--px)\">After?</div></div>",
+      "a": "A",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "The shape is turned a quarter turn (90°) clockwise. Which shows the result?"
+    },
+    {
+      "type": "rotshape",
+      "key": "rs:L:90",
+      "icon": "🔄",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">This shape is turned <b>a quarter turn (90°)</b> clockwise.<br>What does it look like after?</div><div style=\"display:flex;gap:8px;align-items:center;justify-content:center;margin-bottom:10px\"><div style=\"font-size:11px;color:#64748b;font-family:var(--px)\">Before:</div><svg width=\"68\" height=\"68\" viewBox=\"0 0 68 68\"><rect x=\"4\" y=\"4\" width=\"19\" height=\"19\" fill=\"#60a5fa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"24\" y=\"4\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"44\" y=\"4\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"24\" width=\"19\" height=\"19\" fill=\"#60a5fa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"24\" y=\"24\" width=\"19\" height=\"19\" fill=\"#60a5fa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"44\" y=\"24\" width=\"19\" height=\"19\" fill=\"#60a5fa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"44\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"24\" y=\"44\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"44\" y=\"44\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg><div style=\"font-size:20px\">➡️</div><div style=\"font-size:11px;color:#64748b;font-family:var(--px)\">After?</div></div>",
+      "a": "B",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "The shape is turned a quarter turn (90°) clockwise. Which shows the result?"
+    },
+    {
+      "type": "rotshape",
+      "key": "rs:arrow:90",
+      "icon": "🔄",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">This shape is turned <b>a quarter turn (90°)</b> clockwise.<br>What does it look like after?</div><div style=\"display:flex;gap:8px;align-items:center;justify-content:center;margin-bottom:10px\"><div style=\"font-size:11px;color:#64748b;font-family:var(--px)\">Before:</div><svg width=\"68\" height=\"68\" viewBox=\"0 0 68 68\"><rect x=\"4\" y=\"4\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"24\" y=\"4\" width=\"19\" height=\"19\" fill=\"#34d399\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"44\" y=\"4\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"24\" width=\"19\" height=\"19\" fill=\"#34d399\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"24\" y=\"24\" width=\"19\" height=\"19\" fill=\"#34d399\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"44\" y=\"24\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"44\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"24\" y=\"44\" width=\"19\" height=\"19\" fill=\"#34d399\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"44\" y=\"44\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg><div style=\"font-size:20px\">➡️</div><div style=\"font-size:11px;color:#64748b;font-family:var(--px)\">After?</div></div>",
+      "a": "D",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "The shape is turned a quarter turn (90°) clockwise. Which shows the result?"
+    },
+    {
+      "type": "rotshape",
+      "key": "rs:T:90",
+      "icon": "🔄",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">This shape is turned <b>a quarter turn (90°)</b> clockwise.<br>What does it look like after?</div><div style=\"display:flex;gap:8px;align-items:center;justify-content:center;margin-bottom:10px\"><div style=\"font-size:11px;color:#64748b;font-family:var(--px)\">Before:</div><svg width=\"68\" height=\"68\" viewBox=\"0 0 68 68\"><rect x=\"4\" y=\"4\" width=\"19\" height=\"19\" fill=\"#34d399\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"24\" y=\"4\" width=\"19\" height=\"19\" fill=\"#34d399\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"44\" y=\"4\" width=\"19\" height=\"19\" fill=\"#34d399\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"24\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"24\" y=\"24\" width=\"19\" height=\"19\" fill=\"#34d399\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"44\" y=\"24\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"44\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"24\" y=\"44\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"44\" y=\"44\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg><div style=\"font-size:20px\">➡️</div><div style=\"font-size:11px;color:#64748b;font-family:var(--px)\">After?</div></div>",
+      "a": "A",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "The shape is turned a quarter turn (90°) clockwise. Which shows the result?"
+    },
+    {
+      "type": "rotshape",
+      "key": "rs:plus:90",
+      "icon": "🔄",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">This shape is turned <b>a quarter turn (90°)</b> clockwise.<br>What does it look like after?</div><div style=\"display:flex;gap:8px;align-items:center;justify-content:center;margin-bottom:10px\"><div style=\"font-size:11px;color:#64748b;font-family:var(--px)\">Before:</div><svg width=\"68\" height=\"68\" viewBox=\"0 0 68 68\"><rect x=\"4\" y=\"4\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"24\" y=\"4\" width=\"19\" height=\"19\" fill=\"#fbbf24\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"44\" y=\"4\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"24\" width=\"19\" height=\"19\" fill=\"#fbbf24\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"24\" y=\"24\" width=\"19\" height=\"19\" fill=\"#fbbf24\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"44\" y=\"24\" width=\"19\" height=\"19\" fill=\"#fbbf24\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"44\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"24\" y=\"44\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"44\" y=\"44\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg><div style=\"font-size:20px\">➡️</div><div style=\"font-size:11px;color:#64748b;font-family:var(--px)\">After?</div></div>",
+      "a": "D",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "The shape is turned a quarter turn (90°) clockwise. Which shows the result?"
+    },
+    {
+      "type": "rotshape",
+      "key": "rs:zigzag:90",
+      "icon": "🔄",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">This shape is turned <b>a quarter turn (90°)</b> clockwise.<br>What does it look like after?</div><div style=\"display:flex;gap:8px;align-items:center;justify-content:center;margin-bottom:10px\"><div style=\"font-size:11px;color:#64748b;font-family:var(--px)\">Before:</div><svg width=\"68\" height=\"68\" viewBox=\"0 0 68 68\"><rect x=\"4\" y=\"4\" width=\"19\" height=\"19\" fill=\"#fb923c\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"24\" y=\"4\" width=\"19\" height=\"19\" fill=\"#fb923c\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"44\" y=\"4\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"24\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"24\" y=\"24\" width=\"19\" height=\"19\" fill=\"#fb923c\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"44\" y=\"24\" width=\"19\" height=\"19\" fill=\"#fb923c\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"44\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"24\" y=\"44\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"44\" y=\"44\" width=\"19\" height=\"19\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg><div style=\"font-size:20px\">➡️</div><div style=\"font-size:11px;color:#64748b;font-family:var(--px)\">After?</div></div>",
+      "a": "D",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "The shape is turned a quarter turn (90°) clockwise. Which shows the result?"
+    },
+    {
+      "type": "mirror",
+      "key": "mr:3:[[2,0],[0,1],[1,1]]",
+      "icon": "🪞",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">What is the <b>mirror image</b> (left ↔ right)?</div><div style=\"display:flex;gap:12px;align-items:center;justify-content:center;margin-bottom:12px\"><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Original</div><svg width=\"62\" height=\"62\" viewBox=\"0 0 62 62\"><rect x=\"4\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"4\" width=\"17\" height=\"17\" fill=\"#a78bfa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"22\" width=\"17\" height=\"17\" fill=\"#a78bfa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"40\" width=\"17\" height=\"17\" fill=\"#a78bfa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg></div><div style=\"font-size:20px\">🪞</div><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Mirror?</div></div></div>",
+      "a": "A",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What is the mirror image of this pattern?"
+    },
+    {
+      "type": "mirror",
+      "key": "mr:3:[[2,1],[1,0],[2,0]]",
+      "icon": "🪞",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">What is the <b>mirror image</b> (left ↔ right)?</div><div style=\"display:flex;gap:12px;align-items:center;justify-content:center;margin-bottom:12px\"><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Original</div><svg width=\"62\" height=\"62\" viewBox=\"0 0 62 62\"><rect x=\"4\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"22\" width=\"17\" height=\"17\" fill=\"#60a5fa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"40\" width=\"17\" height=\"17\" fill=\"#60a5fa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"40\" width=\"17\" height=\"17\" fill=\"#60a5fa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg></div><div style=\"font-size:20px\">🪞</div><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Mirror?</div></div></div>",
+      "a": "A",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What is the mirror image of this pattern?"
+    },
+    {
+      "type": "mirror",
+      "key": "mr:3:[[1,1],[1,0],[0,0],[0,1]]",
+      "icon": "🪞",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">What is the <b>mirror image</b> (left ↔ right)?</div><div style=\"display:flex;gap:12px;align-items:center;justify-content:center;margin-bottom:12px\"><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Original</div><svg width=\"62\" height=\"62\" viewBox=\"0 0 62 62\"><rect x=\"4\" y=\"4\" width=\"17\" height=\"17\" fill=\"#34d399\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"4\" width=\"17\" height=\"17\" fill=\"#34d399\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"22\" width=\"17\" height=\"17\" fill=\"#34d399\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"22\" width=\"17\" height=\"17\" fill=\"#34d399\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg></div><div style=\"font-size:20px\">🪞</div><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Mirror?</div></div></div>",
+      "a": "B",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What is the mirror image of this pattern?"
+    },
+    {
+      "type": "mirror",
+      "key": "mr:3:[[0,0],[2,0],[1,0],[0,1]]",
+      "icon": "🪞",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">What is the <b>mirror image</b> (left ↔ right)?</div><div style=\"display:flex;gap:12px;align-items:center;justify-content:center;margin-bottom:12px\"><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Original</div><svg width=\"62\" height=\"62\" viewBox=\"0 0 62 62\"><rect x=\"4\" y=\"4\" width=\"17\" height=\"17\" fill=\"#fb923c\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"4\" width=\"17\" height=\"17\" fill=\"#fb923c\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"22\" width=\"17\" height=\"17\" fill=\"#fb923c\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"40\" width=\"17\" height=\"17\" fill=\"#fb923c\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg></div><div style=\"font-size:20px\">🪞</div><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Mirror?</div></div></div>",
+      "a": "B",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What is the mirror image of this pattern?"
+    },
+    {
+      "type": "mirror",
+      "key": "mr:3:[[1,1],[0,1],[2,1],[0,0],[2,0]]",
+      "icon": "🪞",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">What is the <b>mirror image</b> (left ↔ right)?</div><div style=\"display:flex;gap:12px;align-items:center;justify-content:center;margin-bottom:12px\"><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Original</div><svg width=\"62\" height=\"62\" viewBox=\"0 0 62 62\"><rect x=\"4\" y=\"4\" width=\"17\" height=\"17\" fill=\"#34d399\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"4\" width=\"17\" height=\"17\" fill=\"#34d399\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"22\" width=\"17\" height=\"17\" fill=\"#34d399\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"40\" width=\"17\" height=\"17\" fill=\"#34d399\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"40\" width=\"17\" height=\"17\" fill=\"#34d399\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg></div><div style=\"font-size:20px\">🪞</div><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Mirror?</div></div></div>",
+      "a": "C",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What is the mirror image of this pattern?"
+    },
+    {
+      "type": "mirror",
+      "key": "mr:3:[[1,0],[2,1],[0,1]]",
+      "icon": "🪞",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">What is the <b>mirror image</b> (left ↔ right)?</div><div style=\"display:flex;gap:12px;align-items:center;justify-content:center;margin-bottom:12px\"><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Original</div><svg width=\"62\" height=\"62\" viewBox=\"0 0 62 62\"><rect x=\"4\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"4\" width=\"17\" height=\"17\" fill=\"#60a5fa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"22\" width=\"17\" height=\"17\" fill=\"#60a5fa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"40\" width=\"17\" height=\"17\" fill=\"#60a5fa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg></div><div style=\"font-size:20px\">🪞</div><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Mirror?</div></div></div>",
+      "a": "D",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What is the mirror image of this pattern?"
+    },
+    {
+      "type": "mirror",
+      "key": "mr:3:[[0,1],[2,1],[1,0]]",
+      "icon": "🪞",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">What is the <b>mirror image</b> (left ↔ right)?</div><div style=\"display:flex;gap:12px;align-items:center;justify-content:center;margin-bottom:12px\"><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Original</div><svg width=\"62\" height=\"62\" viewBox=\"0 0 62 62\"><rect x=\"4\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"4\" width=\"17\" height=\"17\" fill=\"#34d399\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"22\" width=\"17\" height=\"17\" fill=\"#34d399\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"40\" width=\"17\" height=\"17\" fill=\"#34d399\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg></div><div style=\"font-size:20px\">🪞</div><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Mirror?</div></div></div>",
+      "a": "D",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What is the mirror image of this pattern?"
+    },
+    {
+      "type": "mirror",
+      "key": "mr:3:[[2,1],[2,0],[0,0],[1,0]]",
+      "icon": "🪞",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">What is the <b>mirror image</b> (left ↔ right)?</div><div style=\"display:flex;gap:12px;align-items:center;justify-content:center;margin-bottom:12px\"><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Original</div><svg width=\"62\" height=\"62\" viewBox=\"0 0 62 62\"><rect x=\"4\" y=\"4\" width=\"17\" height=\"17\" fill=\"#fb923c\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"22\" width=\"17\" height=\"17\" fill=\"#fb923c\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"40\" width=\"17\" height=\"17\" fill=\"#fb923c\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"40\" width=\"17\" height=\"17\" fill=\"#fb923c\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg></div><div style=\"font-size:20px\">🪞</div><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Mirror?</div></div></div>",
+      "a": "D",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What is the mirror image of this pattern?"
+    },
+    {
+      "type": "mirror",
+      "key": "mr:3:[[1,1],[0,0],[1,0]]",
+      "icon": "🪞",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">What is the <b>mirror image</b> (left ↔ right)?</div><div style=\"display:flex;gap:12px;align-items:center;justify-content:center;margin-bottom:12px\"><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Original</div><svg width=\"62\" height=\"62\" viewBox=\"0 0 62 62\"><rect x=\"4\" y=\"4\" width=\"17\" height=\"17\" fill=\"#a78bfa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"22\" width=\"17\" height=\"17\" fill=\"#a78bfa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"22\" width=\"17\" height=\"17\" fill=\"#a78bfa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg></div><div style=\"font-size:20px\">🪞</div><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Mirror?</div></div></div>",
+      "a": "A",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What is the mirror image of this pattern?"
+    },
+    {
+      "type": "mirror",
+      "key": "mr:3:[[2,0],[0,0],[0,1],[1,1]]",
+      "icon": "🪞",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">What is the <b>mirror image</b> (left ↔ right)?</div><div style=\"display:flex;gap:12px;align-items:center;justify-content:center;margin-bottom:12px\"><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Original</div><svg width=\"62\" height=\"62\" viewBox=\"0 0 62 62\"><rect x=\"4\" y=\"4\" width=\"17\" height=\"17\" fill=\"#a78bfa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"4\" width=\"17\" height=\"17\" fill=\"#a78bfa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"22\" width=\"17\" height=\"17\" fill=\"#a78bfa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"40\" width=\"17\" height=\"17\" fill=\"#a78bfa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg></div><div style=\"font-size:20px\">🪞</div><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Mirror?</div></div></div>",
+      "a": "D",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What is the mirror image of this pattern?"
+    },
+    {
+      "type": "mirror",
+      "key": "mr:3:[[1,1],[0,1],[0,0],[2,0]]",
+      "icon": "🪞",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">What is the <b>mirror image</b> (left ↔ right)?</div><div style=\"display:flex;gap:12px;align-items:center;justify-content:center;margin-bottom:12px\"><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Original</div><svg width=\"62\" height=\"62\" viewBox=\"0 0 62 62\"><rect x=\"4\" y=\"4\" width=\"17\" height=\"17\" fill=\"#fb923c\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"4\" width=\"17\" height=\"17\" fill=\"#fb923c\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"22\" width=\"17\" height=\"17\" fill=\"#fb923c\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"40\" width=\"17\" height=\"17\" fill=\"#fb923c\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg></div><div style=\"font-size:20px\">🪞</div><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Mirror?</div></div></div>",
+      "a": "D",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What is the mirror image of this pattern?"
+    },
+    {
+      "type": "mirror",
+      "key": "mr:3:[[1,1],[0,1],[2,1],[1,0]]",
+      "icon": "🪞",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">What is the <b>mirror image</b> (left ↔ right)?</div><div style=\"display:flex;gap:12px;align-items:center;justify-content:center;margin-bottom:12px\"><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Original</div><svg width=\"62\" height=\"62\" viewBox=\"0 0 62 62\"><rect x=\"4\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"4\" width=\"17\" height=\"17\" fill=\"#fbbf24\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"22\" width=\"17\" height=\"17\" fill=\"#fbbf24\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"22\" width=\"17\" height=\"17\" fill=\"#fbbf24\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"40\" width=\"17\" height=\"17\" fill=\"#fbbf24\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg></div><div style=\"font-size:20px\">🪞</div><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Mirror?</div></div></div>",
+      "a": "A",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What is the mirror image of this pattern?"
+    },
+    {
+      "type": "mirror",
+      "key": "mr:3:[[2,0],[1,0],[0,1]]",
+      "icon": "🪞",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">What is the <b>mirror image</b> (left ↔ right)?</div><div style=\"display:flex;gap:12px;align-items:center;justify-content:center;margin-bottom:12px\"><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Original</div><svg width=\"62\" height=\"62\" viewBox=\"0 0 62 62\"><rect x=\"4\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"4\" width=\"17\" height=\"17\" fill=\"#fb923c\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"22\" width=\"17\" height=\"17\" fill=\"#fb923c\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"40\" width=\"17\" height=\"17\" fill=\"#fb923c\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg></div><div style=\"font-size:20px\">🪞</div><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Mirror?</div></div></div>",
+      "a": "B",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What is the mirror image of this pattern?"
+    },
+    {
+      "type": "mirror",
+      "key": "mr:3:[[2,0],[0,1],[0,0],[1,0]]",
+      "icon": "🪞",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">What is the <b>mirror image</b> (left ↔ right)?</div><div style=\"display:flex;gap:12px;align-items:center;justify-content:center;margin-bottom:12px\"><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Original</div><svg width=\"62\" height=\"62\" viewBox=\"0 0 62 62\"><rect x=\"4\" y=\"4\" width=\"17\" height=\"17\" fill=\"#60a5fa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"4\" width=\"17\" height=\"17\" fill=\"#60a5fa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"22\" width=\"17\" height=\"17\" fill=\"#60a5fa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"40\" width=\"17\" height=\"17\" fill=\"#60a5fa\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg></div><div style=\"font-size:20px\">🪞</div><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Mirror?</div></div></div>",
+      "a": "D",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What is the mirror image of this pattern?"
+    },
+    {
+      "type": "mirror",
+      "key": "mr:3:[[1,1],[2,1],[0,0],[2,0],[0,1]]",
+      "icon": "🪞",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">What is the <b>mirror image</b> (left ↔ right)?</div><div style=\"display:flex;gap:12px;align-items:center;justify-content:center;margin-bottom:12px\"><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Original</div><svg width=\"62\" height=\"62\" viewBox=\"0 0 62 62\"><rect x=\"4\" y=\"4\" width=\"17\" height=\"17\" fill=\"#fbbf24\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"4\" width=\"17\" height=\"17\" fill=\"#fbbf24\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"22\" width=\"17\" height=\"17\" fill=\"#fbbf24\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"40\" width=\"17\" height=\"17\" fill=\"#fbbf24\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"40\" width=\"17\" height=\"17\" fill=\"#fbbf24\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg></div><div style=\"font-size:20px\">🪞</div><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Mirror?</div></div></div>",
+      "a": "B",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What is the mirror image of this pattern?"
+    },
+    {
+      "type": "mirror",
+      "key": "mr:3:[[1,1],[2,0],[1,0],[0,0],[0,1]]",
+      "icon": "🪞",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">What is the <b>mirror image</b> (left ↔ right)?</div><div style=\"display:flex;gap:12px;align-items:center;justify-content:center;margin-bottom:12px\"><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Original</div><svg width=\"62\" height=\"62\" viewBox=\"0 0 62 62\"><rect x=\"4\" y=\"4\" width=\"17\" height=\"17\" fill=\"#fbbf24\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"4\" width=\"17\" height=\"17\" fill=\"#fbbf24\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"22\" width=\"17\" height=\"17\" fill=\"#fbbf24\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"22\" width=\"17\" height=\"17\" fill=\"#fbbf24\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"40\" width=\"17\" height=\"17\" fill=\"#fbbf24\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg></div><div style=\"font-size:20px\">🪞</div><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Mirror?</div></div></div>",
+      "a": "D",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What is the mirror image of this pattern?"
+    },
+    {
+      "type": "mirror",
+      "key": "mr:3:[[2,1],[0,1],[0,0]]",
+      "icon": "🪞",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">What is the <b>mirror image</b> (left ↔ right)?</div><div style=\"display:flex;gap:12px;align-items:center;justify-content:center;margin-bottom:12px\"><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Original</div><svg width=\"62\" height=\"62\" viewBox=\"0 0 62 62\"><rect x=\"4\" y=\"4\" width=\"17\" height=\"17\" fill=\"#f87171\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"4\" width=\"17\" height=\"17\" fill=\"#f87171\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"40\" width=\"17\" height=\"17\" fill=\"#f87171\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg></div><div style=\"font-size:20px\">🪞</div><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Mirror?</div></div></div>",
+      "a": "B",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What is the mirror image of this pattern?"
+    },
+    {
+      "type": "mirror",
+      "key": "mr:3:[[0,0],[2,1],[1,1]]",
+      "icon": "🪞",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">What is the <b>mirror image</b> (left ↔ right)?</div><div style=\"display:flex;gap:12px;align-items:center;justify-content:center;margin-bottom:12px\"><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Original</div><svg width=\"62\" height=\"62\" viewBox=\"0 0 62 62\"><rect x=\"4\" y=\"4\" width=\"17\" height=\"17\" fill=\"#fb923c\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"22\" width=\"17\" height=\"17\" fill=\"#fb923c\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"40\" width=\"17\" height=\"17\" fill=\"#fb923c\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg></div><div style=\"font-size:20px\">🪞</div><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Mirror?</div></div></div>",
+      "a": "D",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What is the mirror image of this pattern?"
+    },
+    {
+      "type": "mirror",
+      "key": "mr:3:[[0,0],[1,0],[2,0],[2,1],[1,1]]",
+      "icon": "🪞",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">What is the <b>mirror image</b> (left ↔ right)?</div><div style=\"display:flex;gap:12px;align-items:center;justify-content:center;margin-bottom:12px\"><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Original</div><svg width=\"62\" height=\"62\" viewBox=\"0 0 62 62\"><rect x=\"4\" y=\"4\" width=\"17\" height=\"17\" fill=\"#fbbf24\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"22\" width=\"17\" height=\"17\" fill=\"#fbbf24\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"22\" width=\"17\" height=\"17\" fill=\"#fbbf24\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"40\" width=\"17\" height=\"17\" fill=\"#fbbf24\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"40\" width=\"17\" height=\"17\" fill=\"#fbbf24\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg></div><div style=\"font-size:20px\">🪞</div><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Mirror?</div></div></div>",
+      "a": "A",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What is the mirror image of this pattern?"
+    },
+    {
+      "type": "mirror",
+      "key": "mr:3:[[0,1],[1,0],[2,1],[0,0]]",
+      "icon": "🪞",
+      "display": "<div style=\"font-size:10px;font-family:var(--px);color:#374151;margin-bottom:8px;text-align:center\">What is the <b>mirror image</b> (left ↔ right)?</div><div style=\"display:flex;gap:12px;align-items:center;justify-content:center;margin-bottom:12px\"><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Original</div><svg width=\"62\" height=\"62\" viewBox=\"0 0 62 62\"><rect x=\"4\" y=\"4\" width=\"17\" height=\"17\" fill=\"#f87171\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"4\" width=\"17\" height=\"17\" fill=\"#f87171\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"4\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"22\" width=\"17\" height=\"17\" fill=\"#f87171\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"22\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"4\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"22\" y=\"40\" width=\"17\" height=\"17\" fill=\"#f87171\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/><rect x=\"40\" y=\"40\" width=\"17\" height=\"17\" fill=\"#e2e8f0\" stroke=\"#94a3b8\" stroke-width=\"1\" rx=\"2\"/></svg></div><div style=\"font-size:20px\">🪞</div><div style=\"text-align:center\"><div style=\"font-size:10px;color:#64748b;font-family:var(--px)\">Mirror?</div></div></div>",
+      "a": "B",
+      "ch": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "tts": "What is the mirror image of this pattern?"
+    }
+  ]
+}
