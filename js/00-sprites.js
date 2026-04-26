@@ -10,20 +10,55 @@ function loadSprite(name, cb) {
   if (_spriteCache[name]) { if (cb) cb(_spriteCache[name]); return _spriteCache[name]; }
   var img = new Image();
   img.onload = function() { _spriteCache[name] = img; _spriteLoaded[name] = true; if (cb) cb(img); };
-  img.onerror = function() { _spriteCache[name] = null; _spriteLoaded[name] = false; if (cb) cb(null); };
-  img.src = SPRITE_BASE + name + '.png';
+  img.onerror = function() {
+    // Try .png if .svg fails
+    if (img.src.endsWith('.svg')) {
+      img.src = SPRITE_BASE + name + '.png';
+      return;
+    }
+    _spriteCache[name] = null; _spriteLoaded[name] = false; if (cb) cb(null);
+  };
+  img.src = SPRITE_BASE + name + '.svg';
   return null;
 }
 
 function spriteImg(name, w, h, fallback) {
   w = w || 32; h = h || 32;
   if (_spriteLoaded[name] && _spriteCache[name]) {
-    return '<img src="' + SPRITE_BASE + name + '.png" width="' + w + '" height="' + h + '" style="image-rendering:pixelated;" alt="' + (fallback || '') + '">';
+    var ext = _spriteCache[name].src.endsWith('.svg') ? '.svg' : '.png';
+    return '<img src="' + SPRITE_BASE + name + ext + '" width="' + w + '" height="' + h + '" style="image-rendering:pixelated;" alt="' + (fallback || '') + '">';
   }
   return fallback || '';
 }
 
 // Preload all sprites
+// Map: emoji → sprite name for auto-replacement
+var _emojiSpriteMap={
+  '⚔️':'characters/knight','🐱':'characters/cat','🏴‍☠️':'characters/pirate','🧚':'characters/fairy',
+  '🐵':'characters/monkey','🧙':'characters/wizard','👸':'characters/princess','🗡️':'characters/ninja',
+  '🤖':'characters/robot','🐼':'characters/panda','🐉':'characters/dragon','🔥':'characters/phoenix',
+  '👻':'characters/ghost','👨‍🚀':'characters/astronaut','⛩️':'characters/samurai',
+  '🧜':'characters/mermaid','🦖':'characters/dinosaur','🪓':'characters/viking','👽':'characters/alien',
+  '🦄':'characters/unicorn',
+  '🌿':'enemies/vine_colossus','🦈':'enemies/reef_shark','🌋':'enemies/magma_dragon',
+  '🧊':'enemies/frost_colossus','🦅':'enemies/sky_warden','👑':'enemies/dark_king',
+  '🦎':'enemies/crystal_lizard','⚡':'enemies/storm_eagle','🐗':'enemies/shadow_boar',
+  '🐙':'enemies/ink_kraken','👹':'enemies/fire_elemental','🐺':'enemies/ice_wolf',
+  '❤️':'ui/heart_full','🖤':'ui/heart_empty','🪙':'ui/coin','⭐':'ui/star',
+  '🔮':'ui/crystal','💡':'ui/hint_scroll','💖':'ui/potion','💝':'ui/potion',
+  '🏰':'castle/tower','🧱':'castle/wall','🚪':'castle/gate','💣':'castle/cannon',
+  '🚩':'castle/flag','🌊':'castle/moat'
+};
+
+function emojiToSprite(emoji,w,h){
+  var name=_emojiSpriteMap[emoji];
+  if(name){
+    var s=spriteImg(name,w||32,h||32,'');
+    if(s)return s;
+  }
+  return emoji;
+}
+
 function preloadSprites() {
   var sprites = [
     // Characters

@@ -75,12 +75,12 @@ function initHome(){
   audBtn('home-aud');renderNetIcon();autoBuiltCheck();
   if(S.onlineMode)checkNetwork();
   var statsData=[
-    {i:S.hp>0?'❤️':'💔',v:S.hp+'/'+S.maxHp,l:'HEARTS'},
-    {i:'🪙',v:S.totalCoins,l:'COINS'},
-    {i:'🏆',v:Object.keys(S.achievements).length,l:'ACHVS'},
+    {i:emojiToSprite(S.hp>0?'❤️':'💔',28,28)||S.hp>0?'❤️':'💔',v:S.hp+'/'+S.maxHp,l:'HEARTS'},
+    {i:emojiToSprite('🪙',28,28)||'🪙',v:S.totalCoins,l:'COINS'},
+    {i:'🏆',v:achCount(),l:'ACHVS'},
     {i:'🔥',v:S.maxCombo,l:'COMBO'}
   ];
-  $('home-stats').innerHTML=statsData.map(function(it){return '<div class="pb" style="background:linear-gradient(145deg,rgba(30,30,60,.9),rgba(20,20,40,.9));border-color:rgba(255,255,255,.1);border-radius:10px;padding:9px 4px;text-align:center;box-shadow:3px 3px 0 #000,inset 1px 1px 0 rgba(255,255,255,.05);"><div style="font-size:1.5rem">'+it.i+'</div><div style="font-size:10px;color:var(--gold);margin-top:3px">'+it.v+'</div><div style="font-size:8px;color:#777;margin-top:2px">'+it.l+'</div></div>';}).join('');
+  $('home-stats').innerHTML=statsData.map(function(it){return '<div class="pb" style="background:linear-gradient(145deg,rgba(30,30,60,.9),rgba(20,20,40,.9));border-color:rgba(255,255,255,.1);border-radius:10px;padding:9px 4px;text-align:center;box-shadow:3px 3px 0 #000,inset 1px 1px 0 rgba(255,255,255,.05);"><div style="font-size:1.5rem;display:flex;align-items:center;justify-content:center;">'+it.i+'</div><div style="font-size:10px;color:var(--gold);margin-top:3px">'+it.v+'</div><div style="font-size:8px;color:#777;margin-top:2px">'+it.l+'</div></div>';}).join('');
   $('k-sub').textContent=buildCount()+'/'+CASTLE_PARTS.filter(function(p){return!p.free;}).length+' parts · '+(S.potionStock||0)+' pot · '+(S.hintStock||0)+' hints';
   $('k-notify').style.display=availableCount()>0?'block':'none';
   $('btn-kingdom').onclick=function(){sfx('tick');initBuilder();goTo('builder');};

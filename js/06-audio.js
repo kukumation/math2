@@ -273,16 +273,19 @@ function speakQ(t){
   if(S.ttsMuted||S.muted||!t)return;
   speak(t,1.0,0.9);
 }
-function speakBoss(t){
-  if(S.muted||!t)return;
+function speakBoss(t,cb){
+  if(S.muted||!t){if(cb)cb();return;}
   try{
     window.speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(t);
-    u.lang='en-US';u.pitch=1.8;u.rate=1.3;u.volume=1.0;
+    u.lang='en-US';u.pitch=0.3;u.rate=0.85;u.volume=1.0;
     var vs=window.speechSynthesis.getVoices();
-    var v=vs.filter(function(x){return /samantha|karen|zira|fiona|victoria|female/i.test(x.name)&&x.lang.indexOf('en')===0;})[0]
+    var v=vs.filter(function(x){return /daniel|james|david|male|thomas|alex|google us english/i.test(x.name)&&x.lang.indexOf('en')===0;})[0]
+      ||vs.filter(function(x){return !/samantha|karen|zira|fiona|victoria|female/i.test(x.name)&&x.lang.indexOf('en')===0;})[0]
       ||vs.filter(function(x){return x.lang.indexOf('en')===0;})[0];
     if(v)u.voice=v;
+    u.onend=function(){if(cb)cb();};
+    u.onerror=function(){if(cb)cb();};
     window.speechSynthesis.speak(u);
-  }catch(e){}
+  }catch(e){if(cb)cb();}
 }

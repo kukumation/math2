@@ -421,104 +421,181 @@ var SHOP_ITEMS=[
 ];
 
 // ============================================================
-// ACHIEVEMENTS (80+)
+// ACHIEVEMENTS — tiered system
+// tiers: array of {icon, name, desc, cond, threshold}
+// S.achievements[id] = tier index (0-based) or undefined
+// For backward compat, old boolean achievements stay as-is
 // ============================================================
+var TIER_LABELS=['🥉','🥈','🥇','💎'];
 var ACHIEVEMENTS=[
-  {id:'a_first',icon:'⭐',name:'First Star',desc:'Answer your first question correctly',cond:'Get 1 correct answer',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_c10',icon:'📝',name:'Getting Started',desc:'Answer 10 questions correctly',cond:'10 correct answers',color:'#84cc16',bg:'#1a2e05'},
-  {id:'a_c50',icon:'🚀',name:'Half Century',desc:'Answer 50 questions correctly',cond:'50 correct answers',color:'#10b981',bg:'#064e3b'},
-  {id:'a_c100',icon:'🏅',name:'Century',desc:'Answer 100 questions correctly',cond:'100 correct answers',color:'#22c55e',bg:'#052e16'},
-  {id:'a_c200',icon:'🌟',name:'Double Century',desc:'Answer 200 questions correctly',cond:'200 correct answers',color:'#f59e0b',bg:'#451a03'},
-  {id:'a_c500',icon:'💫',name:'Master Scholar',desc:'Answer 500 questions correctly',cond:'500 correct answers',color:'#a855f7',bg:'#2e1065'},
-  {id:'a_c1000',icon:'🌌',name:'Math Legend',desc:'Answer 1000 questions correctly',cond:'1000 correct answers',color:'#fbbf24',bg:'#1a0a00'},
-  {id:'a_c2000',icon:'🧙',name:'Grand Wizard',desc:'Answer 2000 questions correctly',cond:'2000 correct answers',color:'#f43f5e',bg:'#4c0519'},
-  {id:'a_combo3',icon:'🔥',name:'On Fire',desc:'Get a 3x combo streak',cond:'3 correct in a row',color:'#f97316',bg:'#431407'},
-  {id:'a_combo5',icon:'💥',name:'Blazing',desc:'Get a 5x combo streak',cond:'5 correct in a row',color:'#ef4444',bg:'#450a0a'},
-  {id:'a_combo10',icon:'⚡',name:'Lightning',desc:'Get a 10x combo streak',cond:'10 correct in a row',color:'#a855f7',bg:'#2e1065'},
-  {id:'a_combo15',icon:'🌪️',name:'Tornado',desc:'Get a 15x combo streak',cond:'15 correct in a row',color:'#38bdf8',bg:'#082f49'},
-  {id:'a_combo20',icon:'☄️',name:'Unstoppable',desc:'Get a 20x combo streak',cond:'20 correct in a row',color:'#fbbf24',bg:'#1a0000'},
-  {id:'a_combo30',icon:'🌠',name:'Infinite Power',desc:'Get a 30x combo streak',cond:'30 correct in a row — VERY HARD!',color:'#f43f5e',bg:'#4c0519'},
-  {id:'a_perfect1',icon:'💎',name:'Flawless Victory',desc:'Complete a level with zero mistakes',cond:'Level with 0 wrong answers',color:'#06b6d4',bg:'#083344'},
-  {id:'a_perfect3',icon:'🌟',name:'Triple Crown',desc:'Complete 3 levels perfectly',cond:'3 levels with 0 mistakes',color:'#22c55e',bg:'#052e16'},
-  {id:'a_perfect5',icon:'👑',name:'Perfection King',desc:'Complete 5 levels perfectly',cond:'5 levels with 0 mistakes',color:'#f59e0b',bg:'#451a03'},
-  {id:'a_perfect10',icon:'🏆',name:'Perfect Master',desc:'Complete 10 levels perfectly',cond:'10 levels with 0 mistakes',color:'#a855f7',bg:'#2e1065'},
-  {id:'a_perfect20',icon:'✨',name:'Untouchable',desc:'Complete 20 levels perfectly',cond:'20 levels with 0 mistakes — VERY HARD!',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_boss1',icon:'⚔️',name:'Boss Slayer',desc:'Defeat your first world boss',cond:'Defeat 1 boss',color:'#dc2626',bg:'#450a0a'},
-  {id:'a_boss3',icon:'🗡️',name:'Dragon Tamer',desc:'Defeat 3 different bosses',cond:'Defeat 3 different bosses',color:'#7c3aed',bg:'#2e1065'},
-  {id:'a_boss6',icon:'👑',name:'World Champion',desc:'Defeat all 6 original bosses',cond:'Defeat bosses 1-6',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_boss10',icon:'🦸',name:'Boss Hunter',desc:'Win 10 boss battles total',cond:'10 total boss wins (rematches count)',color:'#22c55e',bg:'#052e16'},
-  {id:'a_boss_fast',icon:'⚡',name:'Speed Slayer',desc:'Answer a boss question with 20+ sec left',cond:'Answer within 10 seconds',color:'#38bdf8',bg:'#082f49'},
-  {id:'a_boss_rem',icon:'🔄',name:'Rematched',desc:'Win a boss rematch',cond:'Beat a boss a second time',color:'#f97316',bg:'#431407'},
-  {id:'a_boss_perfect',icon:'🎯',name:'Flawless Boss',desc:'Defeat a boss without losing a heart',cond:'Beat a boss with 3/3 HP remaining',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_build3',icon:'🔨',name:'First Bricks',desc:'Fully build 3 castle parts',cond:'3 parts at max level',color:'#84cc16',bg:'#1a2e05'},
-  {id:'a_build5',icon:'🏗️',name:'Apprentice Builder',desc:'Fully build 5 castle parts',cond:'5 parts at max level',color:'#10b981',bg:'#064e3b'},
-  {id:'a_build10',icon:'🏰',name:'Castle Builder',desc:'Fully build 10 castle parts',cond:'10 parts at max level',color:'#f59e0b',bg:'#451a03'},
-  {id:'a_build15',icon:'🏯',name:'Master Builder',desc:'Fully build 15 castle parts',cond:'15 parts at max level',color:'#a855f7',bg:'#2e1065'},
-  {id:'a_build20',icon:'🌟',name:'Grand Architect',desc:'Fully build 20 castle parts',cond:'20 parts at max level — HARD!',color:'#fbbf24',bg:'#1a0000'},
-  {id:'a_coins50',icon:'🪙',name:'Coin Finder',desc:'Earn 50 total coins',cond:'Earn 50 lifetime coins',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_coins100',icon:'💰',name:'Treasure Hunter',desc:'Earn 100 total coins',cond:'Earn 100 lifetime coins',color:'#f59e0b',bg:'#451a03'},
-  {id:'a_coins500',icon:'💎',name:"Dragon's Hoard",desc:'Earn 500 total coins',cond:'Earn 500 lifetime coins',color:'#06b6d4',bg:'#083344'},
-  {id:'a_coins1k',icon:'💰',name:'Gold Mountain',desc:'Earn 1000 total coins',cond:'Earn 1000 lifetime coins — HARD!',color:'#22c55e',bg:'#052e16'},
-  {id:'a_worlds2',icon:'🌍',name:'Explorer',desc:'Unlock 2 worlds',color:'#22c55e',cond:'Beat World 1 boss',bg:'#052e16'},
-  {id:'a_worlds6',icon:'🌏',name:'World Traveller',desc:'Beat all 6 original bosses',cond:'Defeat all 6 original bosses',color:'#f59e0b',bg:'#451a03'},
-  {id:'a_worlds10',icon:'🌌',name:'Galaxy Explorer',desc:'Reach World 10',cond:'Defeat 9 bosses',color:'#a855f7',bg:'#2e1065'},
-  {id:'a_stars5',icon:'🌠',name:'Star Collector',desc:'Earn 3 stars on 5 levels',cond:'5 levels with perfect 3 stars',color:'#f59e0b',bg:'#451a03'},
-  {id:'a_stars15',icon:'🌌',name:'Galaxy Brain',desc:'Earn 3 stars on 15 levels',cond:'15 levels with 3 stars',color:'#a855f7',bg:'#2e1065'},
-  {id:'a_level10',icon:'🔟',name:'Level 10 Hero',desc:'Complete 10 levels',cond:'10 levels cleared',color:'#84cc16',bg:'#1a2e05'},
-  {id:'a_level30',icon:'💫',name:'Veteran',desc:'Complete 30 levels',cond:'30 levels cleared',color:'#f97316',bg:'#431407'},
-  {id:'a_level50',icon:'🌟',name:'Elite Player',desc:'Complete 50 levels',cond:'50 levels cleared',color:'#a855f7',bg:'#2e1065'},
-  {id:'a_level100',icon:'🏆',name:'Centurion',desc:'Complete 100 levels',cond:'100 levels cleared — VERY HARD!',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_clock10',icon:'⏰',name:'Time Wizard',desc:'Answer 10 clock questions correctly',cond:'10 correct clock/time answers',color:'#818cf8',bg:'#1e1b4b'},
-  {id:'a_logic10',icon:'🧩',name:'Logic Thinker',desc:'Answer 10 logic questions correctly',cond:'10 correct logic answers',color:'#34d399',bg:'#064e3b'},
-  {id:'a_word10',icon:'📖',name:'Storyteller',desc:'Answer 10 word problems correctly',cond:'10 correct word problems',color:'#fb923c',bg:'#431407'},
-  {id:'a_pattern10',icon:'🔮',name:'Pattern Seeker',desc:'Answer 10 pattern questions correctly',cond:'10 correct pattern answers',color:'#a78bfa',bg:'#2e1065'},
-  {id:'a_lineup10',icon:'👫',name:'Queue Master',desc:'Answer 10 queue/order questions correctly',cond:'10 correct lineup answers',color:'#f472b6',bg:'#500724'},
-  {id:'a_spatial10',icon:'🔷',name:'Shape Expert',desc:'Answer 10 spatial questions correctly',cond:'10 correct spatial answers',color:'#22d3ee',bg:'#083344'},
-  {id:'a_shop1',icon:'🛍️',name:'First Purchase',desc:'Buy your first item from the shop',cond:'Make 1 shop purchase',color:'#ec4899',bg:'#500724'},
-  {id:'a_shop5',icon:'🛒',name:'Shopaholic',desc:'Buy 5 items from the shop',cond:'5 total shop purchases',color:'#f43f5e',bg:'#4c0519'},
-  {id:'a_shop10',icon:'🏪',name:'Big Spender',desc:'Buy 10 items from the shop',cond:'10 total shop purchases',color:'#a855f7',bg:'#2e1065'},
-  {id:'a_sharp',icon:'🎯',name:'Sharpshooter',desc:'Reach 85%+ accuracy (min 20 questions)',cond:'85% accuracy over 20+ questions',color:'#38bdf8',bg:'#082f49'},
-  {id:'a_sharp95',icon:'🎯',name:'Eagle Eye',desc:'Reach 95%+ accuracy (min 50 questions)',cond:'95% accuracy over 50+ questions — HARD!',color:'#fbbf24',bg:'#451a03'},
+  // — TIERED: Correct answers —
+  {id:'at_correct',icon:'📝',name:'Scholar',desc:'Answer questions correctly',color:'#84cc16',bg:'#1a2e05',
+    tiers:[
+      {icon:'⭐',name:'First Star',desc:'Answer 1 correctly',cond:'1 correct',threshold:1},
+      {icon:'📝',name:'Getting Started',desc:'10 correct',cond:'10 correct',threshold:10},
+      {icon:'🚀',name:'Half Century',desc:'50 correct',cond:'50 correct',threshold:50},
+      {icon:'🏅',name:'Century',desc:'100 correct',cond:'100 correct',threshold:100},
+      {icon:'🌟',name:'Double Century',desc:'200 correct',cond:'200 correct',threshold:200},
+      {icon:'💫',name:'Master Scholar',desc:'500 correct',cond:'500 correct',threshold:500},
+      {icon:'🌌',name:'Math Legend',desc:'1000 correct',cond:'1000 correct',threshold:1000},
+      {icon:'🧙',name:'Grand Wizard',desc:'2000 correct',cond:'2000 correct',threshold:2000}
+    ],getVal:function(){return Object.values(S.stats).reduce(function(s,v){return s+(v.correct||0);},0);}},
+  // — TIERED: Combo —
+  {id:'at_combo',icon:'🔥',name:'Combo Master',desc:'Build answer combos',color:'#f97316',bg:'#431407',
+    tiers:[
+      {icon:'🔥',name:'On Fire',desc:'3x combo',cond:'3 in a row',threshold:3},
+      {icon:'💥',name:'Blazing',desc:'5x combo',cond:'5 in a row',threshold:5},
+      {icon:'⚡',name:'Lightning',desc:'10x combo',cond:'10 in a row',threshold:10},
+      {icon:'🌪️',name:'Tornado',desc:'15x combo',cond:'15 in a row',threshold:15},
+      {icon:'☄️',name:'Unstoppable',desc:'20x combo',cond:'20 in a row',threshold:20},
+      {icon:'🌠',name:'Infinite Power',desc:'30x combo',cond:'30 in a row',threshold:30}
+    ],getVal:function(){return S.maxCombo;}},
+  // — TIERED: Perfect levels —
+  {id:'at_perfect',icon:'💎',name:'Perfectionist',desc:'Complete levels with zero mistakes',color:'#06b6d4',bg:'#083344',
+    tiers:[
+      {icon:'💎',name:'Flawless Victory',desc:'1 perfect level',cond:'1 perfect level',threshold:1},
+      {icon:'🌟',name:'Triple Crown',desc:'3 perfect levels',cond:'3 perfect levels',threshold:3},
+      {icon:'👑',name:'Perfection King',desc:'5 perfect levels',cond:'5 perfect levels',threshold:5},
+      {icon:'🏆',name:'Perfect Master',desc:'10 perfect levels',cond:'10 perfect levels',threshold:10},
+      {icon:'✨',name:'Untouchable',desc:'20 perfect levels',cond:'20 perfect levels',threshold:20},
+      {icon:'💎',name:'Diamond Standard',desc:'50 perfect levels',cond:'50 perfect levels',threshold:50}
+    ],getVal:function(){return Object.values(S.levelStars).filter(function(v){return v===3;}).length;}},
+  // — TIERED: Boss defeats —
+  {id:'at_boss',icon:'⚔️',name:'Boss Slayer',desc:'Defeat world bosses',color:'#dc2626',bg:'#450a0a',
+    tiers:[
+      {icon:'⚔️',name:'First Blood',desc:'Defeat 1 boss',cond:'1 boss defeated',threshold:1},
+      {icon:'🗡️',name:'Dragon Tamer',desc:'Defeat 3 bosses',cond:'3 different bosses',threshold:3},
+      {icon:'👑',name:'World Champion',desc:'Defeat 6 bosses',cond:'6 different bosses',threshold:6},
+      {icon:'🦸',name:'Boss Hunter',desc:'10 total boss wins',cond:'10 total wins',threshold:10},
+      {icon:'🌟',name:'Boss Annihilator',desc:'25 total boss wins',cond:'25 total wins',threshold:25},
+      {icon:'🌌',name:'Boss Legend',desc:'50 total boss wins',cond:'50 total wins',threshold:50}
+    ],getVal:function(){return Object.values(S.bossWins).reduce(function(s,v){return s+(v||0);},0);}},
+  // — TIERED: Castle building —
+  {id:'at_build',icon:'🔨',name:'Builder',desc:'Build castle parts to max level',color:'#84cc16',bg:'#1a2e05',
+    tiers:[
+      {icon:'🔨',name:'First Bricks',desc:'3 parts maxed',cond:'3 parts at max level',threshold:3},
+      {icon:'🏗️',name:'Apprentice Builder',desc:'5 parts maxed',cond:'5 parts at max level',threshold:5},
+      {icon:'🏰',name:'Castle Builder',desc:'10 parts maxed',cond:'10 parts at max level',threshold:10},
+      {icon:'🏯',name:'Master Builder',desc:'15 parts maxed',cond:'15 parts at max level',threshold:15},
+      {icon:'🌟',name:'Grand Architect',desc:'20 parts maxed',cond:'20 parts at max level',threshold:20}
+    ],getVal:function(){return CASTLE_PARTS.filter(function(p){return!p.free&&(S.partLevels[p.id]||0)>=MAX_PART_LEVEL;}).length;}},
+  // — TIERED: Coins earned —
+  {id:'at_coins',icon:'🪙',name:'Coin Collector',desc:'Earn coins from answers',color:'#fbbf24',bg:'#451a03',
+    tiers:[
+      {icon:'🪙',name:'Coin Finder',desc:'Earn 50 coins',cond:'50 lifetime coins',threshold:50},
+      {icon:'💰',name:'Treasure Hunter',desc:'Earn 100 coins',cond:'100 lifetime coins',threshold:100},
+      {icon:'💎',name:"Dragon's Hoard",desc:'Earn 500 coins',cond:'500 lifetime coins',threshold:500},
+      {icon:'💰',name:'Gold Mountain',desc:'Earn 1000 coins',cond:'1000 lifetime coins',threshold:1000},
+      {icon:'👑',name:'Dragon Hoard',desc:'Earn 5000 coins',cond:'5000 lifetime coins',threshold:5000}
+    ],getVal:function(){return S.totalCoins;}},
+  // — TIERED: Worlds explored —
+  {id:'at_worlds',icon:'🌍',name:'Explorer',desc:'Unlock new worlds',color:'#22c55e',bg:'#052e16',
+    tiers:[
+      {icon:'🌍',name:'Explorer',desc:'Reach World 2',cond:'Beat 1 boss',threshold:2},
+      {icon:'🌏',name:'World Traveller',desc:'Reach World 6',cond:'Beat 5 bosses',threshold:6},
+      {icon:'🌌',name:'Galaxy Explorer',desc:'Reach World 10',cond:'Beat 9 bosses',threshold:10},
+      {icon:'🚀',name:'Cosmic Voyager',desc:'Reach World 15',cond:'Beat 14 bosses',threshold:15}
+    ],getVal:function(){return maxWorldIndex()+1;}},
+  // — TIERED: Stars earned —
+  {id:'at_stars',icon:'🌠',name:'Star Collector',desc:'Earn 3 stars on levels',color:'#f59e0b',bg:'#451a03',
+    tiers:[
+      {icon:'🌠',name:'Star Collector',desc:'5 three-star levels',cond:'5 levels with 3 stars',threshold:5},
+      {icon:'🌌',name:'Galaxy Brain',desc:'15 three-star levels',cond:'15 levels with 3 stars',threshold:15},
+      {icon:'💫',name:'Supernova',desc:'30 three-star levels',cond:'30 levels with 3 stars',threshold:30},
+      {icon:'💎',name:'Star Lord',desc:'50 three-star levels',cond:'50 levels with 3 stars',threshold:50}
+    ],getVal:function(){return Object.values(S.levelStars).filter(function(v){return v===3;}).length;}},
+  // — TIERED: Levels completed —
+  {id:'at_levels',icon:'🔟',name:'Adventurer',desc:'Complete levels',color:'#84cc16',bg:'#1a2e05',
+    tiers:[
+      {icon:'🔟',name:'Level 10 Hero',desc:'10 levels cleared',cond:'10 levels',threshold:10},
+      {icon:'💫',name:'Veteran',desc:'30 levels cleared',cond:'30 levels',threshold:30},
+      {icon:'🌟',name:'Elite Player',desc:'50 levels cleared',cond:'50 levels',threshold:50},
+      {icon:'🏆',name:'Centurion',desc:'100 levels cleared',cond:'100 levels',threshold:100},
+      {icon:'👑',name:'Legend',desc:'200 levels cleared',cond:'200 levels',threshold:200}
+    ],getVal:function(){return S.completed.size;}},
+  // — TIERED: Level win streak —
+  {id:'at_streak',icon:'🔥',name:'Win Streak',desc:'Win levels in a row',color:'#f97316',bg:'#431407',
+    tiers:[
+      {icon:'🔥',name:'Level Streak',desc:'5 in a row',cond:'5-level streak',threshold:5},
+      {icon:'💥',name:'Unstoppable Streak',desc:'10 in a row',cond:'10-level streak',threshold:10},
+      {icon:'🌟',name:'Invincible',desc:'20 in a row',cond:'20-level streak',threshold:20},
+      {icon:'⚡',name:'Eternal Flame',desc:'30 in a row',cond:'30-level streak',threshold:30}
+    ],getVal:function(){return S.levelWinStreak||0;}},
+  // — TIERED: Shop purchases —
+  {id:'at_shop',icon:'🛍️',name:'Shopper',desc:'Buy items from the shop',color:'#ec4899',bg:'#500724',
+    tiers:[
+      {icon:'🛍️',name:'First Purchase',desc:'Buy 1 item',cond:'1 purchase',threshold:1},
+      {icon:'🛒',name:'Shopaholic',desc:'Buy 5 items',cond:'5 purchases',threshold:5},
+      {icon:'🏪',name:'Big Spender',desc:'Buy 10 items',cond:'10 purchases',threshold:10},
+      {icon:'💸',name:'VIP Customer',desc:'Buy 25 items',cond:'25 purchases',threshold:25}
+    ],getVal:function(){return Object.values(S.shopOwned).reduce(function(s,v){return s+(v||0);},0);}},
+  // — TIERED: Decorations —
+  {id:'at_decor',icon:'🌸',name:'Decorator',desc:'Place decorations in castle',color:'#ec4899',bg:'#500724',
+    tiers:[
+      {icon:'🌸',name:'Interior Decorator',desc:'Place 1 decoration',cond:'1 decoration placed',threshold:1},
+      {icon:'🎨',name:'Castle Designer',desc:'Fill 5 slots',cond:'5 slots filled',threshold:5},
+      {icon:'🏡',name:'Dream Castle',desc:'Fill all 8 slots',cond:'All 8 slots filled',threshold:8}
+    ],getVal:function(){return S.decorSlots.filter(function(x){return x!==null;}).length;}},
+  // — TIERED: Accuracy —
+  {id:'at_accuracy',icon:'🎯',name:'Sharpshooter',desc:'Maintain high accuracy',color:'#38bdf8',bg:'#082f49',
+    tiers:[
+      {icon:'🎯',name:'Sharpshooter',desc:'85% accuracy (20+ Q)',cond:'85% over 20+ questions',threshold:85},
+      {icon:'🎯',name:'Eagle Eye',desc:'92% accuracy (50+ Q)',cond:'92% over 50+ questions',threshold:92},
+      {icon:'🎯',name:'Laser Focus',desc:'95% accuracy (50+ Q)',cond:'95% over 50+ questions',threshold:95}
+    ],getVal:function(){var tc=Object.values(S.stats).reduce(function(s,v){return s+(v.correct||0);},0);var tq=Object.values(S.stats).reduce(function(s,v){return s+(v.total||0);},0);return tq>=20?Math.round(tc/tq*100):0;}},
+  // — TIERED: Days played —
+  {id:'at_days',icon:'📅',name:'Dedicated',desc:'Play on different days',color:'#22c55e',bg:'#052e16',
+    tiers:[
+      {icon:'📅',name:'Getting Started',desc:'Play 3 days',cond:'3 unique days',threshold:3},
+      {icon:'📅',name:'Dedicated Player',desc:'Play 7 days',cond:'7 unique days',threshold:7},
+      {icon:'📅',name:'Committed',desc:'Play 14 days',cond:'14 unique days',threshold:14},
+      {icon:'📅',name:'Veteran Player',desc:'Play 30 days',cond:'30 unique days',threshold:30}
+    ],getVal:function(){return S.playDays?S.playDays.size:0;}},
+  // — TIERED: No-potion streak —
+  {id:'at_nopot',icon:'💪',name:'Iron Will',desc:'Complete levels without potions',color:'#22c55e',bg:'#052e16',
+    tiers:[
+      {icon:'💪',name:'Tough',desc:'3 levels no potion',cond:'3 without potions',threshold:3},
+      {icon:'💪',name:'Iron Will',desc:'5 levels no potion',cond:'5 without potions',threshold:5},
+      {icon:'💪',name:'Indomitable',desc:'10 levels no potion',cond:'10 without potions',threshold:10}
+    ],getVal:function(){return S.noPotionCount||0;}},
+  // — TIERED: Spending —
+  {id:'at_spend',icon:'💸',name:'Big Wallet',desc:'Spend coins in shop',color:'#fbbf24',bg:'#451a03',
+    tiers:[
+      {icon:'💸',name:'Spender',desc:'Spend 100 coins',cond:'100 coins spent',threshold:100},
+      {icon:'💸',name:'Big Wallet',desc:'Spend 500 coins',cond:'500 coins spent',threshold:500},
+      {icon:'💸',name:'Tycoon',desc:'Spend 1000 coins',cond:'1000 coins spent',threshold:1000}
+    ],getVal:function(){return S.totalSpent||0;}},
+  // ===== FLAT (non-tiered) achievements =====
   {id:'a_potion',icon:'❤️',name:'Survivor',desc:'Use a Life Potion to continue',cond:'Use 1 life potion',color:'#f87171',bg:'#450a0a'},
-  {id:'a_no_pot',icon:'💪',name:'Iron Will',desc:'Complete 5 levels without using a potion',cond:'5 levels without potions',color:'#22c55e',bg:'#052e16'},
-  {id:'a_streak5',icon:'🔥',name:'Level Streak',desc:'Complete 5 levels in a row without failing',cond:'5-level winning streak',color:'#f97316',bg:'#431407'},
-  {id:'a_streak10',icon:'💥',name:'Unstoppable Streak',desc:'Complete 10 levels in a row without failing',cond:'10-level winning streak — HARD!',color:'#ef4444',bg:'#450a0a'},
-  {id:'a_streak20',icon:'🌟',name:'Invincible',desc:'Complete 20 levels in a row without failing',cond:'20-level winning streak — EXTREME!',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_night',icon:'🌙',name:'Night Owl',desc:'Play between 9pm and 6am',cond:'Play after 9pm or before 6am',color:'#818cf8',bg:'#1e1b4b'},
-  {id:'a_decor1',icon:'🌸',name:'Interior Decorator',desc:'Place your first decoration',cond:'Place 1 decoration in the court',color:'#ec4899',bg:'#500724'},
-  {id:'a_decor5',icon:'🎨',name:'Castle Designer',desc:'Fill 5 decoration slots',cond:'5 decoration slots filled',color:'#f43f5e',bg:'#4c0519'},
-  {id:'a_decor8',icon:'🏡',name:'Dream Castle',desc:'Fill all 8 decoration slots',cond:'All 8 decoration slots filled',color:'#a855f7',bg:'#2e1065'},
-  {id:'a_practice',icon:'📚',name:'Dedicated Learner',desc:'Practice a wrong answer from the log',cond:'Use the Practice button in error log',color:'#22c55e',bg:'#052e16'},
-  {id:'a_hint',icon:'💡',name:'Clever Clogs',desc:'Use a Hint Scroll',cond:'Activate a Hint Scroll in a level',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_crystal',icon:'🔮',name:'Time Bender',desc:'Use a Time Crystal in a boss battle',cond:'Activate Time Crystal vs a boss',color:'#38bdf8',bg:'#082f49'},
-  {id:'a_mul_10',icon:'✖️',name:'Times Tables Pro',desc:'Answer 20 multiplication questions correctly',cond:'20 correct multiplication answers',color:'#f59e0b',bg:'#451a03'},
-  {id:'a_div_10',icon:'➗',name:'Division Master',desc:'Answer 20 division questions correctly',cond:'20 correct division answers',color:'#6d28d9',bg:'#2e1065'},
-  {id:'a_money10',icon:'💰',name:'Banker',desc:'Answer 10 money questions correctly',cond:'10 correct money answers',color:'#22c55e',bg:'#052e16'},
-  {id:'a_all_topics',icon:'🌈',name:'All-Rounder',desc:'Get at least 1 correct in every topic',cond:'Score in all 17 topics',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_comeback',icon:'🌅',name:'Comeback Kid',desc:'Win a level after losing 2 hearts',cond:'Complete a level after losing 2 lives',color:'#f97316',bg:'#431407'},
-  {id:'a_no_hint_boss',icon:'💪',name:'Unaided Champion',desc:'Defeat a boss without using any items',cond:'Beat a boss with 0 crystals/potions used',color:'#22c55e',bg:'#052e16'},
-  {id:'a_add50',icon:'➕',name:'Addition Ace',desc:'Answer 50 addition questions correctly',cond:'50 correct addition answers',color:'#22c55e',bg:'#052e16'},
-  {id:'a_mul50',icon:'✖️',name:'Multiplication Master',desc:'Answer 50 multiplication questions correctly',cond:'50 correct multiplication answers',color:'#f59e0b',bg:'#451a03'},
-  {id:'a_div50',icon:'➗',name:'Division Champion',desc:'Answer 50 division questions correctly',cond:'50 correct division answers',color:'#a855f7',bg:'#2e1065'},
-  {id:'a_sub50',icon:'➖',name:'Subtraction Star',desc:'Answer 50 subtraction questions correctly',cond:'50 correct subtraction answers',color:'#38bdf8',bg:'#082f49'},
-  {id:'a_buildall',icon:'🏛️',name:'Kingdom Complete',desc:'Fully build every castle part',cond:'All castle parts at max level — EXTREME!',color:'#fbbf24',bg:'#1a0a00'},
-  {id:'a_alldecor',icon:'🎨',name:'Master Decorator',desc:'Own every decoration item',cond:'Purchase all decorations from the shop',color:'#ec4899',bg:'#500724'},
-  {id:'a_allcoll',icon:'💎',name:'Royal Collection',desc:'Own every collection item',cond:'Purchase all collection items from the shop',color:'#06b6d4',bg:'#083344'},
-  {id:'a_spend500',icon:'💸',name:'Big Wallet',desc:'Spend a total of 500 coins in the shop',cond:'Spend 500 lifetime coins',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_divstreak5',icon:'🔥',name:'Division Streak',desc:'Answer 5 division questions correctly in a row',cond:'5 division correct in a row',color:'#f97316',bg:'#431407'},
-  {id:'a_mulstreak10',icon:'⚡',name:'Times Table Terror',desc:'Answer 10 multiplication questions in a row',cond:'10 multiplication correct in a row',color:'#a855f7',bg:'#2e1065'},
-  {id:'a_bossperf3',icon:'🌟',name:'Boss Annihilator',desc:'Beat 3 bosses in a row without losing a heart',cond:'3 consecutive perfect boss battles',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_session100',icon:'📚',name:'Marathon Scholar',desc:'Answer 100 questions in one session',cond:'100 questions in a single play session',color:'#22c55e',bg:'#052e16'},
-  {id:'a_5topics',icon:'🌈',name:'Topic Explorer',desc:'Answer questions from 5 different topics in one level',cond:'5 unique topics in a single level',color:'#38bdf8',bg:'#082f49'},
-  {id:'a_noon',icon:'☀️',name:'Midday Hero',desc:'Play a level between 11am and 1pm',cond:'Complete a level at midday',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_7days',icon:'📅',name:'Dedicated Player',desc:'Play on 7 different days',cond:'Play on 7 unique days',color:'#22c55e',bg:'#052e16'},
-  {id:'a_50first',icon:'🎯',name:'Quick Thinker',desc:'50% of your answers are correct on first try',cond:'50%+ first-try accuracy (min 20 questions)',color:'#f97316',bg:'#431407'},
-  {id:'a_mul_50',icon:'🔢',name:'Times Table King',desc:'Answer 50 multiplication questions correctly',cond:'50 correct multiplication answers',color:'#f59e0b',bg:'#451a03'},
-  {id:'a_div_50',icon:'📐',name:'Division Grandmaster',desc:'Answer 50 division questions correctly',cond:'50 correct division answers',color:'#6d28d9',bg:'#2e1065'},
-  {id:'a_word50',icon:'📖',name:'Story Master',desc:'Answer 50 word problems correctly',cond:'50 correct word problem answers',color:'#fb923c',bg:'#431407'},
-  {id:'a_money50',icon:'🏦',name:'Bank President',desc:'Answer 50 money questions correctly',cond:'50 correct money answers',color:'#22c55e',bg:'#052e16'},
-  {id:'a_logic50',icon:'🧠',name:'Logic Genius',desc:'Answer 50 logic questions correctly',cond:'50 correct logic answers',color:'#34d399',bg:'#064e3b'},
-  {id:'a_perfect50',icon:'💎',name:'Diamond Standard',desc:'Complete 50 levels perfectly',cond:'50 levels with 0 wrong answers — EXTREME!',color:'#06b6d4',bg:'#083344'},
-  {id:'a_coins5k',icon:'👑',name:'Dragon Hoard',desc:'Earn 5000 total coins',cond:'Earn 5000 lifetime coins — LEGENDARY!',color:'#fbbf24',bg:'#1a0000'},
-  {id:'a_boss25',icon:'⚔️',name:'Boss Legend',desc:'Win 25 boss battles total',cond:'25 total boss wins',color:'#dc2626',bg:'#450a0a'}
+  {id:'a_comeback',icon:'🌅',name:'Comeback Kid',desc:'Win a level after losing 2 hearts',cond:'Lose 2 lives then win',color:'#f97316',bg:'#431407'},
+  {id:'a_boss_fast',icon:'⚡',name:'Speed Slayer',desc:'Answer a boss question very fast',cond:'Answer within 10 seconds',color:'#38bdf8',bg:'#082f49'},
+  {id:'a_boss_rem',icon:'🔄',name:'Rematched',desc:'Win a boss rematch',cond:'Beat a boss a second time',color:'#f97316',bg:'#431407'},
+  {id:'a_boss_perfect',icon:'🎯',name:'Flawless Boss',desc:'Defeat a boss without losing a heart',cond:'Beat boss with 3/3 HP',color:'#fbbf24',bg:'#451a03'},
+  {id:'a_no_hint_boss',icon:'💪',name:'Unaided Champion',desc:'Defeat a boss without items',cond:'No crystals/potions used',color:'#22c55e',bg:'#052e16'},
+  {id:'a_hint',icon:'💡',name:'Clever Clogs',desc:'Use a Hint Scroll',cond:'Activate a Hint Scroll',color:'#fbbf24',bg:'#451a03'},
+  {id:'a_crystal',icon:'🔮',name:'Time Bender',desc:'Use a Time Crystal in boss battle',cond:'Activate Time Crystal',color:'#38bdf8',bg:'#082f49'},
+  {id:'a_practice',icon:'📚',name:'Dedicated Learner',desc:'Practice a wrong answer',cond:'Use Practice in error log',color:'#22c55e',bg:'#052e16'},
+  {id:'a_all_topics',icon:'🌈',name:'All-Rounder',desc:'Score in every topic',cond:'1+ correct in all topics',color:'#fbbf24',bg:'#451a03'},
+  {id:'a_night',icon:'🌙',name:'Night Owl',desc:'Play between 9pm and 6am',cond:'Play after 9pm',color:'#818cf8',bg:'#1e1b4b'},
+  {id:'a_noon',icon:'☀️',name:'Midday Hero',desc:'Play between 11am and 1pm',cond:'Play at midday',color:'#fbbf24',bg:'#451a03'},
+  {id:'a_5topics',icon:'🌈',name:'Topic Explorer',desc:'5 topics in one level',cond:'5 unique topics in 1 level',color:'#38bdf8',bg:'#082f49'},
+  {id:'a_session100',icon:'📚',name:'Marathon Scholar',desc:'100 questions in one session',cond:'100 questions single session',color:'#22c55e',bg:'#052e16'},
+  {id:'a_50first',icon:'🎯',name:'Quick Thinker',desc:'50%+ first-try accuracy (20+ Q)',cond:'50%+ first-try accuracy',color:'#f97316',bg:'#431407'},
+  {id:'a_buildall',icon:'🏛️',name:'Kingdom Complete',desc:'Build every castle part',cond:'All parts at max level',color:'#fbbf24',bg:'#1a0a00'},
+  {id:'a_alldecor',icon:'🎨',name:'Master Decorator',desc:'Own every decoration',cond:'Purchase all decorations',color:'#ec4899',bg:'#500724'},
+  {id:'a_allcoll',icon:'💎',name:'Royal Collection',desc:'Own every collection item',cond:'Purchase all collections',color:'#06b6d4',bg:'#083344'},
+  // — Topic mastery achievements —
+  {id:'a_add50',icon:'➕',name:'Addition Ace',desc:'50 correct addition answers',cond:'50 addition correct',color:'#22c55e',bg:'#052e16'},
+  {id:'a_sub50',icon:'➖',name:'Subtraction Star',desc:'50 correct subtraction answers',cond:'50 subtraction correct',color:'#38bdf8',bg:'#082f49'},
+  {id:'a_mul50',icon:'✖️',name:'Multiplication Master',desc:'50 correct multiplication answers',cond:'50 multiplication correct',color:'#f59e0b',bg:'#451a03'},
+  {id:'a_div50',icon:'➗',name:'Division Champion',desc:'50 correct division answers',cond:'50 division correct',color:'#a855f7',bg:'#2e1065'},
+  {id:'a_word50',icon:'📖',name:'Story Master',desc:'50 correct word problems',cond:'50 word problems correct',color:'#fb923c',bg:'#431407'},
+  {id:'a_money50',icon:'🏦',name:'Bank President',desc:'50 correct money questions',cond:'50 money correct',color:'#22c55e',bg:'#052e16'},
+  {id:'a_logic50',icon:'🧠',name:'Logic Genius',desc:'50 correct logic questions',cond:'50 logic correct',color:'#34d399',bg:'#064e3b'},
+  {id:'a_pattern50',icon:'🔮',name:'Pattern Sage',desc:'50 correct pattern questions',cond:'50 pattern correct',color:'#a78bfa',bg:'#2e1065'},
+  {id:'a_clock50',icon:'⏰',name:'Time Lord',desc:'50 correct time questions',cond:'50 clock/time correct',color:'#818cf8',bg:'#1e1b4b'},
+  {id:'a_spatial50',icon:'🔷',name:'Shape Wizard',desc:'50 correct spatial questions',cond:'50 spatial correct',color:'#22d3ee',bg:'#083344'},
+  {id:'a_divstreak5',icon:'🔥',name:'Division Streak',desc:'5 division correct in a row',cond:'5 division in a row',color:'#f97316',bg:'#431407'},
+  {id:'a_mulstreak10',icon:'⚡',name:'Times Table Terror',desc:'10 multiplication correct in a row',cond:'10 mul in a row',color:'#a855f7',bg:'#2e1065'},
+  {id:'a_bossperf3',icon:'🌟',name:'Boss Annihilator',desc:'3 perfect boss battles in a row',cond:'3 flawless boss fights',color:'#fbbf24',bg:'#451a03'}
 ];

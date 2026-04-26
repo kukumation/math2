@@ -14,23 +14,32 @@
 html,body{width:100%;height:100%;overflow:hidden;background:#0a0a1a;font-family:var(--px);}
 #app{width:100%;height:100%;max-width:480px;margin:0 auto;position:relative;overflow:hidden;background:#0a0a1a;}
 @keyframes titleGlow{0%,100%{text-shadow:3px 3px 0 #E65100,5px 5px 0 #000,0 0 20px rgba(251,208,0,.2)}50%{text-shadow:3px 3px 0 #E65100,5px 5px 0 #000,0 0 40px rgba(251,208,0,.5)}}
-.scr{display:none;position:absolute;inset:0;flex-direction:column;overflow-y:auto;overflow-x:hidden;transition:opacity .25s ease;}
+.scr{display:none;position:absolute;inset:0;flex-direction:column;overflow-y:auto;overflow-x:hidden;transition:opacity .25s ease;z-index:1;}
 .scr.on{display:flex;animation:fadeIn .25s ease;}
 @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
 .pb{cursor:pointer;border:3px solid #000;box-shadow:4px 4px 0 #000;transition:transform .07s,box-shadow .07s,filter .15s;user-select:none;outline:none;-webkit-tap-highlight-color:transparent;display:inline-flex;align-items:center;justify-content:center;border-radius:4px;}
 .pb:hover{filter:brightness(1.15);}
 .pb:active{transform:translate(3px,3px);box-shadow:1px 1px 0 #000;filter:brightness(0.9);}
 .wb0{background:linear-gradient(180deg,#56A8E5 0%,#7EC8A4 45%,#4DB36A 70%,#2E7D32 100%);}
+.wb0::after{content:'';position:absolute;inset:0;background:url('../assets/sprites/backgrounds/wb0.svg') center/cover no-repeat;pointer-events:none;z-index:-1;opacity:.85;}
 .wb1{background:linear-gradient(180deg,#0077B6 0%,#00B4D8 40%,#48CAE4 65%,#1A5276 100%);}
+.wb1::after{content:'';position:absolute;inset:0;background:url('../assets/sprites/backgrounds/wb1.svg') center/cover no-repeat;pointer-events:none;z-index:-1;opacity:.85;}
 .wb2{background:linear-gradient(180deg,#1a0000 0%,#7B0E00 35%,#CC3300 60%,#FF6600 85%,#1a0a00 100%);}
+.wb2::after{content:'';position:absolute;inset:0;background:url('../assets/sprites/backgrounds/wb2.svg') center/cover no-repeat;pointer-events:none;z-index:-1;opacity:.85;}
 .wb3{background:linear-gradient(180deg,#E0F4FF 0%,#B3D9FF 40%,#8EC6FF 70%,#1A3A5C 100%);}
+.wb3::after{content:'';position:absolute;inset:0;background:url('../assets/sprites/backgrounds/wb3.svg') center/cover no-repeat;pointer-events:none;z-index:-1;opacity:.85;}
 .wb4{background:linear-gradient(180deg,#F0F9FF 0%,#87CEEB 30%,#E0F4FF 60%,#B3D9FF 85%,#2A6A9A 100%);}
+.wb4::after{content:'';position:absolute;inset:0;background:url('../assets/sprites/backgrounds/wb4.svg') center/cover no-repeat;pointer-events:none;z-index:-1;opacity:.85;}
 .wb5{background:linear-gradient(180deg,#050010 0%,#1a0050 30%,#3d0080 60%,#0d0020 100%);}
+.wb5::after{content:'';position:absolute;inset:0;background:url('../assets/sprites/backgrounds/wb5.svg') center/cover no-repeat;pointer-events:none;z-index:-1;opacity:.85;}
 .wb6{background:linear-gradient(180deg,#001a00 0%,#003300 40%,#005500 70%,#001a00 100%);}
+.wb6::after{content:'';position:absolute;inset:0;background:url('../assets/sprites/backgrounds/wb6.svg') center/cover no-repeat;pointer-events:none;z-index:-1;opacity:.85;}
 .wb7{background:linear-gradient(180deg,#1a0a00 0%,#3d1500 40%,#7a3000 70%,#1a0a00 100%);}
+.wb7::after{content:'';position:absolute;inset:0;background:url('../assets/sprites/backgrounds/wb7.svg') center/cover no-repeat;pointer-events:none;z-index:-1;opacity:.85;}
 .wb8{background:linear-gradient(180deg,#00001a 0%,#000033 40%,#000066 70%,#00001a 100%);}
+.wb8::after{content:'';position:absolute;inset:0;background:url('../assets/sprites/backgrounds/wb8.svg') center/cover no-repeat;pointer-events:none;z-index:-1;opacity:.85;}
 .wb-dark{background:linear-gradient(180deg,#0F0527,#1a0050,#0F0527);}
-.wb-dark::before{content:'';position:absolute;inset:0;background-image:radial-gradient(1px 1px at 20px 30px,rgba(255,255,255,.15),transparent),radial-gradient(1px 1px at 40px 70px,rgba(255,255,255,.1),transparent),radial-gradient(1px 1px at 50px 160px,rgba(255,255,255,.12),transparent),radial-gradient(1px 1px at 90px 40px,rgba(255,255,255,.08),transparent),radial-gradient(1px 1px at 130px 80px,rgba(255,255,255,.1),transparent),radial-gradient(1px 1px at 160px 120px,rgba(255,255,255,.15),transparent),radial-gradient(2px 2px at 70px 100px,rgba(251,208,0,.08),transparent);pointer-events:none;z-index:0;}
+.wb-dark::before{content:'';position:absolute;inset:0;background-image:radial-gradient(1px 1px at 20px 30px,rgba(255,255,255,.15),transparent),radial-gradient(1px 1px at 40px 70px,rgba(255,255,255,.1),transparent),radial-gradient(1px 1px at 50px 160px,rgba(255,255,255,.12),transparent),radial-gradient(1px 1px at 90px 40px,rgba(255,255,255,.08),transparent),radial-gradient(1px 1px at 130px 80px,rgba(255,255,255,.1),transparent),radial-gradient(1px 1px at 160px 120px,rgba(255,255,255,.15),transparent),radial-gradient(2px 2px at 70px 100px,rgba(251,208,0,.08),transparent);pointer-events:none;z-index:-1;}
 .wb-boss{background:linear-gradient(180deg,#0d0000,#3d0000,#7a0000,#0d0000);animation:bossPulse 1.5s ease-in-out infinite;}
 @keyframes bossPulse{0%,100%{box-shadow:inset 0 0 60px rgba(200,0,0,.15)}50%{box-shadow:inset 0 0 120px rgba(255,0,0,.35),inset 0 0 200px rgba(100,0,0,.2)}}
 @keyframes bossShake{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px) translateY(2px)}50%{transform:translateX(4px) translateY(-2px)}75%{transform:translateX(-2px) translateY(1px)}}
@@ -38,6 +47,8 @@ html,body{width:100%;height:100%;overflow:hidden;background:#0a0a1a;font-family:
 @keyframes bossHitFlash{0%{background:rgba(255,60,60,.7)}100%{background:transparent}}
 @keyframes bossDefeated{0%{transform:scale(1) rotate(0);opacity:1}30%{transform:scale(1.3) rotate(-10deg);opacity:1;filter:brightness(3)}60%{transform:scale(0.6) rotate(20deg);opacity:.6}100%{transform:scale(0) rotate(60deg);opacity:0}}
 @keyframes bossExplode{0%{transform:scale(1);opacity:1}50%{transform:scale(2);opacity:.5}100%{transform:scale(3);opacity:0}}
+@keyframes bossAttack{0%{transform:scale(1) translateX(0)}15%{transform:scale(1.4) translateX(40px) translateY(-10px);filter:brightness(2) drop-shadow(0 0 20px rgba(255,0,0,.8))}40%{transform:scale(1.3) translateX(60px) translateY(-5px);filter:brightness(2)}60%{transform:scale(1) translateX(-10px);filter:brightness(1)}100%{transform:scale(1) translateX(0);filter:brightness(1)}}
+@keyframes playerHit{0%{transform:translateX(0)}15%{transform:translateX(12px);filter:brightness(0.5)}30%{transform:translateX(-10px)}45%{transform:translateX(6px)}60%{transform:translateX(-3px)}100%{transform:translateX(0)}}
 .hud{background:linear-gradient(180deg,rgba(0,0,0,.97),rgba(0,0,0,.9));border-bottom:3px solid rgba(255,255,255,.1);padding:12px 16px;display:flex;align-items:center;gap:10px;flex-shrink:0;position:sticky;top:0;z-index:100;backdrop-filter:blur(8px);box-shadow:0 4px 16px rgba(0,0,0,.5);}
 .coin-orb{width:22px;height:22px;border-radius:50%;flex-shrink:0;background:radial-gradient(circle at 35% 35%,#FFE57A,#FBD000 60%,#E65100);border:2px solid #E65100;box-shadow:2px 2px 0 #000,0 0 8px rgba(251,208,0,.3);}
 .q-card{background:linear-gradient(145deg,#FFD54F,#FBD000,#F9A825);border:4px solid #E65100;box-shadow:6px 6px 0 #000,inset 3px 3px 0 rgba(255,255,255,.4),0 0 20px rgba(251,208,0,.15);border-radius:12px;padding:20px 16px;position:relative;width:100%;transition:transform .2s,opacity .2s;}
@@ -303,6 +314,7 @@ canvas{image-rendering:pixelated;image-rendering:crisp-edges;}
     <div class="prog-track" style="width:100px;height:16px;"><div id="g-prog" class="prog-fill" style="width:0%;"></div></div>
     <div id="g-qnum" style="font-size:9px;color:#fff;text-shadow:2px 2px 0 #000;"></div>
   </div>
+  <div id="g-scene" style="position:relative;height:80px;flex-shrink:0;overflow:hidden;pointer-events:none;"></div>
   <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8px 14px;gap:14px;overflow:hidden;">
     <div id="q-card" class="q-card" style="max-width:380px;min-height:120px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
       <div id="q-icon" style="margin-bottom:6px;"></div>
@@ -325,7 +337,7 @@ canvas{image-rendering:pixelated;image-rendering:crisp-edges;}
 <div id="s-boss" class="scr wb-boss">
   <div style="padding:36px 14px 6px;flex-shrink:0;">
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
-      <div id="btn-boss-back" class="pb" style="width:40px;height:40px;background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);border-radius:4px;font-size:22px;color:#fff;">‹</div>
+      <div style="width:40px;"></div>
       <div style="text-align:center;"><div style="font-size:11px;color:#f87171;letter-spacing:3px;text-shadow:0 0 8px rgba(248,113,113,.4);">BOSS BATTLE</div><div id="boss-name" style="font-size:12px;color:var(--gold);margin-top:3px;text-shadow:2px 2px 0 #000;"></div></div>
       <div style="display:flex;align-items:center;gap:4px;"><div id="boss-php"></div><div id="boss-crystal-btn" style="display:none;"></div><div id="boss-aud"></div></div>
     </div>
@@ -336,7 +348,7 @@ canvas{image-rendering:pixelated;image-rendering:crisp-edges;}
       <div style="height:10px;background:#1a1a00;border:2px solid #555;border-radius:2px;overflow:hidden;"><div id="boss-timer-bar" style="height:100%;background:linear-gradient(90deg,#22c55e,#eab308,#ef4444);border-radius:2px;transition:width 1s linear;"></div></div>
     </div>
     <div style="position:relative;text-align:center;margin-bottom:2px;">
-      <div id="boss-spr" class="bounce" style="font-size:6rem;display:inline-block;filter:drop-shadow(3px 3px 0 #000);"></div>
+      <div id="boss-spr" class="bounce" style="font-size:8rem;display:inline-block;filter:drop-shadow(3px 3px 0 #000);"></div>
       <div id="boss-bubble" style="display:none;position:absolute;left:50%;transform:translateX(-50%);bottom:calc(100% + 6px);background:#1a1a1a;border:3px solid #7f1d1d;border-radius:4px;padding:8px 16px;font-size:13px;color:#fff;white-space:nowrap;z-index:20;box-shadow:3px 3px 0 #000;text-shadow:1px 1px 0 #000;"></div>
     </div>
   </div>
@@ -444,8 +456,8 @@ canvas{image-rendering:pixelated;image-rendering:crisp-edges;}
 <script src="js/00-sprites.js"></script>
 <script src="js/01-utils.js"></script>
 <script src="js/02-save.js"></script>
-<script src="js/03-config.js"></script>
-<script src="js/04-state.js"></script>
+<script src="js/03-data.js"></script>
+<script src="js/04-achievements.js"></script>
 <script src="js/05-questions.js"></script>
 <script src="js/06-audio.js"></script>
 <script src="js/07-ui.js"></script>
@@ -467,20 +479,55 @@ function loadSprite(name, cb) {
   if (_spriteCache[name]) { if (cb) cb(_spriteCache[name]); return _spriteCache[name]; }
   var img = new Image();
   img.onload = function() { _spriteCache[name] = img; _spriteLoaded[name] = true; if (cb) cb(img); };
-  img.onerror = function() { _spriteCache[name] = null; _spriteLoaded[name] = false; if (cb) cb(null); };
-  img.src = SPRITE_BASE + name + '.png';
+  img.onerror = function() {
+    // Try .png if .svg fails
+    if (img.src.endsWith('.svg')) {
+      img.src = SPRITE_BASE + name + '.png';
+      return;
+    }
+    _spriteCache[name] = null; _spriteLoaded[name] = false; if (cb) cb(null);
+  };
+  img.src = SPRITE_BASE + name + '.svg';
   return null;
 }
 
 function spriteImg(name, w, h, fallback) {
   w = w || 32; h = h || 32;
   if (_spriteLoaded[name] && _spriteCache[name]) {
-    return '<img src="' + SPRITE_BASE + name + '.png" width="' + w + '" height="' + h + '" style="image-rendering:pixelated;" alt="' + (fallback || '') + '">';
+    var ext = _spriteCache[name].src.endsWith('.svg') ? '.svg' : '.png';
+    return '<img src="' + SPRITE_BASE + name + ext + '" width="' + w + '" height="' + h + '" style="image-rendering:pixelated;" alt="' + (fallback || '') + '">';
   }
   return fallback || '';
 }
 
 // Preload all sprites
+// Map: emoji → sprite name for auto-replacement
+var _emojiSpriteMap={
+  '⚔️':'characters/knight','🐱':'characters/cat','🏴‍☠️':'characters/pirate','🧚':'characters/fairy',
+  '🐵':'characters/monkey','🧙':'characters/wizard','👸':'characters/princess','🗡️':'characters/ninja',
+  '🤖':'characters/robot','🐼':'characters/panda','🐉':'characters/dragon','🔥':'characters/phoenix',
+  '👻':'characters/ghost','👨‍🚀':'characters/astronaut','⛩️':'characters/samurai',
+  '🧜':'characters/mermaid','🦖':'characters/dinosaur','🪓':'characters/viking','👽':'characters/alien',
+  '🦄':'characters/unicorn',
+  '🌿':'enemies/vine_colossus','🦈':'enemies/reef_shark','🌋':'enemies/magma_dragon',
+  '🧊':'enemies/frost_colossus','🦅':'enemies/sky_warden','👑':'enemies/dark_king',
+  '🦎':'enemies/crystal_lizard','⚡':'enemies/storm_eagle','🐗':'enemies/shadow_boar',
+  '🐙':'enemies/ink_kraken','👹':'enemies/fire_elemental','🐺':'enemies/ice_wolf',
+  '❤️':'ui/heart_full','🖤':'ui/heart_empty','🪙':'ui/coin','⭐':'ui/star',
+  '🔮':'ui/crystal','💡':'ui/hint_scroll','💖':'ui/potion','💝':'ui/potion',
+  '🏰':'castle/tower','🧱':'castle/wall','🚪':'castle/gate','💣':'castle/cannon',
+  '🚩':'castle/flag','🌊':'castle/moat'
+};
+
+function emojiToSprite(emoji,w,h){
+  var name=_emojiSpriteMap[emoji];
+  if(name){
+    var s=spriteImg(name,w||32,h||32,'');
+    if(s)return s;
+  }
+  return emoji;
+}
+
 function preloadSprites() {
   var sprites = [
     // Characters
@@ -1026,194 +1073,347 @@ var SHOP_ITEMS=[
 ];
 
 // ============================================================
-// ACHIEVEMENTS (80+)
+// ACHIEVEMENTS — tiered system
+// tiers: array of {icon, name, desc, cond, threshold}
+// S.achievements[id] = tier index (0-based) or undefined
+// For backward compat, old boolean achievements stay as-is
 // ============================================================
+var TIER_LABELS=['🥉','🥈','🥇','💎'];
 var ACHIEVEMENTS=[
-  {id:'a_first',icon:'⭐',name:'First Star',desc:'Answer your first question correctly',cond:'Get 1 correct answer',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_c10',icon:'📝',name:'Getting Started',desc:'Answer 10 questions correctly',cond:'10 correct answers',color:'#84cc16',bg:'#1a2e05'},
-  {id:'a_c50',icon:'🚀',name:'Half Century',desc:'Answer 50 questions correctly',cond:'50 correct answers',color:'#10b981',bg:'#064e3b'},
-  {id:'a_c100',icon:'🏅',name:'Century',desc:'Answer 100 questions correctly',cond:'100 correct answers',color:'#22c55e',bg:'#052e16'},
-  {id:'a_c200',icon:'🌟',name:'Double Century',desc:'Answer 200 questions correctly',cond:'200 correct answers',color:'#f59e0b',bg:'#451a03'},
-  {id:'a_c500',icon:'💫',name:'Master Scholar',desc:'Answer 500 questions correctly',cond:'500 correct answers',color:'#a855f7',bg:'#2e1065'},
-  {id:'a_c1000',icon:'🌌',name:'Math Legend',desc:'Answer 1000 questions correctly',cond:'1000 correct answers',color:'#fbbf24',bg:'#1a0a00'},
-  {id:'a_c2000',icon:'🧙',name:'Grand Wizard',desc:'Answer 2000 questions correctly',cond:'2000 correct answers',color:'#f43f5e',bg:'#4c0519'},
-  {id:'a_combo3',icon:'🔥',name:'On Fire',desc:'Get a 3x combo streak',cond:'3 correct in a row',color:'#f97316',bg:'#431407'},
-  {id:'a_combo5',icon:'💥',name:'Blazing',desc:'Get a 5x combo streak',cond:'5 correct in a row',color:'#ef4444',bg:'#450a0a'},
-  {id:'a_combo10',icon:'⚡',name:'Lightning',desc:'Get a 10x combo streak',cond:'10 correct in a row',color:'#a855f7',bg:'#2e1065'},
-  {id:'a_combo15',icon:'🌪️',name:'Tornado',desc:'Get a 15x combo streak',cond:'15 correct in a row',color:'#38bdf8',bg:'#082f49'},
-  {id:'a_combo20',icon:'☄️',name:'Unstoppable',desc:'Get a 20x combo streak',cond:'20 correct in a row',color:'#fbbf24',bg:'#1a0000'},
-  {id:'a_combo30',icon:'🌠',name:'Infinite Power',desc:'Get a 30x combo streak',cond:'30 correct in a row — VERY HARD!',color:'#f43f5e',bg:'#4c0519'},
-  {id:'a_perfect1',icon:'💎',name:'Flawless Victory',desc:'Complete a level with zero mistakes',cond:'Level with 0 wrong answers',color:'#06b6d4',bg:'#083344'},
-  {id:'a_perfect3',icon:'🌟',name:'Triple Crown',desc:'Complete 3 levels perfectly',cond:'3 levels with 0 mistakes',color:'#22c55e',bg:'#052e16'},
-  {id:'a_perfect5',icon:'👑',name:'Perfection King',desc:'Complete 5 levels perfectly',cond:'5 levels with 0 mistakes',color:'#f59e0b',bg:'#451a03'},
-  {id:'a_perfect10',icon:'🏆',name:'Perfect Master',desc:'Complete 10 levels perfectly',cond:'10 levels with 0 mistakes',color:'#a855f7',bg:'#2e1065'},
-  {id:'a_perfect20',icon:'✨',name:'Untouchable',desc:'Complete 20 levels perfectly',cond:'20 levels with 0 mistakes — VERY HARD!',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_boss1',icon:'⚔️',name:'Boss Slayer',desc:'Defeat your first world boss',cond:'Defeat 1 boss',color:'#dc2626',bg:'#450a0a'},
-  {id:'a_boss3',icon:'🗡️',name:'Dragon Tamer',desc:'Defeat 3 different bosses',cond:'Defeat 3 different bosses',color:'#7c3aed',bg:'#2e1065'},
-  {id:'a_boss6',icon:'👑',name:'World Champion',desc:'Defeat all 6 original bosses',cond:'Defeat bosses 1-6',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_boss10',icon:'🦸',name:'Boss Hunter',desc:'Win 10 boss battles total',cond:'10 total boss wins (rematches count)',color:'#22c55e',bg:'#052e16'},
-  {id:'a_boss_fast',icon:'⚡',name:'Speed Slayer',desc:'Answer a boss question with 20+ sec left',cond:'Answer within 10 seconds',color:'#38bdf8',bg:'#082f49'},
-  {id:'a_boss_rem',icon:'🔄',name:'Rematched',desc:'Win a boss rematch',cond:'Beat a boss a second time',color:'#f97316',bg:'#431407'},
-  {id:'a_boss_perfect',icon:'🎯',name:'Flawless Boss',desc:'Defeat a boss without losing a heart',cond:'Beat a boss with 3/3 HP remaining',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_build3',icon:'🔨',name:'First Bricks',desc:'Fully build 3 castle parts',cond:'3 parts at max level',color:'#84cc16',bg:'#1a2e05'},
-  {id:'a_build5',icon:'🏗️',name:'Apprentice Builder',desc:'Fully build 5 castle parts',cond:'5 parts at max level',color:'#10b981',bg:'#064e3b'},
-  {id:'a_build10',icon:'🏰',name:'Castle Builder',desc:'Fully build 10 castle parts',cond:'10 parts at max level',color:'#f59e0b',bg:'#451a03'},
-  {id:'a_build15',icon:'🏯',name:'Master Builder',desc:'Fully build 15 castle parts',cond:'15 parts at max level',color:'#a855f7',bg:'#2e1065'},
-  {id:'a_build20',icon:'🌟',name:'Grand Architect',desc:'Fully build 20 castle parts',cond:'20 parts at max level — HARD!',color:'#fbbf24',bg:'#1a0000'},
-  {id:'a_coins50',icon:'🪙',name:'Coin Finder',desc:'Earn 50 total coins',cond:'Earn 50 lifetime coins',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_coins100',icon:'💰',name:'Treasure Hunter',desc:'Earn 100 total coins',cond:'Earn 100 lifetime coins',color:'#f59e0b',bg:'#451a03'},
-  {id:'a_coins500',icon:'💎',name:"Dragon's Hoard",desc:'Earn 500 total coins',cond:'Earn 500 lifetime coins',color:'#06b6d4',bg:'#083344'},
-  {id:'a_coins1k',icon:'💰',name:'Gold Mountain',desc:'Earn 1000 total coins',cond:'Earn 1000 lifetime coins — HARD!',color:'#22c55e',bg:'#052e16'},
-  {id:'a_worlds2',icon:'🌍',name:'Explorer',desc:'Unlock 2 worlds',color:'#22c55e',cond:'Beat World 1 boss',bg:'#052e16'},
-  {id:'a_worlds6',icon:'🌏',name:'World Traveller',desc:'Beat all 6 original bosses',cond:'Defeat all 6 original bosses',color:'#f59e0b',bg:'#451a03'},
-  {id:'a_worlds10',icon:'🌌',name:'Galaxy Explorer',desc:'Reach World 10',cond:'Defeat 9 bosses',color:'#a855f7',bg:'#2e1065'},
-  {id:'a_stars5',icon:'🌠',name:'Star Collector',desc:'Earn 3 stars on 5 levels',cond:'5 levels with perfect 3 stars',color:'#f59e0b',bg:'#451a03'},
-  {id:'a_stars15',icon:'🌌',name:'Galaxy Brain',desc:'Earn 3 stars on 15 levels',cond:'15 levels with 3 stars',color:'#a855f7',bg:'#2e1065'},
-  {id:'a_level10',icon:'🔟',name:'Level 10 Hero',desc:'Complete 10 levels',cond:'10 levels cleared',color:'#84cc16',bg:'#1a2e05'},
-  {id:'a_level30',icon:'💫',name:'Veteran',desc:'Complete 30 levels',cond:'30 levels cleared',color:'#f97316',bg:'#431407'},
-  {id:'a_level50',icon:'🌟',name:'Elite Player',desc:'Complete 50 levels',cond:'50 levels cleared',color:'#a855f7',bg:'#2e1065'},
-  {id:'a_level100',icon:'🏆',name:'Centurion',desc:'Complete 100 levels',cond:'100 levels cleared — VERY HARD!',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_clock10',icon:'⏰',name:'Time Wizard',desc:'Answer 10 clock questions correctly',cond:'10 correct clock/time answers',color:'#818cf8',bg:'#1e1b4b'},
-  {id:'a_logic10',icon:'🧩',name:'Logic Thinker',desc:'Answer 10 logic questions correctly',cond:'10 correct logic answers',color:'#34d399',bg:'#064e3b'},
-  {id:'a_word10',icon:'📖',name:'Storyteller',desc:'Answer 10 word problems correctly',cond:'10 correct word problems',color:'#fb923c',bg:'#431407'},
-  {id:'a_pattern10',icon:'🔮',name:'Pattern Seeker',desc:'Answer 10 pattern questions correctly',cond:'10 correct pattern answers',color:'#a78bfa',bg:'#2e1065'},
-  {id:'a_lineup10',icon:'👫',name:'Queue Master',desc:'Answer 10 queue/order questions correctly',cond:'10 correct lineup answers',color:'#f472b6',bg:'#500724'},
-  {id:'a_spatial10',icon:'🔷',name:'Shape Expert',desc:'Answer 10 spatial questions correctly',cond:'10 correct spatial answers',color:'#22d3ee',bg:'#083344'},
-  {id:'a_shop1',icon:'🛍️',name:'First Purchase',desc:'Buy your first item from the shop',cond:'Make 1 shop purchase',color:'#ec4899',bg:'#500724'},
-  {id:'a_shop5',icon:'🛒',name:'Shopaholic',desc:'Buy 5 items from the shop',cond:'5 total shop purchases',color:'#f43f5e',bg:'#4c0519'},
-  {id:'a_shop10',icon:'🏪',name:'Big Spender',desc:'Buy 10 items from the shop',cond:'10 total shop purchases',color:'#a855f7',bg:'#2e1065'},
-  {id:'a_sharp',icon:'🎯',name:'Sharpshooter',desc:'Reach 85%+ accuracy (min 20 questions)',cond:'85% accuracy over 20+ questions',color:'#38bdf8',bg:'#082f49'},
-  {id:'a_sharp95',icon:'🎯',name:'Eagle Eye',desc:'Reach 95%+ accuracy (min 50 questions)',cond:'95% accuracy over 50+ questions — HARD!',color:'#fbbf24',bg:'#451a03'},
+  // — TIERED: Correct answers —
+  {id:'at_correct',icon:'📝',name:'Scholar',desc:'Answer questions correctly',color:'#84cc16',bg:'#1a2e05',
+    tiers:[
+      {icon:'⭐',name:'First Star',desc:'Answer 1 correctly',cond:'1 correct',threshold:1},
+      {icon:'📝',name:'Getting Started',desc:'10 correct',cond:'10 correct',threshold:10},
+      {icon:'🚀',name:'Half Century',desc:'50 correct',cond:'50 correct',threshold:50},
+      {icon:'🏅',name:'Century',desc:'100 correct',cond:'100 correct',threshold:100},
+      {icon:'🌟',name:'Double Century',desc:'200 correct',cond:'200 correct',threshold:200},
+      {icon:'💫',name:'Master Scholar',desc:'500 correct',cond:'500 correct',threshold:500},
+      {icon:'🌌',name:'Math Legend',desc:'1000 correct',cond:'1000 correct',threshold:1000},
+      {icon:'🧙',name:'Grand Wizard',desc:'2000 correct',cond:'2000 correct',threshold:2000}
+    ],getVal:function(){return Object.values(S.stats).reduce(function(s,v){return s+(v.correct||0);},0);}},
+  // — TIERED: Combo —
+  {id:'at_combo',icon:'🔥',name:'Combo Master',desc:'Build answer combos',color:'#f97316',bg:'#431407',
+    tiers:[
+      {icon:'🔥',name:'On Fire',desc:'3x combo',cond:'3 in a row',threshold:3},
+      {icon:'💥',name:'Blazing',desc:'5x combo',cond:'5 in a row',threshold:5},
+      {icon:'⚡',name:'Lightning',desc:'10x combo',cond:'10 in a row',threshold:10},
+      {icon:'🌪️',name:'Tornado',desc:'15x combo',cond:'15 in a row',threshold:15},
+      {icon:'☄️',name:'Unstoppable',desc:'20x combo',cond:'20 in a row',threshold:20},
+      {icon:'🌠',name:'Infinite Power',desc:'30x combo',cond:'30 in a row',threshold:30}
+    ],getVal:function(){return S.maxCombo;}},
+  // — TIERED: Perfect levels —
+  {id:'at_perfect',icon:'💎',name:'Perfectionist',desc:'Complete levels with zero mistakes',color:'#06b6d4',bg:'#083344',
+    tiers:[
+      {icon:'💎',name:'Flawless Victory',desc:'1 perfect level',cond:'1 perfect level',threshold:1},
+      {icon:'🌟',name:'Triple Crown',desc:'3 perfect levels',cond:'3 perfect levels',threshold:3},
+      {icon:'👑',name:'Perfection King',desc:'5 perfect levels',cond:'5 perfect levels',threshold:5},
+      {icon:'🏆',name:'Perfect Master',desc:'10 perfect levels',cond:'10 perfect levels',threshold:10},
+      {icon:'✨',name:'Untouchable',desc:'20 perfect levels',cond:'20 perfect levels',threshold:20},
+      {icon:'💎',name:'Diamond Standard',desc:'50 perfect levels',cond:'50 perfect levels',threshold:50}
+    ],getVal:function(){return Object.values(S.levelStars).filter(function(v){return v===3;}).length;}},
+  // — TIERED: Boss defeats —
+  {id:'at_boss',icon:'⚔️',name:'Boss Slayer',desc:'Defeat world bosses',color:'#dc2626',bg:'#450a0a',
+    tiers:[
+      {icon:'⚔️',name:'First Blood',desc:'Defeat 1 boss',cond:'1 boss defeated',threshold:1},
+      {icon:'🗡️',name:'Dragon Tamer',desc:'Defeat 3 bosses',cond:'3 different bosses',threshold:3},
+      {icon:'👑',name:'World Champion',desc:'Defeat 6 bosses',cond:'6 different bosses',threshold:6},
+      {icon:'🦸',name:'Boss Hunter',desc:'10 total boss wins',cond:'10 total wins',threshold:10},
+      {icon:'🌟',name:'Boss Annihilator',desc:'25 total boss wins',cond:'25 total wins',threshold:25},
+      {icon:'🌌',name:'Boss Legend',desc:'50 total boss wins',cond:'50 total wins',threshold:50}
+    ],getVal:function(){return Object.values(S.bossWins).reduce(function(s,v){return s+(v||0);},0);}},
+  // — TIERED: Castle building —
+  {id:'at_build',icon:'🔨',name:'Builder',desc:'Build castle parts to max level',color:'#84cc16',bg:'#1a2e05',
+    tiers:[
+      {icon:'🔨',name:'First Bricks',desc:'3 parts maxed',cond:'3 parts at max level',threshold:3},
+      {icon:'🏗️',name:'Apprentice Builder',desc:'5 parts maxed',cond:'5 parts at max level',threshold:5},
+      {icon:'🏰',name:'Castle Builder',desc:'10 parts maxed',cond:'10 parts at max level',threshold:10},
+      {icon:'🏯',name:'Master Builder',desc:'15 parts maxed',cond:'15 parts at max level',threshold:15},
+      {icon:'🌟',name:'Grand Architect',desc:'20 parts maxed',cond:'20 parts at max level',threshold:20}
+    ],getVal:function(){return CASTLE_PARTS.filter(function(p){return!p.free&&(S.partLevels[p.id]||0)>=MAX_PART_LEVEL;}).length;}},
+  // — TIERED: Coins earned —
+  {id:'at_coins',icon:'🪙',name:'Coin Collector',desc:'Earn coins from answers',color:'#fbbf24',bg:'#451a03',
+    tiers:[
+      {icon:'🪙',name:'Coin Finder',desc:'Earn 50 coins',cond:'50 lifetime coins',threshold:50},
+      {icon:'💰',name:'Treasure Hunter',desc:'Earn 100 coins',cond:'100 lifetime coins',threshold:100},
+      {icon:'💎',name:"Dragon's Hoard",desc:'Earn 500 coins',cond:'500 lifetime coins',threshold:500},
+      {icon:'💰',name:'Gold Mountain',desc:'Earn 1000 coins',cond:'1000 lifetime coins',threshold:1000},
+      {icon:'👑',name:'Dragon Hoard',desc:'Earn 5000 coins',cond:'5000 lifetime coins',threshold:5000}
+    ],getVal:function(){return S.totalCoins;}},
+  // — TIERED: Worlds explored —
+  {id:'at_worlds',icon:'🌍',name:'Explorer',desc:'Unlock new worlds',color:'#22c55e',bg:'#052e16',
+    tiers:[
+      {icon:'🌍',name:'Explorer',desc:'Reach World 2',cond:'Beat 1 boss',threshold:2},
+      {icon:'🌏',name:'World Traveller',desc:'Reach World 6',cond:'Beat 5 bosses',threshold:6},
+      {icon:'🌌',name:'Galaxy Explorer',desc:'Reach World 10',cond:'Beat 9 bosses',threshold:10},
+      {icon:'🚀',name:'Cosmic Voyager',desc:'Reach World 15',cond:'Beat 14 bosses',threshold:15}
+    ],getVal:function(){return maxWorldIndex()+1;}},
+  // — TIERED: Stars earned —
+  {id:'at_stars',icon:'🌠',name:'Star Collector',desc:'Earn 3 stars on levels',color:'#f59e0b',bg:'#451a03',
+    tiers:[
+      {icon:'🌠',name:'Star Collector',desc:'5 three-star levels',cond:'5 levels with 3 stars',threshold:5},
+      {icon:'🌌',name:'Galaxy Brain',desc:'15 three-star levels',cond:'15 levels with 3 stars',threshold:15},
+      {icon:'💫',name:'Supernova',desc:'30 three-star levels',cond:'30 levels with 3 stars',threshold:30},
+      {icon:'💎',name:'Star Lord',desc:'50 three-star levels',cond:'50 levels with 3 stars',threshold:50}
+    ],getVal:function(){return Object.values(S.levelStars).filter(function(v){return v===3;}).length;}},
+  // — TIERED: Levels completed —
+  {id:'at_levels',icon:'🔟',name:'Adventurer',desc:'Complete levels',color:'#84cc16',bg:'#1a2e05',
+    tiers:[
+      {icon:'🔟',name:'Level 10 Hero',desc:'10 levels cleared',cond:'10 levels',threshold:10},
+      {icon:'💫',name:'Veteran',desc:'30 levels cleared',cond:'30 levels',threshold:30},
+      {icon:'🌟',name:'Elite Player',desc:'50 levels cleared',cond:'50 levels',threshold:50},
+      {icon:'🏆',name:'Centurion',desc:'100 levels cleared',cond:'100 levels',threshold:100},
+      {icon:'👑',name:'Legend',desc:'200 levels cleared',cond:'200 levels',threshold:200}
+    ],getVal:function(){return S.completed.size;}},
+  // — TIERED: Level win streak —
+  {id:'at_streak',icon:'🔥',name:'Win Streak',desc:'Win levels in a row',color:'#f97316',bg:'#431407',
+    tiers:[
+      {icon:'🔥',name:'Level Streak',desc:'5 in a row',cond:'5-level streak',threshold:5},
+      {icon:'💥',name:'Unstoppable Streak',desc:'10 in a row',cond:'10-level streak',threshold:10},
+      {icon:'🌟',name:'Invincible',desc:'20 in a row',cond:'20-level streak',threshold:20},
+      {icon:'⚡',name:'Eternal Flame',desc:'30 in a row',cond:'30-level streak',threshold:30}
+    ],getVal:function(){return S.levelWinStreak||0;}},
+  // — TIERED: Shop purchases —
+  {id:'at_shop',icon:'🛍️',name:'Shopper',desc:'Buy items from the shop',color:'#ec4899',bg:'#500724',
+    tiers:[
+      {icon:'🛍️',name:'First Purchase',desc:'Buy 1 item',cond:'1 purchase',threshold:1},
+      {icon:'🛒',name:'Shopaholic',desc:'Buy 5 items',cond:'5 purchases',threshold:5},
+      {icon:'🏪',name:'Big Spender',desc:'Buy 10 items',cond:'10 purchases',threshold:10},
+      {icon:'💸',name:'VIP Customer',desc:'Buy 25 items',cond:'25 purchases',threshold:25}
+    ],getVal:function(){return Object.values(S.shopOwned).reduce(function(s,v){return s+(v||0);},0);}},
+  // — TIERED: Decorations —
+  {id:'at_decor',icon:'🌸',name:'Decorator',desc:'Place decorations in castle',color:'#ec4899',bg:'#500724',
+    tiers:[
+      {icon:'🌸',name:'Interior Decorator',desc:'Place 1 decoration',cond:'1 decoration placed',threshold:1},
+      {icon:'🎨',name:'Castle Designer',desc:'Fill 5 slots',cond:'5 slots filled',threshold:5},
+      {icon:'🏡',name:'Dream Castle',desc:'Fill all 8 slots',cond:'All 8 slots filled',threshold:8}
+    ],getVal:function(){return S.decorSlots.filter(function(x){return x!==null;}).length;}},
+  // — TIERED: Accuracy —
+  {id:'at_accuracy',icon:'🎯',name:'Sharpshooter',desc:'Maintain high accuracy',color:'#38bdf8',bg:'#082f49',
+    tiers:[
+      {icon:'🎯',name:'Sharpshooter',desc:'85% accuracy (20+ Q)',cond:'85% over 20+ questions',threshold:85},
+      {icon:'🎯',name:'Eagle Eye',desc:'92% accuracy (50+ Q)',cond:'92% over 50+ questions',threshold:92},
+      {icon:'🎯',name:'Laser Focus',desc:'95% accuracy (50+ Q)',cond:'95% over 50+ questions',threshold:95}
+    ],getVal:function(){var tc=Object.values(S.stats).reduce(function(s,v){return s+(v.correct||0);},0);var tq=Object.values(S.stats).reduce(function(s,v){return s+(v.total||0);},0);return tq>=20?Math.round(tc/tq*100):0;}},
+  // — TIERED: Days played —
+  {id:'at_days',icon:'📅',name:'Dedicated',desc:'Play on different days',color:'#22c55e',bg:'#052e16',
+    tiers:[
+      {icon:'📅',name:'Getting Started',desc:'Play 3 days',cond:'3 unique days',threshold:3},
+      {icon:'📅',name:'Dedicated Player',desc:'Play 7 days',cond:'7 unique days',threshold:7},
+      {icon:'📅',name:'Committed',desc:'Play 14 days',cond:'14 unique days',threshold:14},
+      {icon:'📅',name:'Veteran Player',desc:'Play 30 days',cond:'30 unique days',threshold:30}
+    ],getVal:function(){return S.playDays?S.playDays.size:0;}},
+  // — TIERED: No-potion streak —
+  {id:'at_nopot',icon:'💪',name:'Iron Will',desc:'Complete levels without potions',color:'#22c55e',bg:'#052e16',
+    tiers:[
+      {icon:'💪',name:'Tough',desc:'3 levels no potion',cond:'3 without potions',threshold:3},
+      {icon:'💪',name:'Iron Will',desc:'5 levels no potion',cond:'5 without potions',threshold:5},
+      {icon:'💪',name:'Indomitable',desc:'10 levels no potion',cond:'10 without potions',threshold:10}
+    ],getVal:function(){return S.noPotionCount||0;}},
+  // — TIERED: Spending —
+  {id:'at_spend',icon:'💸',name:'Big Wallet',desc:'Spend coins in shop',color:'#fbbf24',bg:'#451a03',
+    tiers:[
+      {icon:'💸',name:'Spender',desc:'Spend 100 coins',cond:'100 coins spent',threshold:100},
+      {icon:'💸',name:'Big Wallet',desc:'Spend 500 coins',cond:'500 coins spent',threshold:500},
+      {icon:'💸',name:'Tycoon',desc:'Spend 1000 coins',cond:'1000 coins spent',threshold:1000}
+    ],getVal:function(){return S.totalSpent||0;}},
+  // ===== FLAT (non-tiered) achievements =====
   {id:'a_potion',icon:'❤️',name:'Survivor',desc:'Use a Life Potion to continue',cond:'Use 1 life potion',color:'#f87171',bg:'#450a0a'},
-  {id:'a_no_pot',icon:'💪',name:'Iron Will',desc:'Complete 5 levels without using a potion',cond:'5 levels without potions',color:'#22c55e',bg:'#052e16'},
-  {id:'a_streak5',icon:'🔥',name:'Level Streak',desc:'Complete 5 levels in a row without failing',cond:'5-level winning streak',color:'#f97316',bg:'#431407'},
-  {id:'a_streak10',icon:'💥',name:'Unstoppable Streak',desc:'Complete 10 levels in a row without failing',cond:'10-level winning streak — HARD!',color:'#ef4444',bg:'#450a0a'},
-  {id:'a_streak20',icon:'🌟',name:'Invincible',desc:'Complete 20 levels in a row without failing',cond:'20-level winning streak — EXTREME!',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_night',icon:'🌙',name:'Night Owl',desc:'Play between 9pm and 6am',cond:'Play after 9pm or before 6am',color:'#818cf8',bg:'#1e1b4b'},
-  {id:'a_decor1',icon:'🌸',name:'Interior Decorator',desc:'Place your first decoration',cond:'Place 1 decoration in the court',color:'#ec4899',bg:'#500724'},
-  {id:'a_decor5',icon:'🎨',name:'Castle Designer',desc:'Fill 5 decoration slots',cond:'5 decoration slots filled',color:'#f43f5e',bg:'#4c0519'},
-  {id:'a_decor8',icon:'🏡',name:'Dream Castle',desc:'Fill all 8 decoration slots',cond:'All 8 decoration slots filled',color:'#a855f7',bg:'#2e1065'},
-  {id:'a_practice',icon:'📚',name:'Dedicated Learner',desc:'Practice a wrong answer from the log',cond:'Use the Practice button in error log',color:'#22c55e',bg:'#052e16'},
-  {id:'a_hint',icon:'💡',name:'Clever Clogs',desc:'Use a Hint Scroll',cond:'Activate a Hint Scroll in a level',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_crystal',icon:'🔮',name:'Time Bender',desc:'Use a Time Crystal in a boss battle',cond:'Activate Time Crystal vs a boss',color:'#38bdf8',bg:'#082f49'},
-  {id:'a_mul_10',icon:'✖️',name:'Times Tables Pro',desc:'Answer 20 multiplication questions correctly',cond:'20 correct multiplication answers',color:'#f59e0b',bg:'#451a03'},
-  {id:'a_div_10',icon:'➗',name:'Division Master',desc:'Answer 20 division questions correctly',cond:'20 correct division answers',color:'#6d28d9',bg:'#2e1065'},
-  {id:'a_money10',icon:'💰',name:'Banker',desc:'Answer 10 money questions correctly',cond:'10 correct money answers',color:'#22c55e',bg:'#052e16'},
-  {id:'a_all_topics',icon:'🌈',name:'All-Rounder',desc:'Get at least 1 correct in every topic',cond:'Score in all 17 topics',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_comeback',icon:'🌅',name:'Comeback Kid',desc:'Win a level after losing 2 hearts',cond:'Complete a level after losing 2 lives',color:'#f97316',bg:'#431407'},
-  {id:'a_no_hint_boss',icon:'💪',name:'Unaided Champion',desc:'Defeat a boss without using any items',cond:'Beat a boss with 0 crystals/potions used',color:'#22c55e',bg:'#052e16'},
-  {id:'a_add50',icon:'➕',name:'Addition Ace',desc:'Answer 50 addition questions correctly',cond:'50 correct addition answers',color:'#22c55e',bg:'#052e16'},
-  {id:'a_mul50',icon:'✖️',name:'Multiplication Master',desc:'Answer 50 multiplication questions correctly',cond:'50 correct multiplication answers',color:'#f59e0b',bg:'#451a03'},
-  {id:'a_div50',icon:'➗',name:'Division Champion',desc:'Answer 50 division questions correctly',cond:'50 correct division answers',color:'#a855f7',bg:'#2e1065'},
-  {id:'a_sub50',icon:'➖',name:'Subtraction Star',desc:'Answer 50 subtraction questions correctly',cond:'50 correct subtraction answers',color:'#38bdf8',bg:'#082f49'},
-  {id:'a_buildall',icon:'🏛️',name:'Kingdom Complete',desc:'Fully build every castle part',cond:'All castle parts at max level — EXTREME!',color:'#fbbf24',bg:'#1a0a00'},
-  {id:'a_alldecor',icon:'🎨',name:'Master Decorator',desc:'Own every decoration item',cond:'Purchase all decorations from the shop',color:'#ec4899',bg:'#500724'},
-  {id:'a_allcoll',icon:'💎',name:'Royal Collection',desc:'Own every collection item',cond:'Purchase all collection items from the shop',color:'#06b6d4',bg:'#083344'},
-  {id:'a_spend500',icon:'💸',name:'Big Wallet',desc:'Spend a total of 500 coins in the shop',cond:'Spend 500 lifetime coins',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_divstreak5',icon:'🔥',name:'Division Streak',desc:'Answer 5 division questions correctly in a row',cond:'5 division correct in a row',color:'#f97316',bg:'#431407'},
-  {id:'a_mulstreak10',icon:'⚡',name:'Times Table Terror',desc:'Answer 10 multiplication questions in a row',cond:'10 multiplication correct in a row',color:'#a855f7',bg:'#2e1065'},
-  {id:'a_bossperf3',icon:'🌟',name:'Boss Annihilator',desc:'Beat 3 bosses in a row without losing a heart',cond:'3 consecutive perfect boss battles',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_session100',icon:'📚',name:'Marathon Scholar',desc:'Answer 100 questions in one session',cond:'100 questions in a single play session',color:'#22c55e',bg:'#052e16'},
-  {id:'a_5topics',icon:'🌈',name:'Topic Explorer',desc:'Answer questions from 5 different topics in one level',cond:'5 unique topics in a single level',color:'#38bdf8',bg:'#082f49'},
-  {id:'a_noon',icon:'☀️',name:'Midday Hero',desc:'Play a level between 11am and 1pm',cond:'Complete a level at midday',color:'#fbbf24',bg:'#451a03'},
-  {id:'a_7days',icon:'📅',name:'Dedicated Player',desc:'Play on 7 different days',cond:'Play on 7 unique days',color:'#22c55e',bg:'#052e16'},
-  {id:'a_50first',icon:'🎯',name:'Quick Thinker',desc:'50% of your answers are correct on first try',cond:'50%+ first-try accuracy (min 20 questions)',color:'#f97316',bg:'#431407'},
-  {id:'a_mul_50',icon:'🔢',name:'Times Table King',desc:'Answer 50 multiplication questions correctly',cond:'50 correct multiplication answers',color:'#f59e0b',bg:'#451a03'},
-  {id:'a_div_50',icon:'📐',name:'Division Grandmaster',desc:'Answer 50 division questions correctly',cond:'50 correct division answers',color:'#6d28d9',bg:'#2e1065'},
-  {id:'a_word50',icon:'📖',name:'Story Master',desc:'Answer 50 word problems correctly',cond:'50 correct word problem answers',color:'#fb923c',bg:'#431407'},
-  {id:'a_money50',icon:'🏦',name:'Bank President',desc:'Answer 50 money questions correctly',cond:'50 correct money answers',color:'#22c55e',bg:'#052e16'},
-  {id:'a_logic50',icon:'🧠',name:'Logic Genius',desc:'Answer 50 logic questions correctly',cond:'50 correct logic answers',color:'#34d399',bg:'#064e3b'},
-  {id:'a_perfect50',icon:'💎',name:'Diamond Standard',desc:'Complete 50 levels perfectly',cond:'50 levels with 0 wrong answers — EXTREME!',color:'#06b6d4',bg:'#083344'},
-  {id:'a_coins5k',icon:'👑',name:'Dragon Hoard',desc:'Earn 5000 total coins',cond:'Earn 5000 lifetime coins — LEGENDARY!',color:'#fbbf24',bg:'#1a0000'},
-  {id:'a_boss25',icon:'⚔️',name:'Boss Legend',desc:'Win 25 boss battles total',cond:'25 total boss wins',color:'#dc2626',bg:'#450a0a'}
+  {id:'a_comeback',icon:'🌅',name:'Comeback Kid',desc:'Win a level after losing 2 hearts',cond:'Lose 2 lives then win',color:'#f97316',bg:'#431407'},
+  {id:'a_boss_fast',icon:'⚡',name:'Speed Slayer',desc:'Answer a boss question very fast',cond:'Answer within 10 seconds',color:'#38bdf8',bg:'#082f49'},
+  {id:'a_boss_rem',icon:'🔄',name:'Rematched',desc:'Win a boss rematch',cond:'Beat a boss a second time',color:'#f97316',bg:'#431407'},
+  {id:'a_boss_perfect',icon:'🎯',name:'Flawless Boss',desc:'Defeat a boss without losing a heart',cond:'Beat boss with 3/3 HP',color:'#fbbf24',bg:'#451a03'},
+  {id:'a_no_hint_boss',icon:'💪',name:'Unaided Champion',desc:'Defeat a boss without items',cond:'No crystals/potions used',color:'#22c55e',bg:'#052e16'},
+  {id:'a_hint',icon:'💡',name:'Clever Clogs',desc:'Use a Hint Scroll',cond:'Activate a Hint Scroll',color:'#fbbf24',bg:'#451a03'},
+  {id:'a_crystal',icon:'🔮',name:'Time Bender',desc:'Use a Time Crystal in boss battle',cond:'Activate Time Crystal',color:'#38bdf8',bg:'#082f49'},
+  {id:'a_practice',icon:'📚',name:'Dedicated Learner',desc:'Practice a wrong answer',cond:'Use Practice in error log',color:'#22c55e',bg:'#052e16'},
+  {id:'a_all_topics',icon:'🌈',name:'All-Rounder',desc:'Score in every topic',cond:'1+ correct in all topics',color:'#fbbf24',bg:'#451a03'},
+  {id:'a_night',icon:'🌙',name:'Night Owl',desc:'Play between 9pm and 6am',cond:'Play after 9pm',color:'#818cf8',bg:'#1e1b4b'},
+  {id:'a_noon',icon:'☀️',name:'Midday Hero',desc:'Play between 11am and 1pm',cond:'Play at midday',color:'#fbbf24',bg:'#451a03'},
+  {id:'a_5topics',icon:'🌈',name:'Topic Explorer',desc:'5 topics in one level',cond:'5 unique topics in 1 level',color:'#38bdf8',bg:'#082f49'},
+  {id:'a_session100',icon:'📚',name:'Marathon Scholar',desc:'100 questions in one session',cond:'100 questions single session',color:'#22c55e',bg:'#052e16'},
+  {id:'a_50first',icon:'🎯',name:'Quick Thinker',desc:'50%+ first-try accuracy (20+ Q)',cond:'50%+ first-try accuracy',color:'#f97316',bg:'#431407'},
+  {id:'a_buildall',icon:'🏛️',name:'Kingdom Complete',desc:'Build every castle part',cond:'All parts at max level',color:'#fbbf24',bg:'#1a0a00'},
+  {id:'a_alldecor',icon:'🎨',name:'Master Decorator',desc:'Own every decoration',cond:'Purchase all decorations',color:'#ec4899',bg:'#500724'},
+  {id:'a_allcoll',icon:'💎',name:'Royal Collection',desc:'Own every collection item',cond:'Purchase all collections',color:'#06b6d4',bg:'#083344'},
+  // — Topic mastery achievements —
+  {id:'a_add50',icon:'➕',name:'Addition Ace',desc:'50 correct addition answers',cond:'50 addition correct',color:'#22c55e',bg:'#052e16'},
+  {id:'a_sub50',icon:'➖',name:'Subtraction Star',desc:'50 correct subtraction answers',cond:'50 subtraction correct',color:'#38bdf8',bg:'#082f49'},
+  {id:'a_mul50',icon:'✖️',name:'Multiplication Master',desc:'50 correct multiplication answers',cond:'50 multiplication correct',color:'#f59e0b',bg:'#451a03'},
+  {id:'a_div50',icon:'➗',name:'Division Champion',desc:'50 correct division answers',cond:'50 division correct',color:'#a855f7',bg:'#2e1065'},
+  {id:'a_word50',icon:'📖',name:'Story Master',desc:'50 correct word problems',cond:'50 word problems correct',color:'#fb923c',bg:'#431407'},
+  {id:'a_money50',icon:'🏦',name:'Bank President',desc:'50 correct money questions',cond:'50 money correct',color:'#22c55e',bg:'#052e16'},
+  {id:'a_logic50',icon:'🧠',name:'Logic Genius',desc:'50 correct logic questions',cond:'50 logic correct',color:'#34d399',bg:'#064e3b'},
+  {id:'a_pattern50',icon:'🔮',name:'Pattern Sage',desc:'50 correct pattern questions',cond:'50 pattern correct',color:'#a78bfa',bg:'#2e1065'},
+  {id:'a_clock50',icon:'⏰',name:'Time Lord',desc:'50 correct time questions',cond:'50 clock/time correct',color:'#818cf8',bg:'#1e1b4b'},
+  {id:'a_spatial50',icon:'🔷',name:'Shape Wizard',desc:'50 correct spatial questions',cond:'50 spatial correct',color:'#22d3ee',bg:'#083344'},
+  {id:'a_divstreak5',icon:'🔥',name:'Division Streak',desc:'5 division correct in a row',cond:'5 division in a row',color:'#f97316',bg:'#431407'},
+  {id:'a_mulstreak10',icon:'⚡',name:'Times Table Terror',desc:'10 multiplication correct in a row',cond:'10 mul in a row',color:'#a855f7',bg:'#2e1065'},
+  {id:'a_bossperf3',icon:'🌟',name:'Boss Annihilator',desc:'3 perfect boss battles in a row',cond:'3 flawless boss fights',color:'#fbbf24',bg:'#451a03'}
 ];
-function achMet(id){
+// Migrate old flat achievements to new tiered format
+var _oldAchMap={
+  'a_first':{id:'at_correct',t:0},'a_c10':{id:'at_correct',t:1},'a_c50':{id:'at_correct',t:2},
+  'a_c100':{id:'at_correct',t:3},'a_c200':{id:'at_correct',t:4},'a_c500':{id:'at_correct',t:5},
+  'a_c1000':{id:'at_correct',t:6},'a_c2000':{id:'at_correct',t:7},
+  'a_combo3':{id:'at_combo',t:0},'a_combo5':{id:'at_combo',t:1},'a_combo10':{id:'at_combo',t:2},
+  'a_combo15':{id:'at_combo',t:3},'a_combo20':{id:'at_combo',t:4},'a_combo30':{id:'at_combo',t:5},
+  'a_perfect1':{id:'at_perfect',t:0},'a_perfect3':{id:'at_perfect',t:1},'a_perfect5':{id:'at_perfect',t:2},
+  'a_perfect10':{id:'at_perfect',t:3},'a_perfect20':{id:'at_perfect',t:4},'a_perfect50':{id:'at_perfect',t:5},
+  'a_boss1':{id:'at_boss',t:0},'a_boss3':{id:'at_boss',t:1},'a_boss6':{id:'at_boss',t:2},
+  'a_boss10':{id:'at_boss',t:3},'a_boss25':{id:'at_boss',t:4},
+  'a_build3':{id:'at_build',t:0},'a_build5':{id:'at_build',t:1},'a_build10':{id:'at_build',t:2},
+  'a_build15':{id:'at_build',t:3},'a_build20':{id:'at_build',t:4},
+  'a_coins50':{id:'at_coins',t:0},'a_coins100':{id:'at_coins',t:1},'a_coins500':{id:'at_coins',t:2},
+  'a_coins1k':{id:'at_coins',t:3},'a_coins5k':{id:'at_coins',t:4},
+  'a_worlds2':{id:'at_worlds',t:0},'a_worlds6':{id:'at_worlds',t:1},'a_worlds10':{id:'at_worlds',t:2},
+  'a_stars5':{id:'at_stars',t:0},'a_stars15':{id:'at_stars',t:1},
+  'a_level10':{id:'at_levels',t:0},'a_level30':{id:'at_levels',t:1},'a_level50':{id:'at_levels',t:2},
+  'a_level100':{id:'at_levels',t:3},
+  'a_streak5':{id:'at_streak',t:0},'a_streak10':{id:'at_streak',t:1},'a_streak20':{id:'at_streak',t:2},
+  'a_shop1':{id:'at_shop',t:0},'a_shop5':{id:'at_shop',t:1},'a_shop10':{id:'at_shop',t:2},
+  'a_decor1':{id:'at_decor',t:0},'a_decor5':{id:'at_decor',t:1},'a_decor8':{id:'at_decor',t:2},
+  'a_sharp':{id:'at_accuracy',t:0},'a_sharp95':{id:'at_accuracy',t:2},
+  'a_7days':{id:'at_days',t:1},
+  'a_no_pot':{id:'at_nopot',t:1},
+  'a_spend500':{id:'at_spend',t:1},
+  'a_mul_10':{id:'a_mul50'},'a_mul_50':{id:'a_mul50'},
+  'a_div_10':{id:'a_div50'},'a_div_50':{id:'a_div50'},
+  'a_clock10':{id:'a_clock50'},'a_logic10':{id:'a_logic50'},
+  'a_word10':{id:'a_word50'},'a_money10':{id:'a_money50'},
+  'a_pattern10':{id:'a_pattern50'},'a_spatial10':{id:'a_spatial50'},'a_lineup10':{id:'a_pattern50'}
+};
+function migrateAch(){
+  if(S._achMigrated)return;
+  var changed=false;
+  Object.keys(_oldAchMap).forEach(function(oldId){
+    if(!S.achievements[oldId])return;
+    var m=_oldAchMap[oldId];
+    var cur=S.achievements[m.id];
+    if(typeof cur!=='number'||cur<m.t){
+      S.achievements[m.id]=m.t;changed=true;
+    }
+    delete S.achievements[oldId];
+  });
+  // Clean up any remaining old IDs
+  var validIds={};
+  ACHIEVEMENTS.forEach(function(a){validIds[a.id]=true;});
+  Object.keys(S.achievements).forEach(function(k){
+    if(!validIds[k]&&typeof S.achievements[k]!=='number'){delete S.achievements[k];changed=true;}
+  });
+  S._achMigrated=true;
+  if(changed)save();
+}
+
+// Get current tier for an achievement (returns -1 if none unlocked)
+function achTier(a){
+  var v=S.achievements[a.id];
+  if(v===undefined||v===null)return -1;
+  if(a.tiers)return(typeof v==='number')?v:-1;
+  return v?-1:-1; // flat: just check truthy
+}
+// Is a flat achievement unlocked?
+function achFlatDone(a){return!!S.achievements[a.id];}
+
+function achMet(a){
+  if(a.tiers){
+    // Tiered: check if next tier is met
+    var cur=achTier(a);
+    var next=cur+1;
+    if(next>=a.tiers.length)return false;
+    var val=a.getVal();
+    // Special handling for accuracy
+    if(a.id==='at_accuracy'){
+      var tc=Object.values(S.stats).reduce(function(s,v){return s+(v.correct||0);},0);
+      var tq=Object.values(S.stats).reduce(function(s,v){return s+(v.total||0);},0);
+      var minQ=next<=1?20:50;
+      return tq>=minQ&&tc/tq>=a.tiers[next].threshold/100;
+    }
+    return val>=a.tiers[next].threshold;
+  }
+  // Flat achievements — same logic as before
   var tc=Object.values(S.stats).reduce(function(s,v){return s+(v.correct||0);},0);
   var tq=Object.values(S.stats).reduce(function(s,v){return s+(v.total||0);},0);
   var s3=Object.values(S.levelStars).filter(function(v){return v===3;}).length;
-  var fp=CASTLE_PARTS.filter(function(p){return!p.free&&(S.partLevels[p.id]||0)>=MAX_PART_LEVEL;}).length;
-  var shopCount=Object.values(S.shopOwned).reduce(function(s,v){return s+(v||0);},0);
   var totalBossWins=Object.values(S.bossWins).reduce(function(s,v){return s+(v||0);},0);
-  var clk=(S.stats.clock?S.stats.clock.correct:0)+(S.stats.elapsed?S.stats.elapsed.correct:0)+(S.stats.timediff?S.stats.timediff.correct:0);
   var h=new Date().getHours();
-  var filledSlots=S.decorSlots.filter(function(x){return x!==null;}).length;
-  var allTopics=ALL_TYPES.filter(function(t){return GENS[t];}).every(function(t){return (S.stats[t]&&S.stats[t].correct>0);});
-  if(id==='a_first')return tc>=1;
-  if(id==='a_c10')return tc>=10;if(id==='a_c50')return tc>=50;if(id==='a_c100')return tc>=100;
-  if(id==='a_c200')return tc>=200;if(id==='a_c500')return tc>=500;if(id==='a_c1000')return tc>=1000;if(id==='a_c2000')return tc>=2000;
-  if(id==='a_combo3')return S.maxCombo>=3;if(id==='a_combo5')return S.maxCombo>=5;if(id==='a_combo10')return S.maxCombo>=10;
-  if(id==='a_combo15')return S.maxCombo>=15;if(id==='a_combo20')return S.maxCombo>=20;if(id==='a_combo30')return S.maxCombo>=30;
-  if(id==='a_perfect1')return s3>=1;if(id==='a_perfect3')return s3>=3;if(id==='a_perfect5')return s3>=5;
-  if(id==='a_perfect10')return s3>=10;if(id==='a_perfect20')return s3>=20;
-  if(id==='a_boss1')return S.bossDefeated.size>=1;if(id==='a_boss3')return S.bossDefeated.size>=3;
-  if(id==='a_boss6')return S.bossDefeated.size>=6;if(id==='a_boss10')return totalBossWins>=10;
-  if(id==='a_boss_fast'||id==='a_boss_rem'||id==='a_boss_perfect'||id==='a_no_hint_boss')return !!S.achievements[id];
-  if(id==='a_build3')return fp>=3;if(id==='a_build5')return fp>=5;if(id==='a_build10')return fp>=10;
-  if(id==='a_build15')return fp>=15;if(id==='a_build20')return fp>=20;
-  if(id==='a_coins50')return S.totalCoins>=50;if(id==='a_coins100')return S.totalCoins>=100;
-  if(id==='a_coins500')return S.totalCoins>=500;if(id==='a_coins1k')return S.totalCoins>=1000;
-  if(id==='a_worlds2')return maxWorldIndex()>=2;if(id==='a_worlds6')return S.bossDefeated.size>=6;if(id==='a_worlds10')return maxWorldIndex()>=10;
-  if(id==='a_stars5')return s3>=5;if(id==='a_stars15')return s3>=15;
-  if(id==='a_level10')return S.completed.size>=10;if(id==='a_level30')return S.completed.size>=30;
-  if(id==='a_level50')return S.completed.size>=50;if(id==='a_level100')return S.completed.size>=100;
-  if(id==='a_clock10')return clk>=10;
-  if(id==='a_logic10')return (S.stats.logic?S.stats.logic.correct:0)>=10;
-  if(id==='a_word10')return (S.stats.word?S.stats.word.correct:0)>=10;
-  if(id==='a_pattern10')return (S.stats.pattern?S.stats.pattern.correct:0)>=10;
-  if(id==='a_lineup10')return (S.stats.lineup?S.stats.lineup.correct:0)>=10;
-  if(id==='a_spatial10')return (S.stats.spatial?S.stats.spatial.correct:0)>=10;
-  if(id==='a_shop1')return shopCount>=1;if(id==='a_shop5')return shopCount>=5;if(id==='a_shop10')return shopCount>=10;
-  if(id==='a_sharp')return tq>=20&&tc/tq>=0.85;
-  if(id==='a_sharp95')return tq>=50&&tc/tq>=0.95;
-  if(id==='a_potion'||id==='a_hint'||id==='a_crystal'||id==='a_practice'||id==='a_comeback')return !!S.achievements[id];
-  if(id==='a_no_pot')return S.noPotionCount>=5;
-  if(id==='a_streak5')return S.levelWinStreak>=5;if(id==='a_streak10')return S.levelWinStreak>=10;if(id==='a_streak20')return S.levelWinStreak>=20;
-  if(id==='a_night')return h>=21||h<6;
-  if(id==='a_decor1')return filledSlots>=1;if(id==='a_decor5')return filledSlots>=5;if(id==='a_decor8')return filledSlots>=8;
-  if(id==='a_mul_10')return (S.stats.mul?S.stats.mul.correct:0)>=20;
-  if(id==='a_div_10')return (S.stats.div?S.stats.div.correct:0)>=20;
-  if(id==='a_money10')return (S.stats.money?S.stats.money.correct:0)>=10;
+  var allTopics=ALL_TYPES.filter(function(t){return GENS[t];}).every(function(t){return(S.stats[t]&&S.stats[t].correct>0);});
+  var id=a.id;
+  if(id==='a_potion'||id==='a_hint'||id==='a_crystal'||id==='a_practice'||id==='a_comeback')return!!S.achievements[id];
+  if(id==='a_boss_fast'||id==='a_boss_rem'||id==='a_boss_perfect'||id==='a_no_hint_boss')return!!S.achievements[id];
+  if(id==='a_divstreak5'||id==='a_mulstreak10'||id==='a_bossperf3'||id==='a_session100')return!!S.achievements[id];
+  if(id==='a_noon')return!!S.achievements[id];
+  if(id==='a_5topics')return!!S.achievements[id];
+  if(id==='a_50first')return tq>=20&&tc/tq>=0.5;
   if(id==='a_all_topics')return allTopics;
-  var allPartsBuilt=CASTLE_PARTS.filter(function(p){return!p.free;}).every(function(p){return(S.partLevels[p.id]||0)>=MAX_PART_LEVEL;});
-  var allDecorOwned=SHOP_ITEMS.filter(function(i){return i.cat==='decor';}).every(function(i){return S.shopOwned[i.id];});
-  var allCollOwned=SHOP_ITEMS.filter(function(i){return i.cat==='coll';}).every(function(i){return S.shopOwned[i.id];});
   if(id==='a_add50')return(S.stats.add?S.stats.add.correct:0)>=50;
+  if(id==='a_sub50')return(S.stats.sub?S.stats.sub.correct:0)>=50;
   if(id==='a_mul50')return(S.stats.mul?S.stats.mul.correct:0)>=50;
   if(id==='a_div50')return(S.stats.div?S.stats.div.correct:0)>=50;
-  if(id==='a_sub50')return(S.stats.sub?S.stats.sub.correct:0)>=50;
-  if(id==='a_buildall')return allPartsBuilt;
-  if(id==='a_alldecor')return allDecorOwned;
-  if(id==='a_allcoll')return allCollOwned;
-  if(id==='a_spend500')return(S.totalSpent||0)>=500;
-  if(id==='a_divstreak5'||id==='a_mulstreak10'||id==='a_bossperf3'||id==='a_5topics'||id==='a_session100')return !!S.achievements[id];
-  if(id==='a_noon')return !!S.achievements[id];
-  if(id==='a_7days')return(S.playDays?S.playDays.size:0)>=7;
-  if(id==='a_50first')return tq>=20&&tc/tq>=0.5;
-  if(id==='a_mul_50')return(S.stats.mul?S.stats.mul.correct:0)>=50;
-  if(id==='a_div_50')return(S.stats.div?S.stats.div.correct:0)>=50;
   if(id==='a_word50')return(S.stats.word?S.stats.word.correct:0)>=50;
   if(id==='a_money50')return(S.stats.money?S.stats.money.correct:0)>=50;
   if(id==='a_logic50')return(S.stats.logic?S.stats.logic.correct:0)>=50;
-  if(id==='a_perfect50')return s3>=50;
-  if(id==='a_coins5k')return S.totalCoins>=5000;
-  if(id==='a_boss25')return totalBossWins>=25;
+  if(id==='a_pattern50')return(S.stats.pattern?S.stats.pattern.correct:0)>=50;
+  if(id==='a_clock50'){var clk=(S.stats.clock?S.stats.clock.correct:0)+(S.stats.elapsed?S.stats.elapsed.correct:0)+(S.stats.timediff?S.stats.timediff.correct:0);return clk>=50;}
+  if(id==='a_spatial50')return(S.stats.spatial?S.stats.spatial.correct:0)>=50;
+  if(id==='a_buildall')return CASTLE_PARTS.filter(function(p){return!p.free;}).every(function(p){return(S.partLevels[p.id]||0)>=MAX_PART_LEVEL;});
+  if(id==='a_alldecor')return SHOP_ITEMS.filter(function(i){return i.cat==='decor';}).every(function(i){return S.shopOwned[i.id];});
+  if(id==='a_allcoll')return SHOP_ITEMS.filter(function(i){return i.cat==='coll';}).every(function(i){return S.shopOwned[i.id];});
+  if(id==='a_night')return h>=21||h<6;
   return false;
 }
+
 var _achQueue=[],_achShowing=false;
 function checkAchievements(){
+  migrateAch();
   ACHIEVEMENTS.forEach(function(a){
-    if(S.achievements[a.id])return;
-    if(achMet(a.id)){S.achievements[a.id]=Date.now();_achQueue.push(a);}
+    if(a.tiers){
+      var cur=achTier(a);
+      if(achMet(a)){
+        var next=cur+1;
+        S.achievements[a.id]=next;
+        _achQueue.push({ach:a,tier:next});
+      }
+    }else{
+      if(!S.achievements[a.id]&&achMet(a)){
+        S.achievements[a.id]=Date.now();
+        _achQueue.push({ach:a,tier:-1});
+      }
+    }
   });
   if(_achQueue.length&&!_achShowing){save();processAchQueue();}
 }
 function processAchQueue(){if(!_achQueue.length){_achShowing=false;return;}_achShowing=true;showAchNotif(_achQueue.shift());}
-function showAchNotif(a){
+function showAchNotif(item){
+  var a=item.ach,tier=item.tier;
   var n=$('ach-notif');
-  n.innerHTML='<div class="ach-card" style="background:linear-gradient(135deg,'+a.bg+'ee,'+a.bg+');--ac:'+a.color+';"><div style="font-size:2.8rem;flex-shrink:0;filter:drop-shadow(0 0 12px '+a.color+')">'+a.icon+'</div><div style="flex:1;min-width:0;"><div style="font-size:9px;color:'+a.color+';letter-spacing:2px;margin-bottom:3px;">ACHIEVEMENT!</div><div style="font-size:12px;color:#fff;font-family:var(--px);margin-bottom:3px;">'+a.name+'</div><div style="font-family:system-ui;font-size:13px;color:rgba(255,255,255,.65);line-height:1.3;">'+a.desc+'</div></div><div style="font-size:1.8rem;animation:spin 3s linear infinite;">✨</div></div>';
-  sfx('power');speak('Achievement unlocked! '+a.name,1.2,.95);
+  var displayIcon,displayName,displayDesc,displayColor;
+  if(tier>=0&&a.tiers){
+    var t=a.tiers[tier];
+    displayIcon=t.icon;displayName=t.name;displayDesc=t.desc;displayColor=a.color;
+  }else{
+    displayIcon=a.icon;displayName=a.name;displayDesc=a.desc;displayColor=a.color;
+  }
+  var tierBadge='';
+  if(tier>=0&&a.tiers){tierBadge='<span style="font-size:10px;color:'+a.color+'">'+TIER_LABELS[Math.min(tier,3)]+' Lv'+(tier+1)+'</span>';}
+  n.innerHTML='<div class="ach-card" style="background:linear-gradient(135deg,'+a.bg+'ee,'+a.bg+');--ac:'+displayColor+';"><div style="font-size:2.8rem;flex-shrink:0;filter:drop-shadow(0 0 12px '+displayColor+')">'+displayIcon+'</div><div style="flex:1;min-width:0;">'+tierBadge+'<div style="font-size:9px;color:'+displayColor+';letter-spacing:2px;margin-bottom:3px;">ACHIEVEMENT!</div><div style="font-size:12px;color:#fff;font-family:var(--px);margin-bottom:3px;">'+displayName+'</div><div style="font-family:system-ui;font-size:13px;color:rgba(255,255,255,.65);line-height:1.3;">'+displayDesc+'</div></div><div style="font-size:1.8rem;animation:spin 3s linear infinite;">✨</div></div>';
+  sfx('power');speak('Achievement unlocked! '+displayName,1.2,.95);
   setTimeout(function(){n.style.top='20px';},50);
   setTimeout(function(){n.style.top='-200px';setTimeout(processAchQueue,500);},3800);
+}
+// Helper: get total unlocked tier count for display
+function achCount(){
+  var c=0;
+  ACHIEVEMENTS.forEach(function(a){
+    if(a.tiers){var t=achTier(a);if(t>=0)c+=t+1;}
+    else if(S.achievements[a.id])c++;
+  });
+  return c;
+}
+function achTotal(){
+  var t=0;
+  ACHIEVEMENTS.forEach(function(a){t+=a.tiers?a.tiers.length:1;});
+  return t;
 }
 function mkC(ans,ws){
   var a=String(ans),pool=[a];
@@ -2449,18 +2649,21 @@ function speakQ(t){
   if(S.ttsMuted||S.muted||!t)return;
   speak(t,1.0,0.9);
 }
-function speakBoss(t){
-  if(S.muted||!t)return;
+function speakBoss(t,cb){
+  if(S.muted||!t){if(cb)cb();return;}
   try{
     window.speechSynthesis.cancel();
     var u=new SpeechSynthesisUtterance(t);
-    u.lang='en-US';u.pitch=1.8;u.rate=1.3;u.volume=1.0;
+    u.lang='en-US';u.pitch=0.3;u.rate=0.85;u.volume=1.0;
     var vs=window.speechSynthesis.getVoices();
-    var v=vs.filter(function(x){return /samantha|karen|zira|fiona|victoria|female/i.test(x.name)&&x.lang.indexOf('en')===0;})[0]
+    var v=vs.filter(function(x){return /daniel|james|david|male|thomas|alex|google us english/i.test(x.name)&&x.lang.indexOf('en')===0;})[0]
+      ||vs.filter(function(x){return !/samantha|karen|zira|fiona|victoria|female/i.test(x.name)&&x.lang.indexOf('en')===0;})[0]
       ||vs.filter(function(x){return x.lang.indexOf('en')===0;})[0];
     if(v)u.voice=v;
+    u.onend=function(){if(cb)cb();};
+    u.onerror=function(){if(cb)cb();};
     window.speechSynthesis.speak(u);
-  }catch(e){}
+  }catch(e){if(cb)cb();}
 }
 function goTo(id){document.querySelectorAll('.scr').forEach(function(s){s.classList.remove('on');});var s=$('s-'+id);if(s){s.classList.add('on');s.scrollTop=0;}S.screen=id;}
 function toast(id,msg,dur){dur=dur||1600;var t=$(id);if(!t)return;t.textContent=msg;t.classList.add('show');setTimeout(function(){t.classList.remove('show');},dur);}
@@ -2539,12 +2742,12 @@ function initHome(){
   audBtn('home-aud');renderNetIcon();autoBuiltCheck();
   if(S.onlineMode)checkNetwork();
   var statsData=[
-    {i:S.hp>0?'❤️':'💔',v:S.hp+'/'+S.maxHp,l:'HEARTS'},
-    {i:'🪙',v:S.totalCoins,l:'COINS'},
-    {i:'🏆',v:Object.keys(S.achievements).length,l:'ACHVS'},
+    {i:emojiToSprite(S.hp>0?'❤️':'💔',28,28)||S.hp>0?'❤️':'💔',v:S.hp+'/'+S.maxHp,l:'HEARTS'},
+    {i:emojiToSprite('🪙',28,28)||'🪙',v:S.totalCoins,l:'COINS'},
+    {i:'🏆',v:achCount(),l:'ACHVS'},
     {i:'🔥',v:S.maxCombo,l:'COMBO'}
   ];
-  $('home-stats').innerHTML=statsData.map(function(it){return '<div class="pb" style="background:linear-gradient(145deg,rgba(30,30,60,.9),rgba(20,20,40,.9));border-color:rgba(255,255,255,.1);border-radius:10px;padding:9px 4px;text-align:center;box-shadow:3px 3px 0 #000,inset 1px 1px 0 rgba(255,255,255,.05);"><div style="font-size:1.5rem">'+it.i+'</div><div style="font-size:10px;color:var(--gold);margin-top:3px">'+it.v+'</div><div style="font-size:8px;color:#777;margin-top:2px">'+it.l+'</div></div>';}).join('');
+  $('home-stats').innerHTML=statsData.map(function(it){return '<div class="pb" style="background:linear-gradient(145deg,rgba(30,30,60,.9),rgba(20,20,40,.9));border-color:rgba(255,255,255,.1);border-radius:10px;padding:9px 4px;text-align:center;box-shadow:3px 3px 0 #000,inset 1px 1px 0 rgba(255,255,255,.05);"><div style="font-size:1.5rem;display:flex;align-items:center;justify-content:center;">'+it.i+'</div><div style="font-size:10px;color:var(--gold);margin-top:3px">'+it.v+'</div><div style="font-size:8px;color:#777;margin-top:2px">'+it.l+'</div></div>';}).join('');
   $('k-sub').textContent=buildCount()+'/'+CASTLE_PARTS.filter(function(p){return!p.free;}).length+' parts · '+(S.potionStock||0)+' pot · '+(S.hintStock||0)+' hints';
   $('k-notify').style.display=availableCount()>0?'block':'none';
   $('btn-kingdom').onclick=function(){sfx('tick');initBuilder();goTo('builder');};
@@ -3541,6 +3744,56 @@ function drawCastle(ctx,x,y,W,H,nd,frame,isSel,s){
   ctx.globalAlpha=1;
 }
 
+// GAME — animated scene strip
+function renderScene(bgClass){
+  var el=$('g-scene');if(!el)return;el.innerHTML='';
+  var svg='http://www.w3.org/2000/svg';
+  var sv=document.createElementNS(svg,'svg');
+  sv.setAttribute('viewBox','0 0 480 80');sv.setAttribute('width','100%');sv.setAttribute('height','100%');
+  sv.style.cssText='display:block;';
+  var idx=parseInt((bgClass.match(/wb(\d)/)||[])[1]||'0');
+  var defs=document.createElementNS(svg,'defs');
+  var styleEl=document.createElementNS(svg,'style');
+  styleEl.textContent='@keyframes sFloatR{0%{transform:translateX(-40px)}100%{transform:translateX(520px)}}@keyframes sFloatL{0%{transform:translateX(520px)}100%{transform:translateX(-40px)}}@keyframes sFloatU{0%{transform:translateY(10px)}100%{transform:translateY(-20px)}}@keyframes sFloatD{0%{transform:translateY(-10px)}100%{transform:translateY(10px)}}@keyframes sPulse{0%,100%{opacity:.3}50%{opacity:1}}@keyframes sBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}@keyframes sFlash{0%,90%,100%{opacity:0}95%{opacity:1}}';
+  defs.appendChild(styleEl);sv.appendChild(defs);
+  var rng=function(a,b){return a+Math.random()*(b-a);};
+  // Each world gets unique animated elements
+  if(idx===0){ // Meadow — clouds + birds
+    for(var i=0;i<3;i++){var c=document.createElementNS(svg,'g');c.innerHTML='<ellipse cx="0" cy="0" rx="'+rng(18,30)+'" ry="'+rng(8,14)+'" fill="rgba(255,255,255,.45)"/><ellipse cx="'+rng(-12,12)+'" cy="'+rng(-6,-2)+'" rx="'+rng(14,22)+'" ry="'+rng(6,10)+'" fill="rgba(255,255,255,.5)"/>';c.style.cssText='animation:sFloatR '+(14+i*4)+'s linear infinite;animation-delay:'+(-i*5)+'s;transform-origin:0 0;';c.setAttribute('transform','translate('+rng(50,200)+','+rng(15,45)+')');sv.appendChild(c);}
+    for(var i=0;i<2;i++){var b=document.createElementNS(svg,'text');b.textContent='🐦';b.setAttribute('font-size','12');b.setAttribute('x','0');b.setAttribute('y','0');b.style.cssText='animation:sFloatR '+(7+i*3)+'s linear infinite;animation-delay:'+(-i*3)+'s;';b.setAttribute('transform','translate('+rng(0,200)+','+rng(20,50)+')');sv.appendChild(b);}
+    for(var i=0;i<4;i++){var f=document.createElementNS(svg,'text');f.textContent='✨';f.setAttribute('font-size',rng(6,10).toFixed(0));f.setAttribute('x','0');f.setAttribute('y','0');f.style.cssText='animation:sPulse '+(1.5+Math.random())+'s ease-in-out infinite;animation-delay:'+(-i*.7)+'s;';f.setAttribute('transform','translate('+rng(20,460)+','+rng(40,75)+')');sv.appendChild(f);}
+  }else if(idx===1){ // Beach — waves + birds + bubbles
+    for(var i=0;i<3;i++){var wv=document.createElementNS(svg,'path');wv.setAttribute('d','M0,'+(30+i*12)+' Q60,'+(20+i*12)+' 120,'+(30+i*12)+' T240,'+(30+i*12)+' T360,'+(30+i*12)+' T480,'+(30+i*12));wv.setAttribute('fill','none');wv.setAttribute('stroke','rgba(255,255,255,'+(0.15+i*0.08)+')');wv.setAttribute('stroke-width','2');wv.style.cssText='animation:sFloatR '+(8+i*2)+'s linear infinite;animation-delay:'+(-i*2)+'s;';sv.appendChild(wv);}
+    for(var i=0;i<3;i++){var bb=document.createElementNS(svg,'circle');bb.setAttribute('r',rng(2,5).toFixed(1));bb.setAttribute('fill','rgba(255,255,255,.25)');bb.style.cssText='animation:sFloatU '+(3+Math.random()*2)+'s ease-in-out infinite;animation-delay:'+(-i*1.2)+'s;';bb.setAttribute('cx',rng(50,430).toFixed(0));bb.setAttribute('cy',rng(50,75).toFixed(0));sv.appendChild(bb);}
+  }else if(idx===2){ // Lava — embers
+    for(var i=0;i<6;i++){var em=document.createElementNS(svg,'circle');em.setAttribute('r',rng(1.5,3.5).toFixed(1));em.setAttribute('fill','rgba(255,'+Math.floor(rng(100,200))+',0,.6)');em.style.cssText='animation:sFloatU '+(1.5+Math.random()*2)+'s ease-in-out infinite;animation-delay:'+(-i*.5)+'s;';em.setAttribute('cx',rng(20,460).toFixed(0));em.setAttribute('cy',rng(40,75).toFixed(0));sv.appendChild(em);}
+    for(var i=0;i<2;i++){var lg=document.createElementNS(svg,'rect');lg.setAttribute('width','100%');lg.setAttribute('height','3');lg.setAttribute('fill','rgba(255,80,0,.12)');lg.style.cssText='animation:sPulse 2s ease-in-out infinite;animation-delay:'+(-i)+'s;';lg.setAttribute('y',(rng(60,75)).toFixed(0));sv.appendChild(lg);}
+  }else if(idx===3){ // Ice — snowflakes + aurora
+    for(var i=0;i<8;i++){var sn=document.createElementNS(svg,'text');sn.textContent='❄';sn.setAttribute('font-size',rng(6,12).toFixed(0));sn.setAttribute('fill','rgba(255,255,255,.5)');sn.style.cssText='animation:sFloatD '+(3+Math.random()*3)+'s ease-in-out infinite;animation-delay:'+(-i*.6)+'s;';sn.setAttribute('x',rng(10,470).toFixed(0));sn.setAttribute('y',rng(10,60).toFixed(0));sv.appendChild(sn);}
+    var au=document.createElementNS(svg,'ellipse');au.setAttribute('cx','240');au.setAttribute('cy','30');au.setAttribute('rx','200');au.setAttribute('ry','18');au.setAttribute('fill','none');au.setAttribute('stroke','rgba(100,200,255,.12)');au.setAttribute('stroke-width','8');au.style.cssText='animation:sPulse 4s ease-in-out infinite;';sv.appendChild(au);
+  }else if(idx===4){ // Sky — clouds + sun rays
+    for(var i=0;i<3;i++){var c=document.createElementNS(svg,'g');c.innerHTML='<ellipse cx="0" cy="0" rx="'+rng(20,35)+'" ry="'+rng(8,14)+'" fill="rgba(255,255,255,.4)"/><ellipse cx="'+rng(-10,10)+'" cy="'+rng(-6,-2)+'" rx="'+rng(15,25)+'" ry="'+rng(6,10)+'" fill="rgba(255,255,255,.5)"/>';c.style.cssText='animation:sFloatR '+(12+i*5)+'s linear infinite;animation-delay:'+(-i*4)+'s;';c.setAttribute('transform','translate('+rng(50,200)+','+rng(15,50)+')');sv.appendChild(c);}
+    for(var i=0;i<3;i++){var rd=document.createElementNS(svg,'text');rd.textContent='☀';rd.setAttribute('font-size','16');rd.style.cssText='animation:sPulse 3s ease-in-out infinite;animation-delay:'+(-i)+'s;';rd.setAttribute('x',rng(350,440).toFixed(0));rd.setAttribute('y',rng(15,35).toFixed(0));sv.appendChild(rd);}
+  }else if(idx===5){ // Dark Castle — bats + stars + moon
+    var mn=document.createElementNS(svg,'text');mn.textContent='🌙';mn.setAttribute('font-size','22');mn.setAttribute('x','420');mn.setAttribute('y','30');mn.style.cssText='animation:sBob 4s ease-in-out infinite;';sv.appendChild(mn);
+    for(var i=0;i<3;i++){var bt=document.createElementNS(svg,'text');bt.textContent='🦇';bt.setAttribute('font-size',rng(8,14).toFixed(0));bt.style.cssText='animation:sFloatL '+(5+Math.random()*3)+'s linear infinite;animation-delay:'+(-i*2)+'s;';bt.setAttribute('transform','translate('+rng(100,400)+','+rng(15,55)+')');sv.appendChild(bt);}
+    for(var i=0;i<5;i++){var st=document.createElementNS(svg,'circle');st.setAttribute('r',rng(1,2).toFixed(1));st.setAttribute('fill','rgba(255,255,255,.5)');st.style.cssText='animation:sPulse '+(1+Math.random()*2)+'s ease-in-out infinite;animation-delay:'+(-i*.4)+'s;';st.setAttribute('cx',rng(10,470).toFixed(0));st.setAttribute('cy',rng(5,60).toFixed(0));sv.appendChild(st);}
+  }else if(idx===6){ // Forest — fireflies + spores
+    for(var i=0;i<6;i++){var ff=document.createElementNS(svg,'circle');ff.setAttribute('r',rng(1.5,3).toFixed(1));ff.setAttribute('fill','rgba(150,255,100,.5)');ff.style.cssText='animation:sBob '+(2+Math.random()*2)+'s ease-in-out infinite;animation-delay:'+(-i*.6)+'s;';ff.setAttribute('cx',rng(20,460).toFixed(0));ff.setAttribute('cy',rng(20,65).toFixed(0));sv.appendChild(ff);}
+    for(var i=0;i<3;i++){var sp=document.createElementNS(svg,'text');sp.textContent='🍃';sp.setAttribute('font-size',rng(8,12).toFixed(0));sp.style.cssText='animation:sFloatR '+(8+Math.random()*4)+'s linear infinite;animation-delay:'+(-i*3)+'s;';sp.setAttribute('transform','translate('+rng(0,200)+','+rng(20,60)+')');sv.appendChild(sp);}
+  }else if(idx===7){ // Thunder — rain + lightning
+    for(var i=0;i<10;i++){var rn=document.createElementNS(svg,'line');rn.setAttribute('x1',rng(0,480).toFixed(0));rn.setAttribute('y1','0');rn.setAttribute('x2',rng(-5,5).toFixed(0));rn.setAttribute('y2','12');rn.setAttribute('stroke','rgba(150,180,255,.3)');rn.setAttribute('stroke-width','1.5');rn.style.cssText='animation:sFloatD '+(0.4+Math.random()*0.4)+'s linear infinite;animation-delay:'+(-i*.15)+'s;';rn.setAttribute('transform','translate(0,'+rng(0,50).toFixed(0)+')');sv.appendChild(rn);}
+    var lt=document.createElementNS(svg,'polygon');lt.setAttribute('points','240,0 250,30 245,30 255,55 235,25 242,25');lt.setAttribute('fill','rgba(255,255,200,.7)');lt.style.cssText='animation:sFlash 5s linear infinite;';sv.appendChild(lt);
+  }else if(idx===8){ // Ocean — bubbles + fish + seaweed
+    for(var i=0;i<4;i++){var bb=document.createElementNS(svg,'circle');bb.setAttribute('r',rng(2,5).toFixed(1));bb.setAttribute('fill','none');bb.setAttribute('stroke','rgba(100,180,255,.3)');bb.setAttribute('stroke-width','1');bb.style.cssText='animation:sFloatU '+(3+Math.random()*2)+'s ease-in-out infinite;animation-delay:'+(-i*1)+'s;';bb.setAttribute('cx',rng(30,450).toFixed(0));bb.setAttribute('cy',rng(40,75).toFixed(0));sv.appendChild(bb);}
+    for(var i=0;i<2;i++){var fi=document.createElementNS(svg,'text');fi.textContent=i===0?'🐟':'🐠';fi.setAttribute('font-size','12');fi.style.cssText='animation:sFloatR '+(8+i*3)+'s linear infinite;animation-delay:'+(-i*4)+'s;';fi.setAttribute('transform','translate('+rng(0,150)+','+rng(25,55)+')');sv.appendChild(fi);}
+    for(var i=0;i<3;i++){var sw=document.createElementNS(svg,'path');sw.setAttribute('d','M'+(80+i*140)+',80 Q'+(80+i*140+8)+',60 '+(80+i*140)+',45 Q'+(80+i*140-6)+',30 '+(80+i*140)+',15');sw.setAttribute('fill','none');sw.setAttribute('stroke','rgba(50,150,80,.35)');sw.setAttribute('stroke-width','3');sw.style.cssText='animation:sBob 3s ease-in-out infinite;animation-delay:'+(-i*.8)+'s;';sv.appendChild(sw);}
+  }else{ // default — fireflies
+    for(var i=0;i<4;i++){var ff=document.createElementNS(svg,'circle');ff.setAttribute('r',rng(1,2.5).toFixed(1));ff.setAttribute('fill','rgba(255,200,100,.4)');ff.style.cssText='animation:sPulse '+(1.5+Math.random())+'s ease-in-out infinite;animation-delay:'+(-i*.5)+'s;';ff.setAttribute('cx',rng(20,460).toFixed(0));ff.setAttribute('cy',rng(15,65).toFixed(0));sv.appendChild(ff);}
+  }
+  el.appendChild(sv);
+}
+
 // GAME
 function startLevel(lIdx){
   if(S.hp<=0){S.level=lIdx;S.levelWrong=0;showFail();return;}
@@ -3553,9 +3806,10 @@ function startLevel(lIdx){
   $('g-band').style.background=w.hdrGrad;$('g-lname').textContent=LNAMES[lIdx];
   $('s-game').className='scr on '+(w.bgClass||'wb-dark');$('s-game').style.boxShadow='none';
   $('fire-overlay').innerHTML='';$('g-combo').style.display='none';bgSpeedMult=1.0;
+  renderScene(w.bgClass||'wb-dark');
   checkAchievements();goTo('game');loadQ();
 }
-function updateHpUI(){var l=$('g-lives');if(!l)return;var html='';for(var hi=0;hi<S.maxHp;hi++){html+='<span style="font-size:'+(hi<S.hp?'1.6rem':'1.1rem')+';opacity:'+(hi<S.hp?1:.2)+'">'+(hi<S.hp?'❤️':'🖤')+'</span>';}l.innerHTML=html;}
+function updateHpUI(){var l=$('g-lives');if(!l)return;var html='';for(var hi=0;hi<S.maxHp;hi++){var heart=hi<S.hp?'❤️':'🖤';var sp=emojiToSprite(hi<S.hp?'❤️':'🖤',24,24);html+='<span style="font-size:'+(hi<S.hp?'1.6rem':'1.1rem')+';opacity:'+(hi<S.hp?1:.2)+'">'+(sp||heart)+'</span>';}l.innerHTML=html;}
 function updateHintBtn(){
   var hb=$('g-hint-btn');if(!hb)return;
   if(S.hintStock>0){
@@ -3740,9 +3994,9 @@ function showFail(){
 function showVictory(stars,hadUnlocks){
   spawnFire(0);$('s-game').style.boxShadow='none';$('fire-overlay').innerHTML='';bgSpeedMult=1.0;
   goTo('victory');
-  $('vic-icon').textContent=stars===3?'🌟':stars>=1?'⭐':'😅';
+  $('vic-icon').innerHTML=stars===3?'🌟':stars>=1?emojiToSprite('⭐',48,48)||'⭐':'😅';
   $('vic-lname').textContent=LNAMES[S.level];
-  $('vic-stars').innerHTML=[0,1,2].map(function(i){return '<span style="font-size:2rem;opacity:'+(i<stars?1:.2)+'">⭐</span>';}).join('');
+  $('vic-stars').innerHTML=[0,1,2].map(function(i){return '<span style="font-size:2rem;opacity:'+(i<stars?1:.2)+'">'+(emojiToSprite('⭐',28,28)||'⭐')+'</span>';}).join('');
   var earned=stars===3?6:stars>=1?3:1;
   $('vic-coins').textContent='+'+earned+' COINS EARNED';
   S.coins+=earned;S.totalCoins+=earned;save();checkAchievements();
@@ -3771,13 +4025,13 @@ function startBoss(){
   _bossUsedCrystal=false;var _bossUsedPotion=false;
   var w=getWorldData(S.region);
   stopBg();playBg('boss');audBtn('boss-aud');
-  $('boss-name').textContent=w.bossName;$('boss-spr').textContent=w.boss;updateBossHUD();
+  $('boss-name').textContent=w.bossName;$('boss-spr').innerHTML=emojiToSprite(w.boss,96,96)||w.boss;updateBossHUD();
   // Crystal button
   var crystalDiv=$('boss-crystal-btn');
   if(crystalDiv){
     updateCrystalBtn();
   }
-  $('btn-boss-back').onclick=function(){sfx('tick');clearInterval(S.bossTimerInterval);stopBg();playBg('w'+(S.region%6));S.combo=0;bgSpeedMult=1.0;initRegion();goTo('region');};
+  // Boss battle — no exit allowed
   goTo('boss');sfx('bossentry');
   // Dramatic entrance — red flash + screen shake
   var flash=document.createElement('div');
@@ -3807,7 +4061,7 @@ function updateCrystalBtn(){
 }
 function updateBossHUD(){
   $('boss-hp-bar').style.width=(S.bossHP/QPB*100)+'%';$('boss-hp-txt').textContent=S.bossHP+'/'+QPB;
-  var html='';for(var bhi=0;bhi<3;bhi++){html+='<span style="font-size:1.1rem;opacity:'+(bhi<S.playerHP?1:.2)+'">❤️</span>';}
+  var html='';for(var bhi=0;bhi<3;bhi++){var bh=emojiToSprite('❤️',22,22)||'❤️';html+='<span style="font-size:1.1rem;opacity:'+(bhi<S.playerHP?1:.2)+'">'+bh+'</span>';}
   $('boss-php').innerHTML=html;
 }
 function showBubble(t,d){d=d||2500;var b=$('boss-bubble');b.textContent=t;b.style.display='block';speakBoss(t);setTimeout(function(){b.style.display='none';},d);}
@@ -3838,7 +4092,17 @@ function loadBossQ(){
       toast('b-toast','HIT! +'+earned+(mult>1?' (2x COMBO!)':''),1000);
       save();checkAchievements();
     }else{
-      S.playerHP--;sfx('ng');showBubble(pick(BOSS_TAUNT),1600);
+      S.playerHP--;sfx('ng');
+      // Boss attack animation — RPG style
+      var bossSpr=$('boss-spr');
+      if(bossSpr){bossSpr.style.animation='none';void bossSpr.offsetWidth;bossSpr.style.animation='bossAttack .6s ease-out';setTimeout(function(){bossSpr.style.animation='';},600);}
+      // Player area shake
+      var bqCard=$('bq-card');
+      if(bqCard){bqCard.style.animation='none';void bqCard.offsetWidth;bqCard.style.animation='playerHit .5s ease-out';setTimeout(function(){bqCard.style.animation='';},500);}
+      // Red flash on screen
+      var bossScr=$('s-boss');
+      if(bossScr){var rf=document.createElement('div');rf.style.cssText='position:fixed;inset:0;background:rgba(255,0,0,.4);z-index:998;pointer-events:none;transition:opacity .4s;';bossScr.appendChild(rf);setTimeout(function(){rf.style.opacity='0';},150);setTimeout(function(){if(rf.parentNode)rf.parentNode.removeChild(rf);},500);}
+      showBubble(pick(BOSS_TAUNT),1600);
     }
     updateBossHUD();
     setTimeout(function(){
@@ -3939,13 +4203,12 @@ function bossWin(){
     }
   }
   sfx('power');
-  showBubble(defeatLine,2500);
-  speakBoss(defeatLine);
+  showBubble(defeatLine,4000);
   // Screen shake
   var bossScr3=$('s-boss');
   if(bossScr3){bossScr3.style.animation='bossShake .1s ease 6';setTimeout(function(){bossScr3.style.animation='';},700);}
-  // Delay victory screen to show defeat animation
-  setTimeout(function(){
+  // Wait for boss to finish speaking, then show victory
+  function showVictory(){
     confetti();speak(w.win,1.4,1.0);
     stopBg();playBg('w'+(S.region%6));S.combo=0;bgSpeedMult=1.0;
     $('bv-icon').textContent=w.badge.e;$('bv-sub').textContent=w.name+' conquered!';
@@ -3961,7 +4224,8 @@ function bossWin(){
     if(isFirstWin&&S.region<49)bvDefs.push({l:'NEXT WORLD',fn:function(){S.region++;playBg('w'+(S.region%6));initRegion();goTo('region');},bg:'#15803d'});
     bvDefs.forEach(function(bd){var b=el('div','background:'+bd.bg+';border-radius:8px;padding:12px 16px;font-size:10px;color:#fff;cursor:pointer;',bd.l,{class:'pb'});b.onclick=bd.fn;btns.appendChild(b);});
     goTo('bvic');
-  },2600);
+  }
+  speakBoss(defeatLine,showVictory);
 }
 function bossLose(){
   clearInterval(S.bossTimerInterval);stopBg();playBg('w'+(S.region%6));
@@ -4874,13 +5138,12 @@ window.equipCharacter=function(id){
 
 // COLLECTION
 function renderCollection(container){
-  var achUnlocked=ACHIEVEMENTS.filter(function(a){return S.achievements[a.id];});
-  var achLocked=ACHIEVEMENTS.filter(function(a){return!S.achievements[a.id];});
   var shopOwned=SHOP_ITEMS.filter(function(it){return(S.shopOwned[it.id]||0)>0;});
   var numBadges=Math.min(maxWorldIndex()+2,14);
   var bossBadges=[];
   for(var bi=0;bi<numBadges;bi++){var wd=getWorldData(bi);bossBadges.push(Object.assign({},wd.badge,{world:wd.name,unlocked:S.bossDefeated.has(bi)}));}
-  var statCards=[{i:'Badges',v:bossBadges.filter(function(b){return b.unlocked;}).length},{i:'Achievements',v:achUnlocked.length+'/'+ACHIEVEMENTS.length},{i:'Shop Items',v:shopOwned.length}];
+  var uc=achCount(),at=achTotal();
+  var statCards=[{i:'Badges',v:bossBadges.filter(function(b){return b.unlocked;}).length},{i:'Achievements',v:uc+'/'+at},{i:'Shop Items',v:shopOwned.length}];
   var statHtml=statCards.map(function(p){return '<div style="background:rgba(0,0,0,.4);border-radius:10px;padding:10px 4px;text-align:center;border:2px solid #333;"><div style="font-size:11px;color:var(--gold);margin-top:3px">'+p.v+'</div><div style="font-size:9px;color:#555;margin-top:2px">'+p.i+'</div></div>';}).join('');
   container.appendChild(el('div','padding:14px 14px 10px;','<div style="font-size:12px;color:var(--gold);margin-bottom:12px">MY COLLECTION</div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px">'+statHtml+'</div>'));
   container.appendChild(el('div','padding:10px 14px 5px;','<div style="font-size:11px;color:var(--gold)">WORLD BADGES</div>'));
@@ -4893,35 +5156,70 @@ function renderCollection(container){
     bg.appendChild(card);
   });
   container.appendChild(bg);
-  // Achievements
-  container.appendChild(el('div','padding:8px 14px 5px;','<div style="font-size:11px;color:var(--gold)">ACHIEVEMENTS ('+achUnlocked.length+'/'+ACHIEVEMENTS.length+')</div>'));
-  if(achUnlocked.length){
-    var ag=el('div','display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 14px 8px;');
-    achUnlocked.forEach(function(a){
-      var card=document.createElement('div');
-      card.style.cssText='background:'+a.bg+'aa;border:2px solid '+a.color+';border-radius:12px;padding:10px;display:flex;align-items:center;gap:8px;cursor:pointer;';
-      card.innerHTML='<div style="font-size:2rem;filter:drop-shadow(0 0 8px '+a.color+')">'+a.icon+'</div><div style="flex:1;min-width:0"><div style="font-size:9px;color:'+a.color+';font-family:var(--px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+a.name+'</div><div style="font-family:system-ui;font-size:11px;color:#888;margin-top:2px;line-height:1.3">'+a.desc+'</div></div>';
-      card.onclick=function(){showAchDetail(a);};ag.appendChild(card);
-    });
-    container.appendChild(ag);
-  }
-  if(achLocked.length){
-    container.appendChild(el('div','padding:5px 14px 4px;','<div style="font-size:9px;color:#555">LOCKED ('+achLocked.length+') — tap to see requirements</div>'));
-    var lg=el('div','display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:0 14px 10px;');
-    achLocked.slice(0,16).forEach(function(a){
-      var card=document.createElement('div');
-      card.style.cssText='background:rgba(0,0,0,.3);border:2px solid #222;border-radius:10px;padding:9px;display:flex;align-items:center;gap:7px;opacity:.6;cursor:pointer;';
-      card.innerHTML='<div style="font-size:1.6rem;filter:grayscale(1)">🔒</div><div><div style="font-size:9px;color:#555;font-family:var(--px)">'+a.name+'</div><div style="font-family:system-ui;font-size:10px;color:#3a3a4a;margin-top:2px;line-height:1.3">'+a.cond+'</div></div>';
-      card.onclick=function(){showAchDetail(a);};lg.appendChild(card);
-    });
-    if(achLocked.length>16)lg.innerHTML+='<div style="grid-column:span 2;text-align:center;font-size:9px;color:#333;padding:8px">+'+(achLocked.length-16)+' more...</div>';
-    container.appendChild(lg);
-  }
+  // Achievements — show all with tier progress
+  container.appendChild(el('div','padding:8px 14px 5px;','<div style="font-size:11px;color:var(--gold)">ACHIEVEMENTS ('+uc+'/'+at+')</div>'));
+  var ag=el('div','display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:0 14px 8px;');
+  ACHIEVEMENTS.forEach(function(a){
+    var card=document.createElement('div');
+    var done=!!S.achievements[a.id];
+    if(a.tiers){
+      var cur=achTier(a);
+      var ct=a.tiers[cur>=0?cur:0];
+      var icon=cur>=0?ct.icon:a.icon;
+      var name=a.name;
+      var tierStr='';
+      if(cur>=0){
+        tierStr='<div style="font-size:7px;color:'+a.color+';margin-bottom:1px">'+TIER_LABELS[Math.min(cur,3)]+' Lv'+(cur+1)+'/'+a.tiers.length+'</div>';
+      }
+      var nextStr='';
+      if(cur<a.tiers.length-1){
+        var nt=a.tiers[cur+1];
+        nextStr='<div style="font-size:8px;color:#555;margin-top:1px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Next: '+nt.cond+'</div>';
+      }
+      card.style.cssText='background:'+(cur>=0?a.bg+'aa':'rgba(0,0,0,.3)')+';border:2px solid '+(cur>=0?a.color:'#222')+';border-radius:8px;padding:7px 6px;display:flex;align-items:flex-start;gap:6px;cursor:pointer;overflow:hidden;';
+      card.innerHTML='<div style="font-size:1.6rem;flex-shrink:0;filter:'+(cur>=0?'drop-shadow(0 0 6px '+a.color+')':'grayscale(1)')+'">'+icon+'</div><div style="flex:1;min-width:0;overflow:hidden;">'+tierStr+'<div style="font-size:8px;color:'+(cur>=0?a.color:'#555')+';font-family:var(--px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+name+'</div>'+(cur>=0?'<div style="font-size:9px;color:#888;margin-top:1px;line-height:1.2;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+ct.desc+'</div>':'<div style="font-size:9px;color:#444;margin-top:1px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+a.tiers[0].cond+'</div>')+nextStr+'</div>';
+    }else{
+      card.style.cssText='background:'+(done?a.bg+'aa':'rgba(0,0,0,.3)')+';border:2px solid '+(done?a.color:'#222')+';border-radius:8px;padding:7px 6px;display:flex;align-items:flex-start;gap:6px;cursor:pointer;overflow:hidden;'+(done?'':'opacity:.6;');
+      card.innerHTML='<div style="font-size:1.6rem;flex-shrink:0;filter:'+(done?'drop-shadow(0 0 6px '+a.color+')':'grayscale(1)')+'">'+(done?a.icon:'🔒')+'</div><div style="flex:1;min-width:0;overflow:hidden;"><div style="font-size:8px;color:'+(done?a.color:'#555')+';font-family:var(--px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+a.name+'</div><div style="font-size:9px;color:#888;margin-top:1px;line-height:1.2;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+(done?a.desc:a.cond)+'</div></div>';
+    }
+    card.onclick=function(){showAchDetail(a);};ag.appendChild(card);
+  });
+  container.appendChild(ag);
 }
 function showAchDetail(a){
   var done=!!S.achievements[a.id];
   $('sheet-title').textContent='Achievement';
-  $('sheet-body').innerHTML='<div style="text-align:center;padding:14px 0 10px"><div style="font-size:4rem;margin-bottom:8px;filter:'+(done?'drop-shadow(0 0 16px '+a.color+')':'grayscale(1)')+'">'+a.icon+'</div><div style="font-size:12px;color:'+(done?a.color:'#555')+';margin-bottom:5px">'+a.name+'</div><div style="font-family:system-ui;font-size:13px;color:#888;margin-bottom:10px;line-height:1.5">'+a.desc+'</div><div style="background:rgba(255,215,0,.08);border:2px solid rgba(255,215,0,.2);border-radius:10px;padding:10px;margin-bottom:10px;font-family:system-ui;font-size:13px;color:#ffd700;">HOW TO UNLOCK:<br>'+a.cond+'</div><div style="font-size:11px;color:'+(done?'#22c55e':'#555')+';padding:8px 16px;border:2px solid '+(done?'#22c55e':'#333')+';border-radius:22px;display:inline-block">'+(done?'UNLOCKED!':'Not yet unlocked')+'</div></div>';
+  var html='<div style="text-align:center;padding:14px 0 10px">';
+  if(a.tiers){
+    var cur=achTier(a);
+    html+='<div style="font-size:4rem;margin-bottom:8px;filter:'+(cur>=0?'drop-shadow(0 0 16px '+a.color+')':'grayscale(1)')+'">'+a.icon+'</div>';
+    html+='<div style="font-size:12px;color:'+a.color+';margin-bottom:5px">'+a.name+'</div>';
+    html+='<div style="font-family:system-ui;font-size:13px;color:#888;margin-bottom:10px;line-height:1.5">'+a.desc+'</div>';
+    html+='<div style="background:rgba(255,215,0,.08);border:2px solid rgba(255,215,0,.2);border-radius:10px;padding:10px;margin-bottom:10px;text-align:left;">';
+    a.tiers.forEach(function(t,i){
+      var unlocked=cur>=i;
+      var isCurrent=cur===i-1||(cur===-1&&i===0);
+      html+='<div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05);'+(unlocked?'':'opacity:.5;')+'">';
+      html+='<span style="font-size:1.2rem">'+(unlocked?t.icon:'🔒')+'</span>';
+      html+='<span style="flex:1;font-family:system-ui;font-size:12px;color:'+(unlocked?'#fff':'#555')+'">'+t.name+' — '+t.cond+'</span>';
+      html+='<span style="font-size:10px;color:'+(unlocked?'#22c55e':'#444')+'">'+(unlocked?'DONE':(isCurrent?'NEXT':''))+'</span>';
+      html+='</div>';
+    });
+    html+='</div>';
+    if(cur>=0){
+      html+='<div style="font-size:11px;color:#22c55e;padding:8px 16px;border:2px solid #22c55e;border-radius:22px;display:inline-block">'+TIER_LABELS[Math.min(cur,3)]+' Level '+(cur+1)+'/'+a.tiers.length+'</div>';
+    }else{
+      html+='<div style="font-size:11px;color:#555;padding:8px 16px;border:2px solid #333;border-radius:22px;display:inline-block">Not yet unlocked</div>';
+    }
+  }else{
+    html+='<div style="font-size:4rem;margin-bottom:8px;filter:'+(done?'drop-shadow(0 0 16px '+a.color+')':'grayscale(1)')+'">'+(done?a.icon:'🔒')+'</div>';
+    html+='<div style="font-size:12px;color:'+(done?a.color:'#555')+';margin-bottom:5px">'+a.name+'</div>';
+    html+='<div style="font-family:system-ui;font-size:13px;color:#888;margin-bottom:10px;line-height:1.5">'+a.desc+'</div>';
+    html+='<div style="background:rgba(255,215,0,.08);border:2px solid rgba(255,215,0,.2);border-radius:10px;padding:10px;margin-bottom:10px;font-family:system-ui;font-size:13px;color:#ffd700;">HOW TO UNLOCK:<br>'+a.cond+'</div>';
+    html+='<div style="font-size:11px;color:'+(done?'#22c55e':'#555')+';padding:8px 16px;border:2px solid '+(done?'#22c55e':'#333')+';border-radius:22px;display:inline-block">'+(done?'UNLOCKED!':'Not yet unlocked')+'</div>';
+  }
+  html+='</div>';
+  $('sheet-body').innerHTML=html;
   $('bld-ov').classList.add('on');$('bld-sheet').classList.remove('off');
   $('btn-sheet-x').onclick=closeSheet;$('bld-ov').onclick=closeSheet;
 }
